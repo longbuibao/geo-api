@@ -12,6 +12,6 @@ const polygonSchema = new mongoose.Schema({
     }
 })
 
-const polygon = mongoose.model('Polygon', polygonSchema)
+const Polygon = mongoose.model('Polygon', polygonSchema)
 
-module.exports = polygon
+module.exports = Polygon
