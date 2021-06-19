@@ -20339,5 +20339,4 @@ require([
 
     graphicsLayer.add(graphicGoVap);
     map.add(graphicsLayer);
-    console.log(TanBinh)
 });
