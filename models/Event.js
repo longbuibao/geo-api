@@ -8,6 +8,8 @@ const eventSchema = new mongoose.Schema({
     }
 })
 
-const Event = mongoose.Schema('Event', eventSchema)
+const Event = mongoose.model('Event', eventSchema)
 
 module.exports = Event
+
+//1-1-2021 to 30-6-2021

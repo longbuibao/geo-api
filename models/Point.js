@@ -1,10 +1,9 @@
 const mongoose = require('mongoose')
 
 const pointSchema = new mongoose.Schema({
-    long: Number,
-    lat: Number,
-    hasPatient: { type: mongoose.Types.ObjectId, ref: 'Patient' },
-    hasEvent: { type: mongoose.Types.ObjectId, ref: 'Event' }
+    latitude: Number,
+    longitude: Number,
+    owner: { type: mongoose.Types.ObjectId, ref: 'Patient' }
 })
 
 const Point = mongoose.model('Point', pointSchema)
