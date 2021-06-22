@@ -1,0 +1,81 @@
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+.district-format {
+    border: 1px solid #555555;
+    padding: 1em;
+    background: #555555;
+    border-radius: 5px;
+    color: #fff;
+    /* box-shadow: ; */
+}
+
+.district-format h5 {
+    margin: 0 auto 0.5em auto;
+    color: #fff;
+    font-size: 1em;
+}
+
+.district-format .form-select {
+    padding: 0.3em;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.info-city {
+    padding: 1em;
+    background: #555555;
+    border-radius: 5px;
+    list-style-type: none;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px #999999;
+    color: #fff;
+}
+
+.info-city ul {
+    margin-bottom: 0;
+}
+
+.info-city h5 {
+    font-size: 1rem;
+}
+
+.patient-format {
+    border: 1px solid #555555;
+    padding: 1em;
+    background: #555555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.patient-format .table-sm {
+    padding: 1em;
+    border: 0.5px solid #fff;
+    background: #fff;
+}
+
+.patient-format h5 {
+    font-size: 1rem;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.patient-format .table td,
+.table th {
+    padding: 0.25em;
+}
