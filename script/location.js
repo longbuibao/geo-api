@@ -2,8 +2,12 @@ require([
     "esri/Map",
     "esri/views/MapView",
     "esri/Graphic",
-    "esri/layers/GraphicsLayer"
-], function(Map, MapView, Graphic, GraphicsLayer) {
+    "esri/layers/GraphicsLayer",
+    "esri/widgets/Locate",
+    "esri/widgets/TimeSlider",
+    "esri/widgets/Expand",
+    "esri/widgets/Legend"
+], function(Map, MapView, Graphic, GraphicsLayer, Locate, TimeSlider, Expand, Legend) {
 
     var map = new Map({
         basemap: "topo-vector"
@@ -15,6 +19,51 @@ require([
         center: [106.8146221625554, 10.61229031981],
         zoom: 11
     });
+
+    var locateBtn = new Locate({
+        view: view
+    });
+
+    view.ui.add(locateBtn, {
+        position: "top-left"
+    });
+
+    // add a legend for the earthquakes layer
+    const legendExpand = new Expand({
+        collapsedIconClass: "esri-icon-collapse",
+        expandIconClass: "esri-icon-expand",
+        expandTooltip: "Legend",
+        view: view,
+        content: new Legend({
+            view: view
+        }),
+        expanded: false
+    });
+    view.ui.add(legendExpand, "top-left");
+
+    const statsDiv = document.getElementById("statsDiv");
+    const infoDiv = document.getElementById("infoDiv");
+    const infoDivExpand = new Expand({
+        collapsedIconClass: "esri-icon-collapse",
+        expandIconClass: "esri-icon-expand",
+        expandTooltip: "Expand earthquakes info",
+        view: view,
+        content: infoDiv,
+        expanded: true
+    });
+    view.ui.add(infoDivExpand, "top-right");
+
+    const timeSlider = new TimeSlider({
+        container: "timeSlider",
+        playRate: 50,
+        stops: {
+            interval: {
+                value: 1,
+                unit: "hours"
+            }
+        }
+    });
+    view.ui.add(timeSlider, "bottom-left");
 
     view.popup.autoOpenEnabled = true; // Disable the default popup behavior
 
