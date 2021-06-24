@@ -5,6 +5,14 @@ const eventSchema = new mongoose.Schema({
     time: {
         type: mongoose.Types.ObjectId,
         ref: 'Time'
+    },
+    owner: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Patient'
+    },
+    location: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Point'
     }
 })
 
