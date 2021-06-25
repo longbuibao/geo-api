@@ -14,26 +14,27 @@
         <% if(!data.isFound) {%>
             <input type="text" name="name" value="<%= data.nameValue %>"><br><br>
             <% } else {%>
-                <input type="text" name="name" disabled><br><br>
+                <input type="text" name="name" readonly value="<%= data.nameValue %>"><br><br>
                 <% } %>
                     <label for="yearOfBirth">yearOfBirth: </label>
-                    <input type="text" name="yearOfBirth" <%=data.isFound ? 'disabled' : '' %> required><br><br>
+                    <input type="text" name="yearOfBirth" <%=data.isFound ? 'readonly' : '' %> required><br><br>
 
-                    <label for="status ">status: </label>
-                    <input type="text" name="status" <%=data.isFound ? 'disabled' : '' %> required><br><br>
+                    <label for="status">status: </label>
+                    <input type="text" name="status" required><br><br>
 
-                    <label for="currentlat ">currentlat: </label>
+                    <label for="currentlat">currentlat: </label>
                     <input type="text" name="lat" required><br><br>
 
                     <label for="currentlong">currentlong: </label>
                     <input type="text" name="long" required><br><br>
 
-                    <label for="detailAddress ">detailAddress: </label>
+                    <label for="detailAddress">detailAddress: </label>
                     <input type="text" name="detailAddress" required><br><br>
 
-                    <label for="district ">district: </label>
+                    <label for="district">district: </label>
                     <input type="text" name="district" required><br><br>
 
+                    <br>
                     <input type="submit" value="Submit">
     </form>
 

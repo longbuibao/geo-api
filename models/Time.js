@@ -1,22 +1,9 @@
 const mongoose = require('mongoose')
 
 const timeSchema = new mongoose.Schema({
-    start: {
-        date: Number,
-        month: Number,
-        year: Number,
-        hours: Number,
-        minutes: Number
-    },
-    end: {
-        date: Number,
-        month: Number,
-        year: Number,
-        hours: Number,
-        minutes: Number
-    }
+    time: String
 })
-timeSchema.virtual('time', {
+timeSchema.virtual('time_', {
     ref: 'Event',
     localField: '_id',
     foreignField: 'time'

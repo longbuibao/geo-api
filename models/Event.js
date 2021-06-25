@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const Time = require('./Time')
+const Point = require('./Point')
 
 const eventSchema = new mongoose.Schema({
     name: String,
@@ -14,6 +16,12 @@ const eventSchema = new mongoose.Schema({
         type: mongoose.Types.ObjectId,
         ref: 'Point'
     }
+})
+
+eventSchema.pre('remove', async function(next) {
+    await Time.deleteOne({ _id: this.time })
+    await Point.deleteOne({ _id: this.location })
+    next()
 })
 
 const Event = mongoose.model('Event', eventSchema)

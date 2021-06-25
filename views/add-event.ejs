@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/add-event/?name=<%= data.name%>" method="post">
+        <label for="name">name: </label>
+        <input type="text" name="name" value="<%= data.name%>"><br><br>
+        <label for="time">time:</label>
+        <input type="datetime-local" id="time" name="time" value="2021-01-01T00:00" min="2021-01-01T00:00" max="2021-07-01T00:00">
+
+        <br>
+        <label for="latEvent">lat of event: </label>
+        <input type="text" name="latEvent" required><br><br>
+
+        <label for="longEvent">long of event: </label>
+        <input type="text" name="longEvent" required><br><br>
+
+        <label for="addressEvent">detail address of event: </label>
+        <input type="text" name="addressEvent" required><br><br>
+
+        <label for="districtEvent">district of event: </label>
+        <input type="text" name="districtEvent" required><br><br>
+
+        <label for="nameEvent">name of event: </label>
+        <input type="text" name="nameEvent" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

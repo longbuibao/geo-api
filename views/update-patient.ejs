@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/update-patient/?_method=PATCH" method="POST">
+        <label for="name">name: </label>
+        <input type="text" id="fname" name="name" required><br><br>
+
+        <label for="yearOfBirth">yearOfBirth: </label>
+        <input type="text" name="yearOfBirth"><br><br>
+
+        <label for="status">status: </label>
+        <input type="text" name="status"><br><br>
+
+        <label for="currentlat">currentlat: </label>
+        <input type="text" name="lat"><br><br>
+
+        <label for="currentlong">currentlong: </label>
+        <input type="text" name="long"><br><br>
+
+        <label for="detailAddress">detailAddress: </label>
+        <input type="text" name="detailAddress"><br><br>
+
+        <label for="district">district: </label>
+        <input type="text" name="district"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
