@@ -14,18 +14,28 @@ router.get('/get-patient', (req, res) => {
 })
 
 router.post('/get-patient', async(req, res) => {
-    const patient = await Patient.findOne({ name: req.body.name })
+    try {
+        const patient = await Patient.findOne({ name: req.body.name })
 
-    if (patient) {
-        res.redirect(`/add-event/?name=${patient.name}`)
-    } else {
-        return res.render('add-patient', {
-            data: {
-                isFound: false,
-                nameValue: req.body.name
+        if (patient) {
+            res.redirect(`/add-event/?name=${patient.name}`)
+        } else {
+            return res.render('add-patient', {
+                data: {
+                    isFound: false,
+                    nameValue: req.body.name
+                }
+            })
+        }
+    } catch (error) {
+        res.status(500).send({
+            message: {
+                path: '/get-patient',
+                text: error.message
             }
         })
     }
+
 })
 
 router.post('/add-patient', async(req, res) => {
@@ -51,15 +61,26 @@ router.post('/add-patient', async(req, res) => {
         status
     }
 
-    const disease = await Disease.findOne({ name: 'SARS-CoV-2' })
-    const point = await (new Point(bodyPoint)).save()
-    const patient = new Patient(bodyPatient)
-    patient['currentLocation'] = point._id
-    patient['hasDisease'] = disease._id
+    try {
+        const disease = await Disease.findOne({ name: 'SARS-CoV-2' })
+        const point = await (new Point(bodyPoint)).save()
+        const patient = new Patient(bodyPatient)
+        patient['currentLocation'] = point._id
+        patient['hasDisease'] = disease._id
 
-    await patient.save()
+        await patient.save()
 
-    res.redirect('/get-patient')
+        res.redirect('/get-patient')
+
+    } catch (error) {
+        res.status(500).send({
+            message: {
+                path: '/add-patient',
+                text: error.message
+            }
+        })
+    }
+
 })
 
 router.get('/add-event', async(req, res) => {
@@ -72,32 +93,46 @@ router.get('/add-event', async(req, res) => {
 router.post('/add-event', async(req, res) => {
 
     const { time } = req.body
-    const { latEvent, longEvent, addressEvent, districtEvent, nameEvent } = req.body
+    const {
+        latEvent,
+        longEvent,
+        addressEvent,
+        districtEvent,
+        nameEvent
+    } = req.body
     const { name } = req.body
 
-    const checkPatient = await Patient.findOne({ name })
+    try {
+        const checkPatient = await Patient.findOne({ name })
 
+        if (checkPatient) {
+            const patientId = checkPatient._id
+            const bodyTime = (new Date(time)).toISOString()
+            const savedTime = await (new Time({ time: bodyTime })).save()
+            const savedLocation = await (new Point({
+                lat: latEvent,
+                long: longEvent,
+                detailAddress: addressEvent,
+                district: districtEvent
+            })).save()
 
-    if (checkPatient) {
-        const patientId = checkPatient._id
-        const bodyTime = (new Date(time)).toISOString()
-        const savedTime = await (new Time({ time: bodyTime })).save()
-        const savedLocation = await (new Point({
-            lat: latEvent,
-            long: longEvent,
-            detailAddress: addressEvent,
-            district: districtEvent
-        })).save()
+            const savedEvent = await (new Event({
+                name: nameEvent,
+                time: savedTime._id,
+                owner: patientId,
+                location: savedLocation._id
+            })).save()
+        }
 
-        const savedEvent = await (new Event({
-            name: nameEvent,
-            time: savedTime._id,
-            owner: patientId,
-            location: savedLocation._id
-        })).save()
+        res.redirect('/get-patient')
+    } catch (error) {
+        res.status(500).send({
+            message: {
+                path: '/add-event',
+                text: error.message
+            }
+        })
     }
-
-    res.redirect('/get-patient')
 })
 
 router.get('/update-patient', async(req, res) => {
@@ -133,8 +168,11 @@ router.patch('/update-patient', async(req, res) => {
         res.render('updated-patient')
 
     } catch (error) {
-        res.send({
-            error: 'Something wrong in admin.js from router.patch(/update-patient), is database connected?'
+        res.status(500).send({
+            message: {
+                path: '/update-patient',
+                text: error.message
+            }
         })
     }
 
@@ -156,8 +194,11 @@ router.delete('/delete-patient', async(req, res) => {
             message: 'Deleted'
         })
     } catch (error) {
-        res.send({
-            error: 'Something wrong in admin.js from router.delete(/delete-patient), is database connected?'
+        res.status(500).send({
+            message: {
+                path: '/delete-patient',
+                text: error.message
+            }
         })
     }
 })
@@ -167,17 +208,27 @@ router.get('/get-detail-patient', async(req, res) => {
 })
 
 router.post('/get-detail-patient', async(req, res) => {
-    const patient = await Patient.findOne({ name: req.body.name })
-    const events = await Event.find({ owner: new mongoose.Types.ObjectId(patient._id) })
-    const currentLocation = await Point.findById(patient.currentLocation)
-    const disease = await Disease.findById(patient.hasDisease)
+    try {
+        const patient = await Patient.findOne({ name: req.body.name })
+        const events = await Event.find({ owner: new mongoose.Types.ObjectId(patient._id) })
+        const currentLocation = await Point.findById(patient.currentLocation)
+        const disease = await Disease.findById(patient.hasDisease)
 
-    res.send({
-        patient,
-        events,
-        currentLocation,
-        disease
-    })
+        res.send({
+            patient,
+            events,
+            currentLocation,
+            disease
+        })
+    } catch (error) {
+        res.status(500).send({
+            message: {
+                path: '/get-detail-patient',
+                text: error.message
+            }
+        })
+    }
 })
+
 
 module.exports = router

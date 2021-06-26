@@ -24,9 +24,11 @@ patientSchema.virtual('events', {
 
 patientSchema.pre('remove', async function(next) {
     const events = await Event.find({ owner: this._id })
+
     events.forEach(async(event) => {
         await event.remove()
     })
+
     await Point.deleteOne({ _id: this.currentLocation })
     next()
 })
