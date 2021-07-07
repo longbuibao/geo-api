@@ -34,15 +34,9 @@ const {
     savePhongToa
 } = require('../controllers/phongtoa/phongtoa.controller')
 
-const Patient = require('../models/Patient')
-const Point = require('../models/Point')
-const Disease = require('../models/Disease')
-const Event = require('../models/Event')
-const mongoose = require('mongoose')
-const Time = require('../models/Time')
-const Status = require('../models/Status')
-const PhongToa = require('../models/PhongToa')
-const CachLi = require('../models/VungCachLi')
+const {
+    saveCachLi
+} = require('../controllers/cachli/cachli.controller')
 
 router.get('/get-patient', (req, res) => {
     res.render('get-patient')
@@ -247,27 +241,10 @@ router.get('/add-isolation-zone', (_, res) => {
 })
 
 router.post('/add-isolation-zone', async(req, res) => {
-    const { tenVung } = req.body
-    const points = JSON.parse(req.body.points)
-    const pointId = []
-
-    points.forEach(async(point, index) => {
-        const savedPoint = await (new Point({
-            lat: point[1],
-            long: point[0]
-        })).save()
-
-        pointId.push(savedPoint._id)
-
-        if (index === points.length - 1) {
-            console.log(pointId)
-            await (new CachLi({
-                name: tenVung,
-                boundaries: [...pointId]
-            })).save()
-        }
+    await saveCachLi(req.body)
+    res.send({
+        message: 'Lưu thành công'
     })
-    res.redirect('/')
 })
 
 module.exports = router
