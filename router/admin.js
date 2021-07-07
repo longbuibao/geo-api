@@ -30,6 +30,10 @@ const {
     updateStatus
 } = require('../controllers/status/status.controller')
 
+const {
+    savePhongToa
+} = require('../controllers/phongtoa/phongtoa.controller')
+
 const Patient = require('../models/Patient')
 const Point = require('../models/Point')
 const Disease = require('../models/Disease')
@@ -228,26 +232,14 @@ router.get('/add-lockade-area', (req, res) => {
 })
 
 router.post('/add-lockade-area', async(req, res) => {
-    const { isoLat, isoLong } = req.body
-    const { detailAddress, district } = req.body
-    const { time } = req.body
-    console.log(isoLat, isoLong, detailAddress, district)
-    const point = await (new Point({
-        lat: isoLat,
-        long: isoLong,
-        detailAddress,
-        district
-    })).save()
-
-    const savedTime = await (new Time({ time })).save()
-
-    await (new PhongToa({
-        whereTo: point._id,
-        time: savedTime._id
-    })).save()
-
-    res.redirect('/')
-
+    try {
+        await savePhongToa(req.body)
+        res.redirect('/add-lockade-area')
+    } catch (error) {
+        res.status(400).send({
+            message: 'Lỗi không thể lưu khu phong tỏa'
+        })
+    }
 })
 
 router.get('/add-isolation-zone', (_, res) => {

@@ -64,7 +64,6 @@ const deletePatient = async(id) => {
             idOfPatient: id
         }
     }
-
 }
 
 const getDetailPatient = async(id) => {
