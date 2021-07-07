@@ -146,7 +146,8 @@ router.delete('/delete-patient', async(req, res) => {
 router.get('/get-detail-patient', async(req, res) => {
     const id = req.query.id
     try {
-        await getDetailPatient(id)
+        const result = await getDetailPatient(id)
+        console.log(result)
     } catch (error) {
         res.status(500).send({
             message: {

@@ -71,11 +71,17 @@ const getDetailPatient = async(id) => {
     await patient.populate({ path: 'pa_sa' }).execPopulate()
     const patientStatus = patient.pa_sa
 
-    patientStatus.forEach(async(stt) => {
-        await stt.populate({ path: 'timeOfStatus' }).execPopulate()
-            // console.log('ddfdfdfdf ' + stt.timeOfStatus)
-        console.log(stt)
+    await Promise.all(patientStatus.map(async(stt) => {
+        await stt.populate({
+            path: 'timeOfStatus'
+        }).execPopulate()
+    }))
+
+    patientStatus.sort(function(a, b) {
+        return new Date(b.timeOfStatus.time) - new Date(a.timeOfStatus.time);
     })
+
+    return { status: patientStatus[0], patient }
 }
 
 module.exports = {
