@@ -5,6 +5,7 @@
             <th>ID Bệnh nhân</th>
             <th>Tên bệnh nhân</th>
             <th>Hành động</th>
+            <th>Status</th>
         </tr>
         <% patients.forEach(patient => { %>
             <tr>
@@ -17,6 +18,11 @@
                 <td>
                     <a onclick="deletePatient(this)" data-patient_id="<%= patient._id %>" id="<%= patient._id %>"><i class="fas fa-trash-alt"></i></a>
                     <a href="http://localhost:3000/update-patient/?id=<%= patient._id %>&name=<%= patient.name %>"><i class="fas fa-edit"></i></a>
+                    <a href="http://localhost:3000/get-detail-patient/?id=<%= patient._id %>"><i class="fas fa-info-circle"></i></a>
+                </td>
+                <td>
+                    <a href="http://localhost:3000/add-patient-status/?id=<%= patient._id %>&name=<%= patient.name %>"><i class="fas fa-plus"></i></a>
+                    <a href="http://localhost:3000/all-patient-status/?id=<%= patient._id %>&name=<%= patient.name %>"><i class="fas fa-edit"></i></a>
                 </td>
             </tr>
             <% }) %>

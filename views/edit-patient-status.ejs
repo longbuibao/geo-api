@@ -1,0 +1,21 @@
+<%- include('patials/header') %>
+    <h3>ID:
+        <%= id %>
+    </h3>
+    <h3>
+        tên:
+        <%= name %>
+    </h3>
+    <h3>
+        Status ID:
+        <%= sttId %>
+    </h3>
+    <form action="/edit-patient-status/?id=<%= sttId %>&patientId=<%= id %>&paName=<%= name %>" method="post">
+        <label for="name">Tên trạng thái: </label>
+        <input type="text" name="nameOfStatus"><br><br>
+
+        <label for="timeOfStatus">Thời gian: </label>
+        <input type="datetime-local" min="2021-01-01T00:00" max="2021-07-01T00:00" name="timeOfStatus"><br><br>
+        <input type="submit" value="Sửa!">
+    </form>
+    <%- include('patials/footer') %>

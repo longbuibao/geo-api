@@ -1,0 +1,17 @@
+<%- include('patials/header') %>
+    <h3>ID:
+        <%= id %>
+    </h3>
+    <h3>
+        tên:
+        <%= name %>
+    </h3>
+    <form action="/add-patient-status/?id=<%= id %>&name=<%= name %>" method="post">
+        <label for="name">Tên trạng thái: </label>
+        <input type="text" name="nameOfStatus" required><br><br>
+
+        <label for="timeOfStatus">Thời gian: </label>
+        <input type="datetime-local" required min="2021-01-01T00:00" max="2021-07-01T00:00" name="timeOfStatus"><br><br>
+        <input type="submit" value="Thêm!">
+    </form>
+    <%- include('patials/footer') %>

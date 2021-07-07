@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const timeSchema = new mongoose.Schema({
-    time: String
+    time: Date
 })
 
 timeSchema.virtual('time_event', {
@@ -11,7 +11,7 @@ timeSchema.virtual('time_event', {
 })
 
 timeSchema.virtual('status_time', {
-    ref: 'Time',
+    ref: 'Status',
     localField: '_id',
     foreignField: 'timeOfStatus'
 })

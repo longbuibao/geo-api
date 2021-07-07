@@ -13,13 +13,7 @@ const {
 
 const Patient = require('../../models/Patient')
 
-const filterProperties = (obj) => {
-    let newObject = {}
-    Object.keys(obj).forEach(key => {
-        if (obj[key] !== '') newObject[key] = obj[key];
-    })
-    return newObject;
-}
+const filterProperties = require('../../utils/filterProperties')
 
 const updatePatient = async(body) => {
     try {

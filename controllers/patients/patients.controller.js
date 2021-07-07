@@ -67,10 +67,23 @@ const deletePatient = async(id) => {
 
 }
 
+const getDetailPatient = async(id) => {
+    const patient = await getPatientById(id)
+    await patient.populate({ path: 'pa_sa' }).execPopulate()
+    const patientStatus = patient.pa_sa
+
+    patientStatus.forEach(async(stt) => {
+        await stt.populate({ path: 'timeOfStatus' }).execPopulate()
+            // console.log('ddfdfdfdf ' + stt.timeOfStatus)
+        console.log(stt)
+    })
+}
+
 module.exports = {
     getPatientByName,
     savePatient,
     getAllPatient,
     getPatientById,
-    deletePatient
+    deletePatient,
+    getDetailPatient
 }

@@ -6,18 +6,29 @@ const {
 } = require('../controllers/routers/router.post.add.patient')
 
 const {
+    allStatus
+} = require('../controllers/routers/router.get.patient.status')
+
+const {
     updatePatient
 } = require('../controllers/routers/router.patch.update.patient')
 
 const {
     getPatientByName,
     getAllPatient,
-    deletePatient
+    deletePatient,
+    getDetailPatient
 } = require('../controllers/patients/patients.controller')
 
 const {
     addEventToPatient
 } = require('../controllers/routers/router.post.add.event')
+
+const {
+    addStatus,
+    deleteStatus,
+    updateStatus
+} = require('../controllers/status/status.controller')
 
 const Patient = require('../models/Patient')
 const Point = require('../models/Point')
@@ -135,22 +146,9 @@ router.delete('/delete-patient', async(req, res) => {
 })
 
 router.get('/get-detail-patient', async(req, res) => {
-    res.render('get-detail-patient')
-})
-
-router.post('/get-detail-patient', async(req, res) => {
+    const id = req.query.id
     try {
-        const patient = await Patient.findOne({ name: req.body.name })
-        const events = await Event.find({ owner: new mongoose.Types.ObjectId(patient._id) })
-        const currentLocation = await Point.findById(patient.currentLocation)
-        const disease = await Disease.findById(patient.hasDisease)
-
-        res.send({
-            patient,
-            events,
-            currentLocation,
-            disease
-        })
+        await getDetailPatient(id)
     } catch (error) {
         res.status(500).send({
             message: {
@@ -159,6 +157,70 @@ router.post('/get-detail-patient', async(req, res) => {
             }
         })
     }
+})
+
+router.get('/add-patient-status', (req, res) => {
+    const id = req.query.id
+    const name = req.query.name
+    res.render('add-patient-status', {
+        id,
+        name
+    })
+})
+
+router.post('/add-patient-status', async(req, res) => {
+    try {
+
+        const { id, name } = req.query
+        await addStatus(id, req.body)
+        res.redirect(`/all-patient-status/?id=${id}&name=${name}`)
+
+    } catch (error) {
+        res.status(400).send(error)
+    }
+})
+
+router.get('/all-patient-status', async(req, res) => {
+    try {
+        const { id, name } = req.query
+        const status = await allStatus(req.query)
+        res.render('list-all-status', { id, name, status })
+    } catch (error) {
+        console.log(error)
+    }
+
+})
+
+router.delete('/delete-status', async(req, res) => {
+    try {
+        const sttId = req.query.statusId
+        await deleteStatus(sttId)
+        res.send()
+    } catch (error) {
+        res.status(400).send('Không thể xóa status')
+    }
+})
+
+router.get('/edit-status', async(req, res) => {
+    const { patientId, patientName, id } = req.query
+    res.render('edit-patient-status', {
+        id: patientId,
+        name: patientName,
+        sttId: id
+    })
+})
+
+router.post('/edit-patient-status', async(req, res) => {
+    try {
+        const { id, patientId, paName } = req.query
+        console.log(req.query)
+        const { nameOfStatus, timeOfStatus } = req.body
+        await updateStatus(id, { nameOfStatus, timeOfStatus })
+        res.redirect(`/all-patient-status/?id=${patientId}&name=${paName}`)
+    } catch (error) {
+        console.log(error)
+    }
+
 })
 
 router.get('/add-lockade-area', (req, res) => {

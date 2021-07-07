@@ -1,0 +1,31 @@
+<%- include('patials/header') %>
+    <h3>ID:
+        <%= id %>
+    </h3>
+    <h3>
+        Tên:
+        <%= name %>
+    </h3>
+    <a style="margin-top: 20px; margin-bottom: 20px;" href="http://localhost:3000/add-patient-status/?id=<%= id %>&name=<%= name %>"><i class="fas fa-plus"></i> Thêm trạng thái mới</a>
+    <table id="patients" style="margin-top: 20px;">
+        <tr>
+            <th>Tên trạng thái</th>
+            <th>Thời gian</th>
+            <th>Hành động</th>
+        </tr>
+        <% status.forEach(stt => { %>
+            <tr>
+                <td>
+                    <%= stt.nameOfStatus %>
+                </td>
+                <td>
+                    <%= stt.timeOfStatus.time %>
+                </td>
+                <td>
+                    <a onclick="deleteStatus(this)" data-status_id="<%= stt._id %>" data-patient_name="<%= name %>" data-patient_id="<%= id %>"><i class="fas fa-trash-alt"></i></a>
+                    <a href="http://localhost:3000/edit-status/?id=<%= stt._id %>&patientId=<%= id %>&patientName=<%= name %>"><i class="fas fa-edit"></i></a>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+    <%- include('patials/footer') %>
