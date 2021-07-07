@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const methodOverride = require('method-override')
+require('dotenv').config()
+
 
 const app = express()
 const adminRouter = require('./router/admin')

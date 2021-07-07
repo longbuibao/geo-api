@@ -1,13 +1,33 @@
 const express = require('express')
 const router = express.Router()
 require('../db/mongoose')
+const {
+    addPatient
+} = require('../controllers/routers/router.post.add.patient')
+
+const {
+    updatePatient
+} = require('../controllers/routers/router.patch.update.patient')
+
+const {
+    getPatientByName,
+    getAllPatient,
+    deletePatient
+} = require('../controllers/patients/patients.controller')
+
+const {
+    addEventToPatient
+} = require('../controllers/routers/router.post.add.event')
+
 const Patient = require('../models/Patient')
 const Point = require('../models/Point')
 const Disease = require('../models/Disease')
 const Event = require('../models/Event')
 const mongoose = require('mongoose')
 const Time = require('../models/Time')
-
+const Status = require('../models/Status')
+const PhongToa = require('../models/PhongToa')
+const CachLi = require('../models/VungCachLi')
 
 router.get('/get-patient', (req, res) => {
     res.render('get-patient')
@@ -15,23 +35,18 @@ router.get('/get-patient', (req, res) => {
 
 router.post('/get-patient', async(req, res) => {
     try {
-        const patient = await Patient.findOne({ name: req.body.name })
 
-        if (patient) {
-            res.redirect(`/add-event/?name=${patient.name}`)
-        } else {
-            return res.render('add-patient', {
-                data: {
-                    isFound: false,
-                    nameValue: req.body.name
-                }
-            })
+        const patient = await getPatientByName(req.body.name)
+        if (patient.status === 200) {
+            res.redirect(`/add-event/?name=${patient.patient.name}`)
         }
+
     } catch (error) {
-        res.status(500).send({
-            message: {
-                path: '/get-patient',
-                text: error.message
+        return res.render('add-patient', {
+            data: {
+                isFound: false,
+                nameValue: error.nameOfPatient,
+                message: error.message
             }
         })
     }
@@ -39,44 +54,18 @@ router.post('/get-patient', async(req, res) => {
 })
 
 router.post('/add-patient', async(req, res) => {
-    const {
-        lat,
-        long,
-        detailAddress,
-        district,
-        name,
-        yearOfBirth,
-        status
-    } = req.body
-
-    const bodyPoint = {
-        lat,
-        long,
-        detailAddress,
-        district
-    }
-    const bodyPatient = {
-        name,
-        yearOfBirth,
-        status
-    }
 
     try {
-        const disease = await Disease.findOne({ name: 'SARS-CoV-2' })
-        const point = await (new Point(bodyPoint)).save()
-        const patient = new Patient(bodyPatient)
-        patient['currentLocation'] = point._id
-        patient['hasDisease'] = disease._id
 
-        await patient.save()
-
+        const result = await addPatient(req.body)
+        console.log(result)
         res.redirect('/get-patient')
 
     } catch (error) {
         res.status(500).send({
             message: {
                 path: '/add-patient',
-                text: error.message
+                error: error.message
             }
         })
     }
@@ -92,38 +81,8 @@ router.get('/add-event', async(req, res) => {
 
 router.post('/add-event', async(req, res) => {
 
-    const { time } = req.body
-    const {
-        latEvent,
-        longEvent,
-        addressEvent,
-        districtEvent,
-        nameEvent
-    } = req.body
-    const { name } = req.body
-
     try {
-        const checkPatient = await Patient.findOne({ name })
-
-        if (checkPatient) {
-            const patientId = checkPatient._id
-            const bodyTime = (new Date(time)).toISOString()
-            const savedTime = await (new Time({ time: bodyTime })).save()
-            const savedLocation = await (new Point({
-                lat: latEvent,
-                long: longEvent,
-                detailAddress: addressEvent,
-                district: districtEvent
-            })).save()
-
-            const savedEvent = await (new Event({
-                name: nameEvent,
-                time: savedTime._id,
-                owner: patientId,
-                location: savedLocation._id
-            })).save()
-        }
-
+        await addEventToPatient(req.body)
         res.redirect('/get-patient')
     } catch (error) {
         res.status(500).send({
@@ -135,42 +94,14 @@ router.post('/add-event', async(req, res) => {
     }
 })
 
-router.get('/update-patient', async(req, res) => {
-    res.render('update-patient')
-})
-
-router.patch('/update-patient', async(req, res) => {
-    const { name } = req.body
-    const { yearOfBirth, status } = req.body
-    const { lat, long, detailAddress, district } = req.body
+router.get('/patient-list-update', async(req, res) => {
     try {
-        const patient = await Patient.findOne({ name })
-        if (!patient) {
-            return res.render('not-found-this-patient')
-        }
-
-        const point = await Point.findById(patient.currentLocation)
-
-        console.log(yearOfBirth)
-
-        patient['yearOfBirth'] = yearOfBirth || patient['yearOfBirth']
-        patient['status'] = status || patient['status']
-
-        await patient.save()
-
-        point['lat'] = lat || point['lat']
-        point['long'] = long || point['long']
-        point['detailAddress'] = detailAddress || point['detailAddress']
-        point['district'] = district || point['district']
-
-        await point.save()
-
-        res.render('updated-patient')
-
+        const patients = await getAllPatient()
+        res.render('list-of-patients', { patients })
     } catch (error) {
         res.status(500).send({
             message: {
-                path: '/update-patient',
+                path: '/patient-list-update',
                 text: error.message
             }
         })
@@ -178,28 +109,28 @@ router.patch('/update-patient', async(req, res) => {
 
 })
 
-router.get('/delete-patient', (req, res) => {
-    res.render('get-patient-to-delete')
+router.get('/update-patient', (req, res) => {
+    const { id, name } = req.query
+    res.render('update-patient', { id, name })
+})
+
+router.patch('/update-patient', async(req, res) => {
+    try {
+        req.body.patientId = req.query.id
+        await updatePatient(req.body)
+        res.redirect('/patient-list-update')
+    } catch (error) {
+        res.status(400).send(error)
+    }
 })
 
 router.delete('/delete-patient', async(req, res) => {
-    const { name } = req.body
     try {
-        const patient = await Patient.findOne({ name })
-        if (!patient) {
-            return res.render('not-found-this-patient')
-        }
-        await patient.remove()
-        res.send({
-            message: 'Deleted'
-        })
+        console.log(req.query.patientId)
+        await deletePatient(req.query.patientId)
+        res.status(200).send()
     } catch (error) {
-        res.status(500).send({
-            message: {
-                path: '/delete-patient',
-                text: error.message
-            }
-        })
+        res.status(500).send(error)
     }
 })
 
@@ -230,5 +161,59 @@ router.post('/get-detail-patient', async(req, res) => {
     }
 })
 
+router.get('/add-lockade-area', (req, res) => {
+    res.render('add-lockade-area')
+})
+
+router.post('/add-lockade-area', async(req, res) => {
+    const { isoLat, isoLong } = req.body
+    const { detailAddress, district } = req.body
+    const { time } = req.body
+    console.log(isoLat, isoLong, detailAddress, district)
+    const point = await (new Point({
+        lat: isoLat,
+        long: isoLong,
+        detailAddress,
+        district
+    })).save()
+
+    const savedTime = await (new Time({ time })).save()
+
+    await (new PhongToa({
+        whereTo: point._id,
+        time: savedTime._id
+    })).save()
+
+    res.redirect('/')
+
+})
+
+router.get('/add-isolation-zone', (_, res) => {
+    res.render('add-isolation-zone')
+})
+
+router.post('/add-isolation-zone', async(req, res) => {
+    const { tenVung } = req.body
+    const points = JSON.parse(req.body.points)
+    const pointId = []
+
+    points.forEach(async(point, index) => {
+        const savedPoint = await (new Point({
+            lat: point[1],
+            long: point[0]
+        })).save()
+
+        pointId.push(savedPoint._id)
+
+        if (index === points.length - 1) {
+            console.log(pointId)
+            await (new CachLi({
+                name: tenVung,
+                boundaries: [...pointId]
+            })).save()
+        }
+    })
+    res.redirect('/')
+})
 
 module.exports = router

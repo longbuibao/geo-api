@@ -3,7 +3,10 @@ const Time = require('./Time')
 const Point = require('./Point')
 
 const eventSchema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        default: 'LTDC'
+    },
     time: {
         type: mongoose.Types.ObjectId,
         ref: 'Time'

@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('patials/header') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <h3>ID:
+        <%= id %>
+    </h3>
+    <h3>
+        tên:
+        <%= name %>
+    </h3>
+    <h2>Muốn cập nhật thông tin nào thì điền thông tin đó</h2>
 
-<body>
-    <form action="/update-patient/?_method=PATCH" method="POST">
-        <label for="name">name: </label>
-        <input type="text" id="fname" name="name" required><br><br>
+    <form action="/update-patient/?_method=PATCH&id=<%= id %>" method="POST">
+        <label for="name">Tên: </label>
+        <input type="text" name="name"><br><br>
 
-        <label for="yearOfBirth">yearOfBirth: </label>
+        <label for="yearOfBirth">Năm sinh: </label>
         <input type="text" name="yearOfBirth"><br><br>
 
-        <label for="status">status: </label>
-        <input type="text" name="status"><br><br>
+        <label for="status">Thời gian công bố mắc bệnh: </label>
+        <input type="datetime-local" id="time" name="accTime" min="2021-01-01T00:00" max="2021-07-01T00:00"><br><br>
 
-        <label for="currentlat">currentlat: </label>
-        <input type="text" name="lat"><br><br>
+        <label for="currentlat">Tọa độ lat hiện tại: </label>
+        <input type="text" name="lat" id="latEvent"><br><br>
 
-        <label for="currentlong">currentlong: </label>
-        <input type="text" name="long"><br><br>
+        <label for="currentlong">Tọa độ long hiện tại: </label>
+        <input type="text" name="long" id="longEvent"><br><br>
 
-        <label for="detailAddress">detailAddress: </label>
-        <input type="text" name="detailAddress"><br><br>
+        <label for="detailAddress">Địa chỉ chi tiết: </label>
+        <input type="text" name="detailAddress" id="test"><br><br>
 
-        <label for="district">district: </label>
-        <input type="text" name="district"><br><br>
+        <label for="district">Quận: </label>
+        <input type="text" name="district" id="districtEvent"><br><br>
+
         <input type="submit" value="Submit">
-    </form>
-</body>
 
-</html>
+    </form>
+    <%- include('patials/footer') %>

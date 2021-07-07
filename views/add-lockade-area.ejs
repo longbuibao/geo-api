@@ -1,0 +1,21 @@
+<%- include('patials/header') %>
+
+    <form action="/add-lockade-area" method="POST">
+        <label for="isoLat">Tọa độ lat của khu phong tỏa: </label>
+        <input type="text" name="isoLat" id="latEvent" required><br><br>
+
+        <label for="isoLong">Tọa độ long của khu phong tỏa: </label>
+        <input type="text" name="isoLong" id="longEvent" required><br><br>
+
+        <label for="detailAddress">Địa chỉ chi tiết: </label>
+        <input type="text" name="detailAddress" id="test" required><br><br>
+
+        <label for="district">Quận: </label>
+        <input type="text" name="district" id="districtEvent" required><br><br>
+
+        <label for="time">Thời gian phong tỏa</label>
+        <input type="datetime-local" id="time" name="time" value="2021-01-01T00:00" min="2021-01-01T00:00" max="2021-07-01T00:00">
+        <input type="submit" value="Submit">
+    </form>
+
+    <%- include('patials/footer') %>

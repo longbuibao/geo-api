@@ -1,43 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('patials/header') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <% if(data.message) { %>
+        <h3>
+            <%= data.message %>, vui lòng nhập bệnh nhân mới
+        </h3>
+        <% } %>
+            <form action="/add-patient" method="post">
+                <label for="name">Tên: </label>
+                <% if(!data.isFound) {%>
+                    <input type="text" name="name" value="<%= data.nameValue %>"><br><br>
+                    <% } else {%>
+                        <input type="text" name="name" readonly value="<%= data.nameValue %>"><br><br>
+                        <% } %>
+                            <label for="yearOfBirth">Năm sinh: </label>
+                            <input type="text" name="yearOfBirth" <%=data.isFound ? 'readonly' : '' %> required><br><br>
 
-<body>
-    <form action="/add-patient" method="post">
-        <label for="name">name: </label>
-        <% if(!data.isFound) {%>
-            <input type="text" name="name" value="<%= data.nameValue %>"><br><br>
-            <% } else {%>
-                <input type="text" name="name" readonly value="<%= data.nameValue %>"><br><br>
-                <% } %>
-                    <label for="yearOfBirth">yearOfBirth: </label>
-                    <input type="text" name="yearOfBirth" <%=data.isFound ? 'readonly' : '' %> required><br><br>
+                            <label for="status">Trạng thái: </label>
+                            <input type="text" name="status" required><br><br>
 
-                    <label for="status">status: </label>
-                    <input type="text" name="status" required><br><br>
+                            <label for="status">Thời gian của trạng thái: </label>
+                            <input type="datetime-local" id="time" name="timeStatus" min="2021-01-01T00:00" max="2021-07-01T00:00"><br><br>
 
-                    <label for="currentlat">currentlat: </label>
-                    <input type="text" name="lat" required><br><br>
+                            <label for="status">Thời gian công bố mắc bệnh: </label>
+                            <input type="datetime-local" id="time" name="accTime" min="2021-01-01T00:00" max="2021-07-01T00:00"><br><br>
 
-                    <label for="currentlong">currentlong: </label>
-                    <input type="text" name="long" required><br><br>
+                            <label for="currentlat">Tọa độ lat hiện tại: </label>
+                            <input type="text" name="lat" id="latEvent" required><br><br>
 
-                    <label for="detailAddress">detailAddress: </label>
-                    <input type="text" name="detailAddress" required><br><br>
+                            <label for="currentlong">Tọa độ long hiện tại: </label>
+                            <input type="text" name="long" id="longEvent" required><br><br>
 
-                    <label for="district">district: </label>
-                    <input type="text" name="district" required><br><br>
+                            <label for="detailAddress">Địa chỉ chi tiết: </label>
+                            <input type="text" name="detailAddress" id="test" required><br><br>
 
-                    <br>
-                    <input type="submit" value="Submit">
-    </form>
+                            <label for="district">Quận: </label>
+                            <input type="text" name="district" id="districtEvent" required><br><br>
 
-</body>
+                            <br>
+                            <input type="submit" value="Submit">
+            </form>
 
-</html>
+            <%- include('patials/footer') %>
