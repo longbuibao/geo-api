@@ -263,7 +263,6 @@ router.get('/add-isolation-zone', (_, res) => {
 
 router.post('/add-isolation-zone', async(req, res) => {
     await saveCachLi(req.body)
-    req.flash('Success', 'Zone added!');
     res.redirect('/add-isolation-zone');
 })
 
