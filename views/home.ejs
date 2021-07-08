@@ -62,8 +62,9 @@
             "esri/widgets/Legend",
             "esri/widgets/Expand",
             "esri/widgets/Search",
-            "esri/widgets/Track"
-        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track) {
+            "esri/widgets/Track",
+            "esri/layers/GeoJSONLayer"
+        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track, GeoJSONLayer) {
 
             var map = new Map({
                 basemap: "topo-vector"
@@ -211,6 +212,25 @@
             //     patientPoint.add(gp);
             // });
             // map.add(patientPoint);
+
+            const geojsonLayer = new GeoJSONLayer({
+                url: "http://localhost:3000/api/get-all-patient-current-point"
+            });
+            geojsonLayer.renderer = {
+                type: "simple",
+                symbol: {
+                    type: "simple-fill",
+                    color: [227, 139, 79, 0.4],
+                    outline: {
+                        color: [255, 255, 255],
+                        width: 1
+                    }
+                }
+            };
+            geojsonLayer.title = "Bản đồ"
+            map.add(geojsonLayer);
+            view.popup.defaultPopupTemplateEnabled = true;
+
 
             var track = new Track({
                 view: view

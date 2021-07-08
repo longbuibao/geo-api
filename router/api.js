@@ -51,4 +51,10 @@ router.get('/api/get-polygon', async(req, res) => {
     }
 })
 
+router.get('/home', function(req, res) {
+    res.render('home', {
+        title: 'Trang chủ'
+    });
+})
+
 module.exports = router
