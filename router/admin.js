@@ -35,7 +35,8 @@ const {
 } = require('../controllers/phongtoa/phongtoa.controller')
 
 const {
-    saveCachLi
+    saveCachLi,
+    getPolygon
 } = require('../controllers/cachli/cachli.controller')
 
 router.get('/get-patient', (req, res) => {
@@ -145,9 +146,10 @@ router.delete('/delete-patient', async(req, res) => {
 
 router.get('/get-detail-patient', async(req, res) => {
     const id = req.query.id
+    console.log(id)
     try {
         const result = await getDetailPatient(id)
-        console.log(result)
+        res.status(200).send(result)
     } catch (error) {
         res.status(500).send({
             message: {
@@ -246,6 +248,12 @@ router.post('/add-isolation-zone', async(req, res) => {
     res.send({
         message: 'Lưu thành công'
     })
+})
+
+router.get('/polygon', async(req, res) => {
+    const name = req.query.name
+    const polygon = await getPolygon(name)
+    res.send(polygon)
 })
 
 module.exports = router
