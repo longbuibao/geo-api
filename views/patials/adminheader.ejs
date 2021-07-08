@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/adminstyle.css">
+    <style>
+        #patients {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+        
+        #patients td,
+        #patients th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #patients tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #patients tr:hover {
+            background-color: #ddd;
+        }
+        
+        #patients th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+        td a {
+            margin-right: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 sidebar mr-1">
+            <div class="logo">
+                <a href="/patient-list-update"><img src="/img/GreenMask.png"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="<%=(title === 'Danh sách bệnh nhân' || title === 'Bệnh nhân') ? 'active' : '' %>"><a href="/patient-list-update">Bệnh nhân</a></li>
+                    <li class="<%=title === 'Điểm phong tỏa' ? 'active' : '' %>"><a href="/add-lockade-area">Điểm phong tỏa</a></li>
+                    <li><a href="/add-isolation-zone">Khu vực phong tỏa</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-8 mainadmin container mt-5">

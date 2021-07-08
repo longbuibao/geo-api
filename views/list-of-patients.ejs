@@ -1,19 +1,27 @@
-<%- include('patials/header') %>
-
-    <table id="patients">
+<%- include('patials/adminheader') %>
+    <h3>Danh sách bệnh nhân</h3>
+    <hr>
+    <a href="/get-patient" class="btn btn-add my-3">Thêm bệnh nhân</a>
+    <table id="patients" class="table">
         <tr>
-            <th>ID Bệnh nhân</th>
+
             <th>Tên bệnh nhân</th>
+            <th>Năm sinh</th>
+            <th>Điểm đã đến</th>
             <th>Hành động</th>
-            <th>Status</th>
+            <th>Tình trạng</th>
+
         </tr>
         <% patients.forEach(patient => { %>
             <tr>
                 <td>
-                    <%= patient._id %>
+                    <%= patient.name %>
                 </td>
                 <td>
-                    <%= patient.name %>
+                    <%= patient.yearOfBirth %>
+                </td>
+                <td>
+                    <a href="http://localhost:3000/add-event/?id=<%= patient._id %>&name=<%= patient.name %>"><i class="fas fa-plus"></i></a>
                 </td>
                 <td>
                     <a onclick="deletePatient(this)" data-patient_id="<%= patient._id %>" id="<%= patient._id %>"><i class="fas fa-trash-alt"></i></a>
@@ -27,4 +35,4 @@
             </tr>
             <% }) %>
     </table>
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>

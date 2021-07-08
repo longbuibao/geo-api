@@ -1,8 +1,8 @@
-<%- include('patials/header') %>
+<%- include('patials/adminheader') %>
 
     <form action="/delete-patient/?_method=DELETE" method="post">
-        <label for="name">Tên: </label>
+        <label for="name">Tên bệnh nhân: </label>
         <input type="text" id="fname" name="name"><br><br>
         <input type="submit" value="Submit">
     </form>
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>

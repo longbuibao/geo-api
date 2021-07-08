@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Draw polyline | Sample | ArcGIS API for JavaScript 4.19</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>
+        <%=title%>
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/adminstyle.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.19/"></script>
 
@@ -36,18 +40,15 @@
             const map = new Map({
                 basemap: "gray-vector"
             });
-
             const view = new MapView({
                 container: "viewDiv",
                 map: map,
                 zoom: 12,
                 center: [106.69714496360614, 10.775242573332328]
             });
-
             // add the button for the draw tool
             view.ui.add("line-button", "top-left");
             view.popup.autoOpenEnabled = false; // Disable the default popup behavior
-
             view.on("click", function(event) { // Listen for the click event
                 view.hitTest(event).then(function(hitTestResults) { // Search for features where the user clicked
                     if (hitTestResults.results) {
@@ -59,7 +60,6 @@
             const draw = new Draw({
                 view: view
             });
-
             // draw polyline button
             document.addEventListener('keydown', function(event) {
                 if (event.ctrlKey && event.key === 'z') {
@@ -74,11 +74,9 @@
                 if ("key" in evt) {
                     isEscape = (evt.key === "Escape" || evt.key === "Esc");
                     isBackslash = (evt.key === "Backspace" || evt.key === "Delete");
-
                 } else {
                     isEscape = (evt.keyCode === 27);
                     isEscape = (evt.keyCode === 8);
-
                 }
                 if (isEscape) {
                     let textArr = [];
@@ -98,13 +96,10 @@
             };
             document.getElementById("line-button").onclick = () => {
                 view.graphics.removeAll();
-
                 // creates and returns an instance of PolyLineDrawAction
                 const action = draw.create("polyline");
-
                 // focus the view to activate keyboard shortcuts for sketching
                 view.focus();
-
                 // listen polylineDrawAction events to give immediate visual feedback
                 // to users as the line is being drawn on the view.
                 action.on(
@@ -133,7 +128,6 @@
                 // create a polyline from returned vertices
                 if (event.vertices.length > 1) {
                     const result = createGraphic(event);
-
                     // if the last vertex is making the line intersects itself,
                     // prevent the events from firing
                     if (result.selfIntersects) {
@@ -141,12 +135,10 @@
                     }
                 }
             }
-
             // create a new graphic presenting the polyline that is being drawn on the view
             function createGraphic(event) {
                 const vertices = event.vertices;
                 view.graphics.removeAll();
-
                 // a graphic representing the polyline that is being drawn
                 const graphic = new Graphic({
                     geometry: {
@@ -162,10 +154,8 @@
                         join: "round"
                     }
                 });
-
                 // check if the polyline intersects itself.
                 const intersectingSegment = getIntersectingSegment(graphic.geometry);
-
                 // Add a new graphic for the intersecting segment.
                 if (intersectingSegment) {
                     view.graphics.addMany([graphic, intersectingSegment]);
@@ -174,28 +164,23 @@
                 else {
                     view.graphics.add(graphic);
                 }
-
                 // return intersectingSegment
                 return {
                     selfIntersects: intersectingSegment
                 };
             }
-
             // function that checks if the line intersects itself
             function isSelfIntersecting(polyline) {
                 if (polyline.paths[0].length < 3) {
                     return false;
                 }
                 const line = polyline.clone();
-
                 //get the last segment from the polyline that is being drawn
                 const lastSegment = getLastSegment(polyline);
                 line.removePoint(0, line.paths[0].length - 1);
-
                 // returns true if the line intersects itself, false otherwise
                 return geometryEngine.crosses(lastSegment, line);
             }
-
             // Checks if the line intersects itself. If yes, change the last
             // segment's symbol giving a visual feedback to the user.
             function getIntersectingSegment(polyline) {
@@ -212,7 +197,6 @@
                 }
                 return null;
             }
-
             // Get the last segment of the polyline that is being drawn
             function getLastSegment(polyline) {
                 const line = polyline.clone();
@@ -221,7 +205,6 @@
                     0,
                     line.paths[0].length - 1
                 );
-
                 return {
                     type: "polyline",
                     spatialReference: view.spatialReference,
@@ -239,22 +222,39 @@
 </head>
 
 <body>
-    <div id="viewDiv">
-        <div id="line-button" class="esri-widget esri-widget--button
-        esri-interactive" title="Draw polyline">
-            <span class="esri-icon-polyline"></span>
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-3 sidebar pr-0 mr-0">
+            <div class="logo">
+                <a href="/patient-list-update"><img src="img/GreenMask.png"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="<%=(title === 'Danh sách bệnh nhân' || title === 'Bệnh nhân') ? 'active' : '' %>"><a href="/patient-list-update">Bệnh nhân</a></li>
+                    <li class="<%=title === 'Điểm phong tỏa' ? 'active' : '' %>"><a href="/add-lockade-area">Điểm phong tỏa</a></li>
+                    <li class="active"><a href="/add-isolation-zone">Khu vực phong tỏa</a></li>
+                </ul>
+            </nav>
         </div>
-        <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 0; top: 0;">
-            <label for="tenVung">Tên vùng: </label>
-            <input type="text" required name="tenVung"><br><br>
 
-            <label for="isoLat">Tọa độ: </label>
-            <input type="text" id="isoLongLat" required name="points"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="col-lg-10 col-md-10 col-sm-10 px-0">
+            <div id="viewDiv">
+                <div id="line-button" class="esri-widget esri-widget--button
+                esri-interactive" title="Draw polyline">
+                    <span class="esri-icon-polyline"></span>
+                </div>
+                <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 0; top: 0;">
+                    <label for="tenVung">Tên vùng: </label>
+                    <input type="text" required name="tenVung"><br><br>
+
+                    <label for="isoLat">Tọa độ: </label>
+                    <input type="text" id="isoLongLat" required name="points"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <input id="cb" type="text" hidden>
+            <!-- <input id="cb" type="text" hidden> -->
+        </div>
     </div>
-    <input id="cb" type="text" hidden>
-
 </body>
 
 </html>
