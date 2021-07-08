@@ -1,12 +1,15 @@
 const express = require('express')
 const path = require('path')
 const methodOverride = require('method-override')
+const cors = require('cors')
 require('dotenv').config()
 
 
 const app = express()
 const adminRouter = require('./router/admin')
-const pointRouter = require('./router/point')
+const api = require('./router/api')
+
+app.use(cors())
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
@@ -19,7 +22,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 app.use(adminRouter)
-app.use(pointRouter)
+app.use(api)
 
 
 app.listen(3000)

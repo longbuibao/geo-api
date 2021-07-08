@@ -22,6 +22,11 @@ timeSchema.virtual('phongToaTime', {
     foreignField: 'time'
 })
 
+timeSchema.virtual('ann_time', {
+    ref: 'Patient',
+    localField: '_id',
+    foreignField: 'announcedTime'
+})
 const Time = mongoose.model('Time', timeSchema)
 
 module.exports = Time
