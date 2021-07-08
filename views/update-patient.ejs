@@ -1,15 +1,13 @@
-<%- include('patials/header') %>
-
-    <h3>ID:
-        <%= id %>
-    </h3>
+<%- include('patials/adminheader') %>
+    <a href="/patient-list-update" class="btn btn-add my-3">Quay lại</a>
     <h3>
-        tên:
+        Cập nhật thông tin bệnh nhân:
         <%= name %>
     </h3>
-    <h2>Muốn cập nhật thông tin nào thì điền thông tin đó</h2>
+    <hr>
+    <h5 class="text-center mb-5"><i>(Muốn cập nhật thông tin nào thì điền thông tin đó)</i></h5>
 
-    <form action="/update-patient/?_method=PATCH&id=<%= id %>" method="POST">
+    <form action="/update-patient/?_method=PATCH&id=<%= id %>" method="POST" style="margin-left: 30%;">
         <label for="name">Tên: </label>
         <input type="text" name="name"><br><br>
 
@@ -34,4 +32,4 @@
         <input type="submit" value="Submit">
 
     </form>
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>

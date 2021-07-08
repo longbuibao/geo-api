@@ -1,13 +1,12 @@
-<%- include('patials/header') %>
-    <h3>ID:
-        <%= id %>
-    </h3>
+<%- include('patials/adminheader') %>
+    <a href="/patient-list-update" class="btn btn-add my-3">Quay lại</a>
     <h3>
-        Tên:
-        <%= name %>
+        Tình trạng của bệnh nhân:
+        <i><%= name %></i>
     </h3>
+    <hr>
     <a style="margin-top: 20px; margin-bottom: 20px;" href="http://localhost:3000/add-patient-status/?id=<%= id %>&name=<%= name %>"><i class="fas fa-plus"></i> Thêm trạng thái mới</a>
-    <table id="patients" style="margin-top: 20px;">
+    <table id="patients" style="margin-top: 20px;" class="table">
         <tr>
             <th>Tên trạng thái</th>
             <th>Thời gian</th>
@@ -28,4 +27,4 @@
             </tr>
             <% }) %>
     </table>
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>

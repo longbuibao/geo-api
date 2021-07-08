@@ -39,8 +39,11 @@ const {
     getPolygon
 } = require('../controllers/cachli/cachli.controller')
 
+
 router.get('/get-patient', (req, res) => {
-    res.render('get-patient')
+    res.render('get-patient', {
+        title: "Bệnh nhân"
+    })
 })
 
 router.post('/get-patient', async(req, res) => {
@@ -53,6 +56,7 @@ router.post('/get-patient', async(req, res) => {
 
     } catch (error) {
         return res.render('add-patient', {
+            title: "Bệnh nhân",
             data: {
                 isFound: false,
                 nameValue: error.nameOfPatient,
@@ -69,7 +73,7 @@ router.post('/add-patient', async(req, res) => {
 
         const result = await addPatient(req.body)
         console.log(result)
-        res.redirect('/get-patient')
+        res.redirect('/add-event/?name=${patient.patient.name}')
 
     } catch (error) {
         res.status(500).send({
@@ -85,7 +89,8 @@ router.post('/add-patient', async(req, res) => {
 router.get('/add-event', async(req, res) => {
     const name = req.query.name
     res.render('add-event', {
-        data: { name }
+        data: { name },
+        title: "Bệnh nhân"
     })
 })
 
@@ -107,7 +112,10 @@ router.post('/add-event', async(req, res) => {
 router.get('/patient-list-update', async(req, res) => {
     try {
         const patients = await getAllPatient()
-        res.render('list-of-patients', { patients })
+        res.render('list-of-patients', {
+            patients,
+            title: "Danh sách bệnh nhân"
+        })
     } catch (error) {
         res.status(500).send({
             message: {
@@ -121,7 +129,11 @@ router.get('/patient-list-update', async(req, res) => {
 
 router.get('/update-patient', (req, res) => {
     const { id, name } = req.query
-    res.render('update-patient', { id, name })
+    res.render('update-patient', {
+        id,
+        name,
+        title: "Cập nhật bệnh nhân"
+    })
 })
 
 router.patch('/update-patient', async(req, res) => {
@@ -165,7 +177,8 @@ router.get('/add-patient-status', (req, res) => {
     const name = req.query.name
     res.render('add-patient-status', {
         id,
-        name
+        name,
+        title: "Bệnh nhân"
     })
 })
 
@@ -185,7 +198,7 @@ router.get('/all-patient-status', async(req, res) => {
     try {
         const { id, name } = req.query
         const status = await allStatus(req.query)
-        res.render('list-all-status', { id, name, status })
+        res.render('list-all-status', { id, name, status, title: "Bệnh nhân" })
     } catch (error) {
         console.log(error)
     }
@@ -207,7 +220,8 @@ router.get('/edit-status', async(req, res) => {
     res.render('edit-patient-status', {
         id: patientId,
         name: patientName,
-        sttId: id
+        sttId: id,
+        title: "Bệnh nhân"
     })
 })
 
@@ -225,7 +239,9 @@ router.post('/edit-patient-status', async(req, res) => {
 })
 
 router.get('/add-lockade-area', (req, res) => {
-    res.render('add-lockade-area')
+    res.render('add-lockade-area', {
+        title: "Điểm phong tỏa"
+    })
 })
 
 router.post('/add-lockade-area', async(req, res) => {
@@ -240,14 +256,15 @@ router.post('/add-lockade-area', async(req, res) => {
 })
 
 router.get('/add-isolation-zone', (_, res) => {
-    res.render('add-isolation-zone')
+    res.render('add-isolation-zone', {
+        title: "Khu vực phong tỏa"
+    })
 })
 
 router.post('/add-isolation-zone', async(req, res) => {
     await saveCachLi(req.body)
-    res.send({
-        message: 'Lưu thành công'
-    })
+    req.flash('Success', 'Zone added!');
+    res.redirect('/add-isolation-zone');
 })
 
 router.get('/polygon', async(req, res) => {

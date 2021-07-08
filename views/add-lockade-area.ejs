@@ -1,5 +1,6 @@
-<%- include('patials/header') %>
-
+<%- include('patials/adminheader') %>
+    <h3>Nhập điểm phong tỏa</h3>
+    <hr>
     <form action="/add-lockade-area" method="POST">
         <label for="isoLat">Tọa độ lat của khu phong tỏa: </label>
         <input type="text" name="isoLat" id="latEvent" required><br><br>
@@ -18,4 +19,4 @@
         <input type="submit" value="Submit">
     </form>
 
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>

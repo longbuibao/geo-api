@@ -1,0 +1,294 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        <%= title%>
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.15/"></script>
+    <script>
+        var jsondata = {
+            "points": [{
+                type: "point",
+                longitude: 106.80353181904727,
+                latitude: 10.872181405352505,
+                Name: "point 1",
+                Location: "location 1"
+            }, {
+                type: "point",
+                longitude: 106.79881113118093,
+                latitude: 10.876164084221884,
+                Name: "point 2",
+                Location: "location 2"
+            }, {
+                type: "point",
+                longitude: 106.80726545399608,
+                latitude: 10.877786641846185,
+                Name: "point 3",
+                Location: "location 3"
+            }],
+            "lines": [],
+            "polygons": [{
+                type: "polygon",
+                rings: [
+                    [106.80247022354634, 10.878680124082097],
+                    [106.80630698916785, 10.884288893484277],
+                    [106.80895057398008, 10.882636870976032],
+                    [106.80461612421192, 10.876087691076565],
+                    [106.80331739849227, 10.876520066744668],
+                    [106.8032809204333, 10.876570640034199],
+                    [106.8032133287334, 10.876602248340824],
+                    [106.80317899649077, 10.876588551416395],
+                    [106.80247022354634, 10.878680124082097]
+                ],
+                Name: "Vung cach li 1",
+                Location: "Vùng 1"
+            }]
+        };
+        require([
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/Graphic",
+            "esri/layers/GraphicsLayer",
+            "esri/widgets/LayerList",
+            "esri/widgets/BasemapGallery",
+            "esri/widgets/Legend",
+            "esri/widgets/Expand",
+            "esri/widgets/Search",
+            "esri/widgets/Track"
+        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track) {
+
+            var map = new Map({
+                basemap: "topo-vector"
+            });
+
+            var view = new MapView({
+                container: "viewDiv",
+                map: map,
+                center: [106.8033387, 10.8739831],
+                zoom: 16,
+                highlightOptions: {
+                    color: "blue"
+                }
+            });
+
+            var searchWidget = new Search({
+                view: view,
+                container: "searchWidget"
+            });
+
+            var graphicsLayer = new GraphicsLayer();
+            // Create attributes
+
+
+
+            var graphicsLayerPoint = new GraphicsLayer();
+            jsondata.points.forEach(function(point) {
+
+                // Create attributes
+                var attributes = {
+                    Name: "My point", // The name of the
+                    Location: "gần đường Hàn Thuyên", // The owner of the
+                };
+                // Create popup template
+                var popupTemplate = {
+                    title: "{Name}",
+                    content: "Điểm này ở <b>{Location}</b>."
+                };
+
+                //var point = {
+                // type: "point",
+                // longitude: 106.80353181904727,
+                // latitude: 10.872181405352505
+                //};
+                var simpleMarkerSymbol = {
+                    type: "simple-marker",
+                    color: [226, 119, 40], // orange
+                    outline: {
+                        color: [255, 255, 255], // white
+                        width: 1
+                    }
+                };
+
+                var pointGraphic = new Graphic({
+                    geometry: point,
+                    symbol: simpleMarkerSymbol,
+                    attributes: point,
+                    popupTemplate: popupTemplate
+                });
+
+                graphicsLayerPoint.add(pointGraphic);
+
+            });
+            map.add(graphicsLayerPoint);
+
+
+            var graphicsLayerPolygon = new GraphicsLayer();
+
+            jsondata.polygons.forEach(function(polygon) { //Di chuột vào polygons và polygon so sánh với jsondata ở trên để biết có gì
+
+                // Create attributes
+                var attributes = {
+                    Name: "Vung cach li", // The name of the
+                    Location: "Dường sknskndjf", // The owner of the
+                };
+                // Create popup template
+                var popupTemplate = {
+                    title: "{Name}",
+                    content: "Địa chỉ <b>{Location}</b>."
+                };
+
+                //var point = {
+                // type: "point",
+                // longitude: 106.80353181904727,
+                // latitude: 10.872181405352505
+                //};
+                var simpleFillSymbol = {
+                    type: "simple-fill",
+                    color: [0, 128, 128, 0.4], // crimson, opacity 30%
+                    outline: {
+                        color: [0, 128, 128], // crimson
+                        width: 2,
+                    },
+                };
+
+                var polygonGraphic = new Graphic({
+                    geometry: polygon,
+                    symbol: simpleFillSymbol,
+                    attributes: polygon,
+                    popupTemplate: popupTemplate
+                });
+
+                graphicsLayerPolygon.add(polygonGraphic);
+
+            })
+            graphicsLayerPoint.title = "Bệnh nhân"
+            graphicsLayerPolygon.title = "Vùng cách li"
+            map.add(graphicsLayerPolygon);
+
+
+            // Mô tả
+
+            // var datapatient = array.map((patient) => ({ //t nghĩ là thiết đặt thuộc tính trên từng bệnh nhân thuộc danh sách bệnh nhân nhìn hàm jsondata ở khúc chắc nó tựa tựa dị á
+            //     type: "point",
+            //     longitude: patient.longitude,
+            //     latitude: patient.latitude,
+            //     attributes: {
+            //         Name: patient.Name,
+            //         Age: patient.age,
+            //         Location: patient.address,
+            //         Time: patient.time
+            //     },
+
+            //     symbol: {
+            //         type: "picture-marker",
+            //         url: "https://banner2.cleanpng.com/20190728/jlb/kisspng-surgical-mask-surgery-face-shield-5d3d78a7f3aec8.1077335815643096719981.jpg",
+            //         width: "24px",
+            //         height: "24px"
+            //     },
+            //     popupTemplate: {
+            //         title: "{Name}",
+            //         content: "Tuổi: {Age} <br> Địa chỉ: {Location} <br> Ngày phát hiện: {Time}"
+            //     }
+
+            // }));
+            // var patientPoint = new GraphicsLayer();
+            // //console.log("response", response);
+            // datapatient.forEach(function(patient) { //datâptient là danh sách các bệnh nhân, patient là benh nhân với t ko chắc viết đúng hay sai
+            //     var gp = new Graphic({
+            //         geometry: patient,
+            //         symbol: patient.symbol,
+            //         attributes: patient.attributes,
+            //         popupTemplate: patient.popupTemplate
+            //     });
+            //     patientPoint.add(gp);
+            // });
+            // map.add(patientPoint);
+
+            var track = new Track({
+                view: view
+            });
+            view.ui.add(track, "top-left");
+
+
+            view.ui.add(
+                [
+                    new Expand({
+                        content: new BasemapGallery({
+                            view: view
+                        }),
+                        view: view,
+                        expandIconClass: "esri-icon-basemap",
+                        group: "top-left"
+                    }),
+                    new Expand({
+                        content: new LayerList({
+                            view: view,
+                        }),
+                        view: view,
+                        expanded: true,
+                        group: "top-left"
+                    }),
+                    new Expand({
+                        content: new Legend({
+                            view: view
+                        }),
+                        view: view,
+                        group: "top-left"
+                    })
+                ],
+                "top-right"
+            );
+
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon"><img src="/img/GreenMask.png" style="width: 35px; height: 35px"></div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+
+                <li class="menu-item active">
+                    <a href="/" class="menu-link ">Bản đồ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="statistic.html" class="menu-link">Thống kê</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/direction" class="menu-link">Lộ trình</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="form-group">
+          <div class="btn-group">
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Tìm kiếm nhanh">
+              <div class="btn btn-info">Tìm</div>
+          </div>
+      </div> -->
+
+        <form id="searchWidgetForm" class="form-group ml-auto mr-5">
+            <!-- <input type="text" placeholder="Tìm kiếm" />
+            <button type="submit" class="fa fa-search"></i></button> -->
+            <div id="searchWidget"></div>
+        </form>
+    </header>
+    <div id="viewDiv"></div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

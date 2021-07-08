@@ -1,52 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        <%= title%>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <style>
-        #patients {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: fit-content;
-        }
-        
-        #patients td,
-        #patients th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        
-        #patients tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        #patients tr:hover {
-            background-color: #ddd;
-        }
-        
-        #patients th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #04AA6D;
-            color: white;
-        }
-        
-        td {
-            text-align: center;
-        }
-        
-        td a {
-            margin-right: 10px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.15/"></script>
+    <script>
+        require([
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/Graphic",
+            "esri/layers/GraphicsLayer",
+            "esri/widgets/LayerList",
+            "esri/widgets/BasemapGallery",
+            "esri/widgets/Legend",
+            "esri/widgets/Expand",
+            "esri/widgets/Search",
+            "esri/widgets/Track"
+        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track) {
+
+            var map = new Map({
+                basemap: "topo-vector"
+            });
+
+            var view = new MapView({
+                container: "viewDiv",
+                map: map,
+                center: [106.8033387, 10.8739831],
+                zoom: 16,
+                highlightOptions: {
+                    color: "blue"
+                }
+            });
+
+            var searchWidget = new Search({
+                view: view,
+                container: "searchWidget"
+            });
+
+            var track = new Track({
+                view: view
+            });
+            view.ui.add(track, "top-left");
+
+
+            view.ui.add(
+                [
+                    new Expand({
+                        content: new BasemapGallery({
+                            view: view
+                        }),
+                        view: view,
+                        expandIconClass: "esri-icon-basemap",
+                        group: "top-left"
+                    }),
+                    new Expand({
+                        content: new LayerList({
+                            view: view,
+                        }),
+                        view: view,
+                        expanded: true,
+                        group: "top-left"
+                    }),
+                    new Expand({
+                        content: new Legend({
+                            view: view
+                        }),
+                        view: view,
+                        group: "top-left"
+                    })
+                ],
+                "top-right"
+            );
+
+        });
+    </script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon"></div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a href="/" class="menu-link ">Bản đồ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="statistic.html" class="menu-link">Thống kê</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/direction" class="menu-link">Lộ trình</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form id="searchWidgetForm">
+            <!-- <input type="text" placeholder="Tìm kiếm" />
+            <button type="submit" class="fa fa-search"></i></button> -->
+            <div id="searchWidget"></div>
+        </form>
+    </header>
+    <div id="viewDiv"></div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

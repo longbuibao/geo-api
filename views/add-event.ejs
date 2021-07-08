@@ -1,5 +1,11 @@
-<%- include('patials/header') %>
-    <form action="/add-event/?name=<%= data.nameValue%>" method="post">
+<%- include('patials/adminheader') %>
+    <a href="/patient-list-update" class="btn btn-add my-3">Quay lại</a>
+    <h3>
+        Thêm địa chỉ đã từng đến cho bệnh nhân
+    </h3>
+    <hr>
+    <form action="/add-event/?name=<%= data.nameValue%>" method="post" style="margin-left: 30%;">
+
         <label for="name">Tên: </label>
         <input type="text" name="name" value="<%= data.name%>"><br><br>
         <label for="time">Thời gian bệnh nhân đã đến:</label>
@@ -23,4 +29,4 @@
         <p id="values"></p>
 
     </form>
-    <%- include('patials/footer') %>
+    <%- include('patials/adminfooter') %>
