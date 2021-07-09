@@ -1,5 +1,6 @@
 const { getAllPatient } = require('../../patients/patients.controller')
 const { getDetailPatient } = require('../../patients/patients.controller')
+
 const getAllPatientAndPoint = async() => {
     try {
         const patients = await getAllPatient()
@@ -18,7 +19,7 @@ const getAllPatientAndPoint = async() => {
         })
 
         const finalPatients = Promise.all(patientsArray.map(async(patient) => {
-            const time = new Date(patient.announcedTime.time).toLocaleString()
+            const time = new Date(patient.announcedTime.time).getTime()
             patient.long = patient.currentLocation.long
             patient.lat = patient.currentLocation.lat
             patient.detailAdd = patient.currentLocation.detailAddress

@@ -1,1 +1,181 @@
 mongo_uri=mongodb+srv://ie402:11011010@covid-tracker-database.7i8xl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+const statsDiv = document.getElementById("statsDiv");
+            const infoDiv = document.getElementById("infoDiv");
+            const infoDivExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Expand earthquakes info",
+                view: view,
+                content: infoDiv,
+                expanded: true
+            });
+            view.ui.add(infoDivExpand, "top-right");
+
+
+				const magMin = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "Min_magnitude",
+                statisticType: "min"
+            };
+
+            const tremorCount = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "tremor_count",
+                statisticType: "count"
+            };
+
+            const statsFields = {
+                Max_magnitude: "Max magnitude",
+                Average_magnitude: "Average magnitude",
+                Min_magnitude: "Min magnitude",
+                Average_depth: "Average Depth"
+            };
+
+            // add a legend for the earthquakes layer
+            const legendExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Legend",
+                view: view,
+                content: new Legend({
+                    view: view
+                }),
+                expanded: false
+            });
+            view.ui.add(legendExpand, "top-left");
+
+const magMin = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "Min_magnitude",
+                statisticType: "min"
+            };
+
+            const tremorCount = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "tremor_count",
+                statisticType: "count"
+            };
+
+            const statsFields = {
+                Max_magnitude: "Max magnitude",
+                Average_magnitude: "Average magnitude",
+                Min_magnitude: "Min magnitude",
+                Average_depth: "Average Depth"
+            };
+
+            // add a legend for the earthquakes layer
+            const legendExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Legend",
+                view: view,
+                content: new Legend({
+                    view: view
+                }),
+                expanded: false
+            });
+            view.ui.add(legendExpand, "top-left");
+
+const magMin = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "Min_magnitude",
+                statisticType: "min"
+            };
+
+            const tremorCount = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "tremor_count",
+                statisticType: "count"
+            };
+
+            const statsFields = {
+                Max_magnitude: "Max magnitude",
+                Average_magnitude: "Average magnitude",
+                Min_magnitude: "Min magnitude",
+                Average_depth: "Average Depth"
+            };
+
+            // add a legend for the earthquakes layer
+            const legendExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Legend",
+                view: view,
+                content: new Legend({
+                    view: view
+                }),
+                expanded: false
+            });
+            view.ui.add(legendExpand, "top-left");
+
+const avgDepth = {
+                onStatisticField: "depth",
+                outStatisticFieldName: "Average_depth",
+                statisticType: "avg"
+            };
+
+            const magMax = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "Max_magnitude",
+                statisticType: "max"
+            };
+
+            const magAvg = {
+                onStatisticField: "mag",
+                outStatisticFieldName: "Average_magnitude",
+                statisticType: "avg"
+            };
+
+				layer
+                    .queryFeatures(statQuery)
+                    .then((result) => {
+                        let htmls = [];
+                        statsDiv.innerHTML = "";
+                        if (result.error) {
+                            return result.error;
+                        } else {
+                            if (result.features.length >= 1) {
+                                const attributes = result.features[0].attributes;
+                                for (name in statsFields) {
+                                    if (attributes[name] && attributes[name] != null) {
+                                        const html =
+                                            "<br/>" +
+                                            statsFields[name] +
+                                            ": <b><span> " +
+                                            attributes[name].toFixed(2) +
+                                            "</span></b>";
+                                        htmls.push(html);
+                                    }
+                                }
+                                const yearHtml =
+                                    "<span>" +
+                                    result.features[0].attributes["tremor_count"] +
+                                    "</span> earthquakes were recorded between " +
+                                    timeSlider.timeExtent.start.toLocaleDateString() +
+                                    " - " +
+                                    timeSlider.timeExtent.end.toLocaleDateString() +
+                                    ".<br/>";
+
+                                if (htmls[0] == undefined) {
+                                    statsDiv.innerHTML = yearHtml;
+                                } else {
+                                    statsDiv.innerHTML =
+                                        yearHtml + htmls[0] + htmls[1] + htmls[2] + htmls[3];
+                                }
+                            }
+                        }
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+
+						  const statQuery = layerView.effect.filter.createQuery();
+                statQuery.outStatistics = [
+                    magMax,
+                    magAvg,
+                    magMin,
+                    tremorCount,
+                    avgDepth
+                ];

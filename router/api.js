@@ -14,7 +14,7 @@ router.get('/api/get-all-patient-current-point', async(req, res) => {
         const patientGeoJson = geoJSON.parse(
             patients, {
                 Point: ['lat', 'long'],
-                include: ['name', 'yearOfBirth', 'accTime', 'detailAdd']
+                include: ['name', 'yearOfBirth', 'accTime', 'detailAdd', 'status']
             }
         )
         res.status(200).send(patientGeoJson)
