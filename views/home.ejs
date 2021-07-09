@@ -11,8 +11,48 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <style>
+        #patients {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+        
+        #patients td,
+        #patients th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #patients tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #patients tr:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        
+        #patients th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+        td a {
+            margin-right: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,43 +87,38 @@
             <div id="searchWidget"></div>
         </form>
     </header>
-    <div id="viewDiv"></div>
-    <!-- <table id="patients" style="margin-top: 20px;" class="table">
-        <tr>
-            <th>Tên bệnh nhân</th>
-            <th>Thời gian</th>
-            <th>Hành động</th>
-            <th>Hành động</th>
-        </tr>
-        <% patients.forEach(patient => { %>
-            <tr>
-                <td>
-                    <%= patient.name%>
-                </td>
-                <td>
-                    <%= patient.yearOfBirth%>
-                </td>
-                <td>
-                    <%= patient.detailAdd%>
-                </td>
-                <td>
-                    <%= patient.long %>
-                </td>
-                <td>
-                    <%= patient.lat%>
-                </td>
-
-            </tr>
-            <% }) %>
-    </table> -->
-
+    <div id="viewDiv">
+        <div id="divPatient" class="table-responsive" class="esri-widget" style="max-width: 350px; height: 300px; position: absolute; right: 2rem;
+        bottom: 4rem;
+        background-color: #fff; border: 2px solid #4CAF50;">
+            <table id="patients" class="table">
+                <tr>
+                    <th>Tên bệnh nhân</th>
+                    <th>Tình trạng</th>
+                </tr>
+                <% patients.forEach(patient => { %>
+                    <tr>
+                        <td>
+                            <a href="/lich-trinh-di-chuyen/name=<%= patient.name %>">
+                                <%= patient.name%>
+                            </a>
+                        </td>
+                        <td>
+                            <%= patient.status%>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </table>
+        </div>
     </div>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://js.arcgis.com/4.15/"></script>
+    <script src="/script/main.js"></script>
     <script>
         // fetch(
         //         '/api/get-all'
@@ -226,9 +261,9 @@
                 Name: polygon.name,
                 symbol: {
                     type: "simple-fill",
-                    color: [51, 102, 255, 0.4],
+                    color: [255, 153, 153, 0.4],
                     outline: {
-                        color: [255, 255, 255],
+                        color: [0, 51, 0],
                         width: 1
                     }
                 },
@@ -247,6 +282,15 @@
             var track = new Track({
                 view: view
             });
+
+            const divPatient = document.getElementById("infoNote");
+            const legendExpand = new Expand({
+                view: view,
+                content: divPatient,
+                expanded: true,
+                group: "bottom-right",
+            });
+            view.ui.add(legendExpand, "bottom-righ");
             view.ui.add(track, "top-left");
 
             view.ui.add(directExpand, {
@@ -268,13 +312,6 @@
                         }),
                         view: view,
                         expanded: true,
-                        group: "top-right"
-                    }),
-                    new Expand({
-                        content: new Legend({
-                            view: view
-                        }),
-                        view: view,
                         group: "top-right"
                     })
                 ], "top-right"

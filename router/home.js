@@ -9,6 +9,7 @@ router.get('/home', async(req, res) => {
     try {
         const patients = await getAllPatientAndPoint()
         const polygons = await getAllPolygon()
+
         res.render('home', {
             patients,
             polygons,
@@ -16,6 +17,20 @@ router.get('/home', async(req, res) => {
         })
     } catch (error) {
         console.log(error)
+    }
+})
+
+
+router.get('/lich-trinh-di-chuyen', async(req, res) => {
+    try {
+        const { name } = req.query
+        const result = await lichTrinhDiChuyen(name)
+        res.render('lich-trinh-di-chuyen', {
+            result,
+            title: "Lịch trình di chuyển"
+        })
+    } catch (error) {
+        res.send(error)
     }
 })
 
