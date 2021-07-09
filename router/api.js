@@ -14,7 +14,7 @@ router.get('/api/get-all-patient-current-point', async(req, res) => {
         const patientGeoJson = geoJSON.parse(
             patients, {
                 Point: ['lat', 'long'],
-                include: ['name', 'yearOfBirth', 'accTime', 'detailAdd', 'status']
+                include: ['name', 'yearOfBirth', 'accTime', 'detailAdd', 'status', 'accTimeMili']
             }
         )
         res.status(200).send(patientGeoJson)
@@ -75,10 +75,6 @@ router.get('/api/get-all', async(req, res) => {
     res.send({ point, polygon })
 })
 
-router.get('/home', async function(req, res) {
-    res.render('home', {
-        title: 'Trang chủ'
-    });
-})
+
 
 module.exports = router

@@ -9,8 +9,9 @@ const saveCachLi = async(body) => {
 
         await Promise.all(points.map(async(point) => {
             const savedPoint = await addPoint({
-                lat: point[1],
-                long: point[0]
+                long: point[0],
+                lat: point[1]
+
             })
             pointId.push(savedPoint)
         }))
@@ -41,8 +42,37 @@ const getPolygon = async() => {
     }
 
 }
+const getAllPolygon = async() => {
+    try {
+        const polygon = await getPolygon()
+        const points = await Promise.all(polygon.map(async(poly) => {
+            const pointOfPoly = await poly.populate('boundaries', '-_id -__v').execPopulate()
+            return pointOfPoly
+        }))
+
+        const finalPolygons = points.map((point) => {
+            const longlat = point.boundaries.map(pnt => {
+                return [pnt.long, pnt.lat]
+            })
+            return {
+                name: point.name,
+                longlat: [longlat]
+            }
+        })
+
+        return finalPolygons
+
+    } catch (error) {
+        throw {
+            path: `controllers/ui/get-all-patient-point.js ${error.message}`,
+            message: 'Lỗi không thể lấy tất cả vùng cách li'
+        }
+    }
+
+}
 
 module.exports = {
     saveCachLi,
-    getPolygon
+    getPolygon,
+    getAllPolygon
 }

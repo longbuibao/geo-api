@@ -8,6 +8,7 @@ require('dotenv').config()
 const app = express()
 const adminRouter = require('./router/admin')
 const api = require('./router/api')
+const home = require('./router/home')
 
 app.use(cors())
 
@@ -23,6 +24,6 @@ app.use(methodOverride('_method'))
 
 app.use(adminRouter)
 app.use(api)
-
+app.use(home)
 
 app.listen(3000)
