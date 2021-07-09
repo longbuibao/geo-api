@@ -5,7 +5,7 @@ const geoJSON = require('geojson');
 const { getAllPatientAndPoint } = require('../controllers/routers/ui/get-all-patient-point')
 const { getAllPolygon } = require('../controllers/cachli/cachli.controller')
 
-router.get('/home', async(req, res) => {
+router.get('/', async(req, res) => {
     try {
         const patients = await getAllPatientAndPoint()
         const polygons = await getAllPolygon()
@@ -13,7 +13,22 @@ router.get('/home', async(req, res) => {
         res.render('home', {
             patients,
             polygons,
-            title: "Trang chủ"
+            title: "GreenMask | Trang chủ"
+        })
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+router.get('/dien-bien', async(req, res) => {
+    try {
+        const patients = await getAllPatientAndPoint()
+        const polygons = await getAllPolygon()
+
+        res.render('timeslider', {
+            patients,
+            polygons,
+            title: "GreenMask | Diễn biến"
         })
     } catch (error) {
         console.log(error)

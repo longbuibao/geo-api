@@ -1,0 +1,272 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>
+        <%= title%>
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="public/img/GreenMask.png">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+    <style>
+        #timeSlider {
+            width: 400px;
+        }
+        
+        #infoDiv {
+            height: 200px;
+            padding: 10px;
+            width: 280px;
+        }
+        
+        #infoDiv span {
+            color: #F9C653;
+            font-size: 12pt;
+            font-weight: bolder;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/themes/dark/main.css" />
+    <script src="https://js.arcgis.com/4.20/"></script>
+    <script>
+        require([
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/layers/GeoJSONLayer",
+            "esri/widgets/TimeSlider",
+            "esri/widgets/Expand",
+            "esri/widgets/Legend"
+        ], (Map, MapView, GeoJSONLayer, TimeSlider, Expand, Legend) => {
+            let layerView;
+
+            // set the timeInfo on GeoJSONLayer at the time initialization
+            const layer = new GeoJSONLayer({
+                url: "http://localhost:3000/api/get-all-patient-current-point",
+                // set the CSVLayer's timeInfo based on the date field
+                timeInfo: {
+                    startField: "accTimeMili", // name of the date field
+                    interval: {
+                        // set time interval to one day
+                        unit: "days",
+                        value: 1
+                    }
+                },
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "picture-marker",
+                        url: "/img/patient.png",
+                        width: "24px",
+                        height: "24px"
+                    }
+                },
+                popupTemplate: {
+                    title: "Chi tiết",
+                    content: [{
+                        type: "fields",
+                        fieldInfos: [{
+                            fieldName: "detailAdd",
+                            label: "Địa chỉ",
+                            visible: true
+                        }, {
+                            fieldName: "status",
+                            label: "Trạng thái",
+                            visible: true
+                        }]
+                    }]
+                }
+            });
+
+
+
+            const map = new Map({
+                basemap: "topo-vector",
+                layers: [layer]
+            });
+            layer.title = "Ca nhiễm"
+            const view = new MapView({
+                map: map,
+                container: "viewDiv",
+                zoom: 13,
+                center: [106.76998, 10.84963]
+            });
+            map.on("load", function() {
+                map.graphics.enableMouseEvents();
+            });
+
+            // create a new time slider widget
+            // set other properties when the layer view is loaded
+            // by default timeSlider.mode is "time-window" - shows
+            // data falls within time range
+            const timeSlider = new TimeSlider({
+                container: "timeSlider",
+                playRate: 10,
+                stops: {
+                    interval: {
+                        value: 1,
+                        unit: "hours"
+                    }
+                }
+            });
+            view.ui.add(timeSlider, "bottom-left");
+
+            view.whenLayerView(layer).then((lv) => {
+                layerView = lv;
+
+                const start = new Date(2021, 4, 1);
+
+                timeSlider.fullTimeExtent = {
+                    start: start,
+                    end: new Date(2021, 5, 30)
+                };
+
+                let end = new Date(start);
+
+                end.setDate(end.getDate() + 1);
+                timeSlider.timeExtent = {
+                    start,
+                    end
+                };
+            });
+
+            timeSlider.watch("timeExtent", (value) => {
+                layer.definitionExpression =
+                    // "accTimeMili <= " + timeSlider.timeExtent.end.getTime();
+                    "accTimeMili >= " + timeSlider.timeExtent.start.getTime();
+
+                layerView.effect = {
+                    filter: {
+                        timeExtent: timeSlider.timeExtent,
+                        geometry: view.extent
+                    },
+                    excludedEffect: "grayscale(20%) opacity(12%)"
+                };
+                const statQuery = layerView.effect.filter.createQuery();
+                statQuery.outStatistics = [
+                    tremorCount
+                ];
+
+                layer
+                    .queryFeatures(statQuery)
+                    .then((result) => {
+                        let htmls = [];
+                        statsDiv.innerHTML = "";
+                        if (result.error) {
+                            return result.error;
+                        } else {
+                            if (result.features.length >= 1) {
+                                const attributes = result.features[0].attributes;
+                                const yearHtml =
+                                    "<span>" +
+                                    result.features[0].attributes["tremor_count"] +
+                                    "</span> số ca ghi nhận <br>" +
+                                    timeSlider.timeExtent.start.toLocaleDateString() +
+                                    " - " +
+                                    timeSlider.timeExtent.end.toLocaleDateString() +
+                                    ".<br/>";
+
+                                if (htmls[0] == undefined) {
+                                    statsDiv.innerHTML = yearHtml;
+                                }
+                            }
+                        }
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            });
+            const tremorCount = {
+                onStatisticField: "name",
+                outStatisticFieldName: "tremor_count",
+                statisticType: "count"
+            };
+            // add a legend for the earthquakes layer
+            const legendExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Legend",
+                view: view,
+                content: new Legend({
+                    view: view
+                }),
+                expanded: false
+            });
+            view.ui.add(legendExpand, "top-left");
+
+            const statsDiv = document.getElementById("statsDiv");
+            const infoDiv = document.getElementById("infoDiv");
+            const infoDivExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Expand earthquakes info",
+                view: view,
+                content: infoDiv,
+                expanded: true
+            });
+            view.ui.add(infoDivExpand, "top-right");
+
+            view.ui.add(
+                [
+                    new Expand({
+                        content: new LayerList({
+                            view: view,
+                        }),
+                        view: view,
+                        expanded: true,
+                        group: "top-right"
+                    })
+                ], "top-left"
+
+            );
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon"><img src="/img/GreenMask.png" style="width: 35px; height: 35px"></div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+
+                <li class="menu-item">
+                    <a href="/" class="menu-link ">Bản đồ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/thống kê" class="menu-link">Thống kê</a>
+                </li>
+                <li class="menu-item active">
+                    <a href="/dien-bien" class="menu-link">Diễn biến</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="form-group">
+          <div class="btn-group">
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Tìm kiếm nhanh">
+              <div class="btn btn-info">Tìm</div>
+          </div>
+      </div> -->
+
+        <form id="searchWidgetForm" class="form-group ml-auto mr-5">
+            <!-- <input type="text" placeholder="Tìm kiếm" />
+            <button type="submit" class="fa fa-search"></i></button> -->
+            <div id="searchWidget"></div>
+        </form>
+    </header>
+    <div id="viewDiv"></div>
+    <div id="timeSlider"></div>
+    <div id="infoDiv" class="esri-widget">
+        <div><b>Số ca trong khoảng thời gian</b></div>
+        <br />
+        <div id="statsDiv" class="esri-widget"></div>
+    </div>
+</body>
+
+</html>
