@@ -84,11 +84,28 @@ const getDetailPatient = async(id) => {
     return { status: patientStatus[0], patient }
 }
 
+// const getDetailAllPatient = async() => {
+//     const allPatient = await getAllPatient()
+//     await Promise.all(allPatient.map(async(stt) => {
+//         await stt.populate({
+//             path: 'timeOfStatus'
+//         }).execPopulate()
+//     }))
+
+//     patientStatus.sort(function(a, b) {
+//         return new Date(b.timeOfStatus.time) - new Date(a.timeOfStatus.time);
+//     })
+
+//     return { status: patientStatus[0], patient }
+// }
+
+
 module.exports = {
     getPatientByName,
     savePatient,
     getAllPatient,
     getPatientById,
     deletePatient,
-    getDetailPatient
+    getDetailPatient,
+    // getDetailAllPatient
 }

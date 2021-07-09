@@ -75,10 +75,6 @@ router.get('/api/get-all', async(req, res) => {
     res.send({ point, polygon })
 })
 
-router.get('/home', async function(req, res) {
-    res.render('home', {
-        title: 'Trang chủ'
-    });
-})
+
 
 module.exports = router

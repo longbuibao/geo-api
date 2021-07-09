@@ -50,29 +50,27 @@
     <div id="viewDiv"></div>
     <table id="patients" style="margin-top: 20px;" class="table">
         <tr>
-            <th>Tên trạng thái</th>
+            <th>Tên bệnh nhân</th>
             <th>Thời gian</th>
             <th>Hành động</th>
             <th>Hành động</th>
-            <th>Hành động</th>
-
         </tr>
         <% patients.forEach(patient => { %>
             <tr>
-                <td>
-                    <%= patient.long %>
-                </td>
-                <td>
-                    <%= patient.lat%>
-                </td>
-                <td>
-                    <%= patient.detailAdd%>
-                </td>
                 <td>
                     <%= patient.name%>
                 </td>
                 <td>
                     <%= patient.yearOfBirth%>
+                </td>
+                <td>
+                    <%= patient.detailAdd%>
+                </td>
+                <td>
+                    <%= patient.long %>
+                </td>
+                <td>
+                    <%= patient.lat%>
                 </td>
 
             </tr>
@@ -87,11 +85,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://js.arcgis.com/4.15/"></script>
     <script>
-        fetch(
-                '/api/get-all'
-            )
-            .then(data => data.text())
-            .then(data => console.log(JSON.parse(data)))
+        // fetch(
+        //         '/api/get-all'
+        //     )
+        //     .then(data => data.text())
+        //     .then(data => console.log(JSON.parse(data)))
         require([
             "esri/Map",
             "esri/views/MapView",
@@ -103,9 +101,12 @@
             "esri/widgets/Expand",
             "esri/widgets/Search",
             "esri/widgets/Track",
-            "esri/layers/GeoJSONLayer"
-        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track, GeoJSONLayer) {
-
+            "esri/layers/GeoJSONLayer",
+            "esri/widgets/Directions",
+            "esri/config"
+        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track, GeoJSONLayer, Directions,
+            esriConfig) {
+            esriConfig.apiKey = "AAPKc1f7559b59c44a1397e39b4f2b87ebc6f0KRFFVS8U5tWT8HBBMXDbTbSjKVwGiQOmbF1LJYadDZLWfya-c13h_TIC36h0F6";
             var map = new Map({
                 basemap: "topo-vector"
             });
@@ -128,6 +129,16 @@
                 view: view,
                 container: "searchWidget"
             });
+            const directExpand = new Expand({
+                content: new Directions({
+                    view: view
+                }),
+                view: view,
+                group: "top-left"
+            })
+
+            // Add the Directions widget to the top right corner of the view
+
 
             var graphicsLayer = new GraphicsLayer();
             // Create attributes
@@ -135,33 +146,38 @@
             var graphicsLayerPoint = new GraphicsLayer();
 
             var graphicsLayerPolygon = new GraphicsLayer();
+
+
             var graphicsLayerPatient = new GraphicsLayer();
             var temp = [];
             var PatientList = <%- JSON.stringify(patients) %>
+            console.log(PatientList)
             for (var i = PatientList.length - 1; i >= 0; i--) {
                 temp.push(PatientList[i]);
             }
             var dataPatient = temp.map(patient => ({
-                type: "point",
-                longitude: patient.long,
-                latitude: patient.lat,
-                Name: patient.name,
-                Age: patient.yearOfBirth,
-                Location: patient.detailAdd,
-                Time: patient.accTime,
-                symbol: {
-                    type: "picture-marker",
-                    url: "/img/patient.png",
-                    width: "24px",
-                    height: "24px"
-                },
-                popupTemplate: {
-                    title: "{Name}",
-                    content: "Tuổi: {Age} <br> Địa chỉ: {Location} <br> Ngày phát hiện: {Time}"
-                }
+                    type: "point",
+                    longitude: patient.long,
+                    latitude: patient.lat,
+                    Name: patient.name,
+                    Year: patient.yearOfBirth,
+                    Location: patient.detailAdd,
+                    Time: patient.accTime,
+                    Status: patient.status,
+                    symbol: {
+                        type: "picture-marker",
+                        url: "/img/patient.png",
+                        width: "24px",
+                        height: "24px"
+                    },
+                    popupTemplate: {
+                        title: "{Name}",
+                        content: "<b>Năm sinh: </b>{Year}<br><b>Địa chỉ: </b>{Location}<br><b>Ngày công bố: </b>{Time}<br><b>Tình trạng: </b>{Status}"
 
-            }))
-            console.log(dataPatient)
+                    }
+
+                }))
+                // console.log(dataPatient)
 
             var createGraphic = function(data) {
                 return new Graphic({
@@ -173,7 +189,7 @@
             };
 
             dataPatient.forEach(function(data) {
-                console.log(data)
+                // console.log(data)
                 var data1 = createGraphic(data)
                 graphicsLayerPatient.add(data1);
             });
@@ -185,7 +201,9 @@
             });
             view.ui.add(track, "top-left");
 
-
+            view.ui.add(directExpand, {
+                position: "top-left"
+            });
             view.ui.add(
                 [
                     new Expand({
@@ -194,7 +212,7 @@
                         }),
                         view: view,
                         expandIconClass: "esri-icon-basemap",
-                        group: "top-left"
+                        group: "top-right"
                     }),
                     new Expand({
                         content: new LayerList({
@@ -202,17 +220,17 @@
                         }),
                         view: view,
                         expanded: true,
-                        group: "top-left"
+                        group: "top-right"
                     }),
                     new Expand({
                         content: new Legend({
                             view: view
                         }),
                         view: view,
-                        group: "top-left"
+                        group: "top-right"
                     })
-                ],
-                "top-right"
+                ], "top-right"
+
             );
         });
     </script>
