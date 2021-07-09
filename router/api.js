@@ -1,9 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const geoJSON = require('geojson');
+const axios = require('axios')
 
 const { getAllPatientAndPoint } = require('../controllers/routers/ui/get-all-patient-point')
 const { getPolygon } = require('../controllers/cachli/cachli.controller')
+const { lichTrinhDiChuyen } = require('../controllers/routers/ui/get-lich-trinh-di-chuyen')
 
 router.get('/api/get-all-patient-current-point', async(req, res) => {
     try {
@@ -51,7 +53,29 @@ router.get('/api/get-polygon', async(req, res) => {
     }
 })
 
-router.get('/home', function(req, res) {
+router.get('/api/lich-trinh-di-chuyen', async(req, res) => {
+    try {
+        const { name } = req.query
+        const result = await lichTrinhDiChuyen(name)
+        const patientGeoJson = geoJSON.parse(
+            result, {
+                Point: ['lat', 'long'],
+                include: ['name', 'patientName', 'happendAt', 'detailAdd']
+            }
+        )
+        res.send(patientGeoJson)
+    } catch (error) {
+        res.send(error)
+    }
+})
+
+router.get('/api/get-all', async(req, res) => {
+    const point = (await axios.get('http://localhost:3000/api/get-all-patient-current-point')).data
+    const polygon = (await axios.get('http://localhost:3000/api/get-polygon')).data
+    res.send({ point, polygon })
+})
+
+router.get('/home', async function(req, res) {
     res.render('home', {
         title: 'Trang chủ'
     });

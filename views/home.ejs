@@ -14,8 +14,13 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.15/"></script>
     <script>
+        fetch(
+                '/api/get-all'
+            )
+            .then(data => data.text())
+            .then(data => console.log(JSON.parse(data)))
         var jsondata = {
-            "points": [{
+            points: [{
                 type: "point",
                 longitude: 106.80353181904727,
                 latitude: 10.872181405352505,
@@ -34,8 +39,8 @@
                 Name: "point 3",
                 Location: "location 3"
             }],
-            "lines": [],
-            "polygons": [{
+            lines: [],
+            polygons: [{
                 type: "polygon",
                 rings: [
                     [106.80247022354634, 10.878680124082097],
@@ -104,11 +109,6 @@
                     content: "Điểm này ở <b>{Location}</b>."
                 };
 
-                //var point = {
-                // type: "point",
-                // longitude: 106.80353181904727,
-                // latitude: 10.872181405352505
-                //};
                 var simpleMarkerSymbol = {
                     type: "simple-marker",
                     color: [226, 119, 40], // orange
@@ -227,7 +227,7 @@
                     }
                 }
             };
-            geojsonLayer.title = "Bản đồ"
+            geojsonLayer.title = "Danh sách bệnh nhân"
             map.add(geojsonLayer);
             view.popup.defaultPopupTemplateEnabled = true;
 
