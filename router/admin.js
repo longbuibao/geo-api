@@ -68,12 +68,14 @@ router.post('/get-patient', async(req, res) => {
 })
 
 router.post('/add-patient', async(req, res) => {
-
     try {
 
         const result = await addPatient(req.body)
         console.log(result)
-        res.redirect('/add-event/?name=${patient.patient.name}')
+        const patient = await getPatientByName(req.body.name)
+        if (patient.status === 200) {
+            res.redirect(`/add-event/?name=${patient.patient.name}`)
+        }
 
     } catch (error) {
         res.status(500).send({
