@@ -19,4 +19,8 @@ router.get('/home', async(req, res) => {
     }
 })
 
+router.get('/statistic', async(req, res) => {
+    res.render('statistic')
+})
+
 module.exports = router
