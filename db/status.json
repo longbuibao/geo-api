@@ -1,0 +1,3613 @@
+[{
+  "_id": {
+    "$oid": "60e6c8dc6d48dd4b346278d8"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e6c8db6d48dd4b346278d4"
+  },
+  "owner": {
+    "$oid": "60e6c8dc6d48dd4b346278d6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6c9d685a4590fb48784ce"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e6c9d685a4590fb48784ca"
+  },
+  "owner": {
+    "$oid": "60e6c9d685a4590fb48784cc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6cffe0802d30f34e114a9"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e6cffd0802d30f34e114a5"
+  },
+  "owner": {
+    "$oid": "60e6cffd0802d30f34e114a7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6d21d85335c3250fda35f"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e6d21d85335c3250fda35b"
+  },
+  "owner": {
+    "$oid": "60e6d21d85335c3250fda35d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6d2bf7282dd460835b56d"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e6d2bf7282dd460835b569"
+  },
+  "owner": {
+    "$oid": "60e6d2bf7282dd460835b56b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e717ab82759c37982f5fcc"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e717ab82759c37982f5fc8"
+  },
+  "owner": {
+    "$oid": "60e717ab82759c37982f5fca"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e71d0ddde94044382af05f"
+  },
+  "nameOfStatus": "đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e71d0ddde94044382af05b"
+  },
+  "owner": {
+    "$oid": "60e71d0ddde94044382af05d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e71e0cdde94044382af081"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e71e0cdde94044382af07d"
+  },
+  "owner": {
+    "$oid": "60e71e0cdde94044382af07f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72036e600e661d401ad6f"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72036e600e661d401ad6b"
+  },
+  "owner": {
+    "$oid": "60e72036e600e661d401ad6d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e723c8e600e661d401ad83"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e723c7e600e661d401ad7f"
+  },
+  "owner": {
+    "$oid": "60e723c8e600e661d401ad81"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7280e7bd9f532e07bc102"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7280d7bd9f532e07bc0fe"
+  },
+  "owner": {
+    "$oid": "60e7280e7bd9f532e07bc100"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72bc77bd9f532e07bc119"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72bc67bd9f532e07bc115"
+  },
+  "owner": {
+    "$oid": "60e72bc77bd9f532e07bc117"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72e3fafed474bd0158216"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72e3fafed474bd0158212"
+  },
+  "owner": {
+    "$oid": "60e72e3fafed474bd0158214"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72e527bd9f532e07bc12e"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72e517bd9f532e07bc12a"
+  },
+  "owner": {
+    "$oid": "60e72e527bd9f532e07bc12c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72eb0afed474bd015822b"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72eb0afed474bd0158227"
+  },
+  "owner": {
+    "$oid": "60e72eb0afed474bd0158229"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72ec27bd9f532e07bc142"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72ec17bd9f532e07bc13e"
+  },
+  "owner": {
+    "$oid": "60e72ec27bd9f532e07bc140"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72f337bd9f532e07bc157"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72f337bd9f532e07bc153"
+  },
+  "owner": {
+    "$oid": "60e72f337bd9f532e07bc155"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72f997bd9f532e07bc16b"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e72f997bd9f532e07bc167"
+  },
+  "owner": {
+    "$oid": "60e72f997bd9f532e07bc169"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7306e7bd9f532e07bc17f"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7306d7bd9f532e07bc17b"
+  },
+  "owner": {
+    "$oid": "60e7306d7bd9f532e07bc17d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e730bd7bd9f532e07bc193"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e730bc7bd9f532e07bc18f"
+  },
+  "owner": {
+    "$oid": "60e730bd7bd9f532e07bc191"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e730f97bd9f532e07bc1a7"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e730f87bd9f532e07bc1a3"
+  },
+  "owner": {
+    "$oid": "60e730f87bd9f532e07bc1a5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7313f7bd9f532e07bc1bb"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7313e7bd9f532e07bc1b7"
+  },
+  "owner": {
+    "$oid": "60e7313f7bd9f532e07bc1b9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7318c7bd9f532e07bc1cf"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7318c7bd9f532e07bc1cb"
+  },
+  "owner": {
+    "$oid": "60e7318c7bd9f532e07bc1cd"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731b4afed474bd015845c"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e731b4afed474bd0158458"
+  },
+  "owner": {
+    "$oid": "60e731b4afed474bd015845a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731c77bd9f532e07bc1e3"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e731c67bd9f532e07bc1df"
+  },
+  "owner": {
+    "$oid": "60e731c67bd9f532e07bc1e1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731fc7bd9f532e07bc1f7"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e731fb7bd9f532e07bc1f3"
+  },
+  "owner": {
+    "$oid": "60e731fc7bd9f532e07bc1f5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732417bd9f532e07bc20c"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e732407bd9f532e07bc208"
+  },
+  "owner": {
+    "$oid": "60e732417bd9f532e07bc20a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73258afed474bd0158470"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73258afed474bd015846c"
+  },
+  "owner": {
+    "$oid": "60e73258afed474bd015846e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7327f7bd9f532e07bc220"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7327e7bd9f532e07bc21c"
+  },
+  "owner": {
+    "$oid": "60e7327f7bd9f532e07bc21e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732b97bd9f532e07bc234"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e732b87bd9f532e07bc230"
+  },
+  "owner": {
+    "$oid": "60e732b87bd9f532e07bc232"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732fc7bd9f532e07bc248"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e732fc7bd9f532e07bc244"
+  },
+  "owner": {
+    "$oid": "60e732fc7bd9f532e07bc246"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733357bd9f532e07bc25d"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e733357bd9f532e07bc258"
+  },
+  "owner": {
+    "$oid": "60e733357bd9f532e07bc25a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733377bd9f532e07bc268"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e733377bd9f532e07bc264"
+  },
+  "owner": {
+    "$oid": "60e733377bd9f532e07bc266"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7336fafed474bd0158485"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7336eafed474bd0158481"
+  },
+  "owner": {
+    "$oid": "60e7336eafed474bd0158483"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733947bd9f532e07bc27c"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e733937bd9f532e07bc278"
+  },
+  "owner": {
+    "$oid": "60e733947bd9f532e07bc27a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733ce7bd9f532e07bc290"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e733cd7bd9f532e07bc28c"
+  },
+  "owner": {
+    "$oid": "60e733ce7bd9f532e07bc28e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734137bd9f532e07bc2a4"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e734127bd9f532e07bc2a0"
+  },
+  "owner": {
+    "$oid": "60e734137bd9f532e07bc2a2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734537bd9f532e07bc2b8"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e734527bd9f532e07bc2b4"
+  },
+  "owner": {
+    "$oid": "60e734537bd9f532e07bc2b6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734917bd9f532e07bc2cd"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e734917bd9f532e07bc2c9"
+  },
+  "owner": {
+    "$oid": "60e734917bd9f532e07bc2cb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734be7bd9f532e07bc2e1"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e734bd7bd9f532e07bc2dd"
+  },
+  "owner": {
+    "$oid": "60e734bd7bd9f532e07bc2df"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734f37bd9f532e07bc2f5"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e734f27bd9f532e07bc2f1"
+  },
+  "owner": {
+    "$oid": "60e734f37bd9f532e07bc2f3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7350fafed474bd0158499"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7350eafed474bd0158495"
+  },
+  "owner": {
+    "$oid": "60e7350fafed474bd0158497"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735257bd9f532e07bc309"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e735247bd9f532e07bc305"
+  },
+  "owner": {
+    "$oid": "60e735257bd9f532e07bc307"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735657bd9f532e07bc31d"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e735657bd9f532e07bc319"
+  },
+  "owner": {
+    "$oid": "60e735657bd9f532e07bc31b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7359e7bd9f532e07bc332"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7359d7bd9f532e07bc32e"
+  },
+  "owner": {
+    "$oid": "60e7359d7bd9f532e07bc330"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735bfafed474bd01584ad"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e735beafed474bd01584a9"
+  },
+  "owner": {
+    "$oid": "60e735beafed474bd01584ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735d17bd9f532e07bc346"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e735d07bd9f532e07bc342"
+  },
+  "owner": {
+    "$oid": "60e735d17bd9f532e07bc344"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7366e7bd9f532e07bc35d"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7366e7bd9f532e07bc359"
+  },
+  "owner": {
+    "$oid": "60e7366e7bd9f532e07bc35b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e736a7afed474bd01584c1"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e736a7afed474bd01584bd"
+  },
+  "owner": {
+    "$oid": "60e736a7afed474bd01584bf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e736bc7bd9f532e07bc371"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e736bc7bd9f532e07bc36d"
+  },
+  "owner": {
+    "$oid": "60e736bc7bd9f532e07bc36f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7370f7bd9f532e07bc385"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e7370f7bd9f532e07bc381"
+  },
+  "owner": {
+    "$oid": "60e7370f7bd9f532e07bc383"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73758afed474bd01584d5"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73757afed474bd01584d1"
+  },
+  "owner": {
+    "$oid": "60e73758afed474bd01584d3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7380aafed474bd01584ea"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73809afed474bd01584e6"
+  },
+  "owner": {
+    "$oid": "60e7380aafed474bd01584e8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73878afed474bd01584fe"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73877afed474bd01584fa"
+  },
+  "owner": {
+    "$oid": "60e73877afed474bd01584fc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73936afed474bd0158659"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73935afed474bd0158655"
+  },
+  "owner": {
+    "$oid": "60e73935afed474bd0158657"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e739dfafed474bd015866e"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e739dfafed474bd015866a"
+  },
+  "owner": {
+    "$oid": "60e739dfafed474bd015866c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73a5cafed474bd0158682"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73a5bafed474bd015867e"
+  },
+  "owner": {
+    "$oid": "60e73a5bafed474bd0158680"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73b1eafed474bd0158863"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73b1eafed474bd015885f"
+  },
+  "owner": {
+    "$oid": "60e73b1eafed474bd0158861"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73bbfafed474bd0158877"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73bbfafed474bd0158873"
+  },
+  "owner": {
+    "$oid": "60e73bbfafed474bd0158875"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73c54afed474bd015888b"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73c54afed474bd0158887"
+  },
+  "owner": {
+    "$oid": "60e73c54afed474bd0158889"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73ce4afed474bd0158a84"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73ce3afed474bd0158a80"
+  },
+  "owner": {
+    "$oid": "60e73ce3afed474bd0158a82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73d4fafed474bd0158a98"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e73d4eafed474bd0158a94"
+  },
+  "owner": {
+    "$oid": "60e73d4fafed474bd0158a96"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79151eba66e2470d5d90d"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e79151eba66e2470d5d909"
+  },
+  "owner": {
+    "$oid": "60e79151eba66e2470d5d90b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79415eba66e2470d5daa0"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e79415eba66e2470d5da9c"
+  },
+  "owner": {
+    "$oid": "60e79415eba66e2470d5da9e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79df3eba66e2470d5dc74"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e79df3eba66e2470d5dc70"
+  },
+  "owner": {
+    "$oid": "60e79df3eba66e2470d5dc72"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79e83eba66e2470d5dc88"
+  },
+  "nameOfStatus": "Đang điều trị",
+  "timeOfStatus": {
+    "$oid": "60e79e82eba66e2470d5dc84"
+  },
+  "owner": {
+    "$oid": "60e79e82eba66e2470d5dc86"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bb63fabd7d2124dc4179"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bb62fabd7d2124dc4175"
+  },
+  "owner": {
+    "$oid": "60e7bb63fabd7d2124dc4177"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bbb9fabd7d2124dc418d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bbb9fabd7d2124dc4189"
+  },
+  "owner": {
+    "$oid": "60e7bbb9fabd7d2124dc418b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bc10fabd7d2124dc41a1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bc0ffabd7d2124dc419d"
+  },
+  "owner": {
+    "$oid": "60e7bc10fabd7d2124dc419f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bc8efabd7d2124dc41b5"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bc8efabd7d2124dc41b1"
+  },
+  "owner": {
+    "$oid": "60e7bc8efabd7d2124dc41b3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bce1fabd7d2124dc41c3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bce1fabd7d2124dc41bf"
+  },
+  "owner": {
+    "$oid": "60e7bce1fabd7d2124dc41c1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bd1efabd7d2124dc41d1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bd1dfabd7d2124dc41cd"
+  },
+  "owner": {
+    "$oid": "60e7bd1efabd7d2124dc41cf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bd62fabd7d2124dc41df"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bd61fabd7d2124dc41db"
+  },
+  "owner": {
+    "$oid": "60e7bd62fabd7d2124dc41dd"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7be38fabd7d2124dc41f4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7be38fabd7d2124dc41f0"
+  },
+  "owner": {
+    "$oid": "60e7be38fabd7d2124dc41f2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7be8dfabd7d2124dc4202"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7be8cfabd7d2124dc41fe"
+  },
+  "owner": {
+    "$oid": "60e7be8dfabd7d2124dc4200"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7beb5fabd7d2124dc4210"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7beb4fabd7d2124dc420c"
+  },
+  "owner": {
+    "$oid": "60e7beb4fabd7d2124dc420e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bedcfabd7d2124dc421e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bedcfabd7d2124dc421a"
+  },
+  "owner": {
+    "$oid": "60e7bedcfabd7d2124dc421c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bf24fabd7d2124dc422c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bf23fabd7d2124dc4228"
+  },
+  "owner": {
+    "$oid": "60e7bf23fabd7d2124dc422a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bfa9fabd7d2124dc423a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bfa8fabd7d2124dc4236"
+  },
+  "owner": {
+    "$oid": "60e7bfa8fabd7d2124dc4238"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bff1fabd7d2124dc424e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7bff1fabd7d2124dc424a"
+  },
+  "owner": {
+    "$oid": "60e7bff1fabd7d2124dc424c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c04bfabd7d2124dc4262"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c04bfabd7d2124dc425e"
+  },
+  "owner": {
+    "$oid": "60e7c04bfabd7d2124dc4260"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c0aafabd7d2124dc4276"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c0a9fabd7d2124dc4272"
+  },
+  "owner": {
+    "$oid": "60e7c0a9fabd7d2124dc4274"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c0e1fabd7d2124dc428a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c0e0fabd7d2124dc4286"
+  },
+  "owner": {
+    "$oid": "60e7c0e0fabd7d2124dc4288"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c13cfabd7d2124dc429e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c13bfabd7d2124dc429a"
+  },
+  "owner": {
+    "$oid": "60e7c13bfabd7d2124dc429c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c17cfabd7d2124dc42b2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c17bfabd7d2124dc42ae"
+  },
+  "owner": {
+    "$oid": "60e7c17bfabd7d2124dc42b0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c1bdfabd7d2124dc42c6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c1bcfabd7d2124dc42c2"
+  },
+  "owner": {
+    "$oid": "60e7c1bcfabd7d2124dc42c4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c1edfabd7d2124dc42da"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c1ecfabd7d2124dc42d6"
+  },
+  "owner": {
+    "$oid": "60e7c1edfabd7d2124dc42d8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c239fabd7d2124dc42ee"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c239fabd7d2124dc42ea"
+  },
+  "owner": {
+    "$oid": "60e7c239fabd7d2124dc42ec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c5fffabd7d2124dc4304"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c5fffabd7d2124dc4300"
+  },
+  "owner": {
+    "$oid": "60e7c5fffabd7d2124dc4302"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c63afabd7d2124dc4318"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c63afabd7d2124dc4314"
+  },
+  "owner": {
+    "$oid": "60e7c63afabd7d2124dc4316"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c680fabd7d2124dc432c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c67ffabd7d2124dc4328"
+  },
+  "owner": {
+    "$oid": "60e7c680fabd7d2124dc432a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c6fefabd7d2124dc433a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c6fefabd7d2124dc4336"
+  },
+  "owner": {
+    "$oid": "60e7c6fefabd7d2124dc4338"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c72bfabd7d2124dc4348"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c72afabd7d2124dc4344"
+  },
+  "owner": {
+    "$oid": "60e7c72bfabd7d2124dc4346"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c768fabd7d2124dc4356"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c768fabd7d2124dc4352"
+  },
+  "owner": {
+    "$oid": "60e7c768fabd7d2124dc4354"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c79cfabd7d2124dc4364"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c79bfabd7d2124dc4360"
+  },
+  "owner": {
+    "$oid": "60e7c79bfabd7d2124dc4362"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c7d2fabd7d2124dc4372"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c7d2fabd7d2124dc436e"
+  },
+  "owner": {
+    "$oid": "60e7c7d2fabd7d2124dc4370"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c818fabd7d2124dc4380"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c817fabd7d2124dc437c"
+  },
+  "owner": {
+    "$oid": "60e7c818fabd7d2124dc437e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c84afabd7d2124dc438e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c849fabd7d2124dc438a"
+  },
+  "owner": {
+    "$oid": "60e7c849fabd7d2124dc438c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c8d5fabd7d2124dc439c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c8d4fabd7d2124dc4398"
+  },
+  "owner": {
+    "$oid": "60e7c8d4fabd7d2124dc439a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c900fabd7d2124dc43aa"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c8fffabd7d2124dc43a6"
+  },
+  "owner": {
+    "$oid": "60e7c900fabd7d2124dc43a8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c92cfabd7d2124dc43b8"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c92bfabd7d2124dc43b4"
+  },
+  "owner": {
+    "$oid": "60e7c92bfabd7d2124dc43b6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c955fabd7d2124dc43c6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c954fabd7d2124dc43c2"
+  },
+  "owner": {
+    "$oid": "60e7c954fabd7d2124dc43c4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c97dfabd7d2124dc43d4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c97dfabd7d2124dc43d0"
+  },
+  "owner": {
+    "$oid": "60e7c97dfabd7d2124dc43d2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c9acfabd7d2124dc43e2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c9abfabd7d2124dc43de"
+  },
+  "owner": {
+    "$oid": "60e7c9acfabd7d2124dc43e0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c9d7fabd7d2124dc43f0"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7c9d7fabd7d2124dc43ec"
+  },
+  "owner": {
+    "$oid": "60e7c9d7fabd7d2124dc43ee"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca08fabd7d2124dc43fe"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7ca08fabd7d2124dc43fa"
+  },
+  "owner": {
+    "$oid": "60e7ca08fabd7d2124dc43fc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca3ffabd7d2124dc440c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7ca3efabd7d2124dc4408"
+  },
+  "owner": {
+    "$oid": "60e7ca3efabd7d2124dc440a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca6ffabd7d2124dc441a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7ca6ffabd7d2124dc4416"
+  },
+  "owner": {
+    "$oid": "60e7ca6ffabd7d2124dc4418"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cae0fabd7d2124dc4428"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7cadffabd7d2124dc4424"
+  },
+  "owner": {
+    "$oid": "60e7cae0fabd7d2124dc4426"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cb0bfabd7d2124dc4436"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7cb0afabd7d2124dc4432"
+  },
+  "owner": {
+    "$oid": "60e7cb0afabd7d2124dc4434"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cb4afabd7d2124dc4444"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e7cb49fabd7d2124dc4440"
+  },
+  "owner": {
+    "$oid": "60e7cb49fabd7d2124dc4442"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81f5129824936b4ec8128"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e81f5029824936b4ec8124"
+  },
+  "owner": {
+    "$oid": "60e81f5129824936b4ec8126"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81f7c29824936b4ec8136"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e81f7c29824936b4ec8132"
+  },
+  "owner": {
+    "$oid": "60e81f7c29824936b4ec8134"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81fb729824936b4ec8144"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e81fb629824936b4ec8140"
+  },
+  "owner": {
+    "$oid": "60e81fb729824936b4ec8142"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81fdb29824936b4ec8152"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e81fdb29824936b4ec814e"
+  },
+  "owner": {
+    "$oid": "60e81fdb29824936b4ec8150"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8200c29824936b4ec8160"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8200b29824936b4ec815c"
+  },
+  "owner": {
+    "$oid": "60e8200b29824936b4ec815e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8203529824936b4ec816e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8203429824936b4ec816a"
+  },
+  "owner": {
+    "$oid": "60e8203429824936b4ec816c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8205629824936b4ec817c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8205629824936b4ec8178"
+  },
+  "owner": {
+    "$oid": "60e8205629824936b4ec817a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8207329824936b4ec818b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8207229824936b4ec8187"
+  },
+  "owner": {
+    "$oid": "60e8207329824936b4ec8189"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8209d29824936b4ec8199"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8209c29824936b4ec8195"
+  },
+  "owner": {
+    "$oid": "60e8209c29824936b4ec8197"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e820c029824936b4ec81a7"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e820c029824936b4ec81a3"
+  },
+  "owner": {
+    "$oid": "60e820c029824936b4ec81a5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e820e229824936b4ec81b5"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e820e229824936b4ec81b1"
+  },
+  "owner": {
+    "$oid": "60e820e229824936b4ec81b3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8210929824936b4ec81c3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8210929824936b4ec81bf"
+  },
+  "owner": {
+    "$oid": "60e8210929824936b4ec81c1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8214b29824936b4ec81d1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8214a29824936b4ec81cd"
+  },
+  "owner": {
+    "$oid": "60e8214a29824936b4ec81cf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8217329824936b4ec81df"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8217329824936b4ec81db"
+  },
+  "owner": {
+    "$oid": "60e8217329824936b4ec81dd"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8219629824936b4ec81ed"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8219529824936b4ec81e9"
+  },
+  "owner": {
+    "$oid": "60e8219529824936b4ec81eb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e821b529824936b4ec81fb"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e821b429824936b4ec81f7"
+  },
+  "owner": {
+    "$oid": "60e821b429824936b4ec81f9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e821e229824936b4ec8209"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e821e229824936b4ec8205"
+  },
+  "owner": {
+    "$oid": "60e821e229824936b4ec8207"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8220629824936b4ec8217"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8220629824936b4ec8213"
+  },
+  "owner": {
+    "$oid": "60e8220629824936b4ec8215"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8225529824936b4ec8225"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8225529824936b4ec8221"
+  },
+  "owner": {
+    "$oid": "60e8225529824936b4ec8223"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8227b29824936b4ec8233"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8227b29824936b4ec822f"
+  },
+  "owner": {
+    "$oid": "60e8227b29824936b4ec8231"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8229c29824936b4ec8241"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8229b29824936b4ec823d"
+  },
+  "owner": {
+    "$oid": "60e8229b29824936b4ec823f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822b929824936b4ec824f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e822b929824936b4ec824b"
+  },
+  "owner": {
+    "$oid": "60e822b929824936b4ec824d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822d729824936b4ec825d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e822d629824936b4ec8259"
+  },
+  "owner": {
+    "$oid": "60e822d629824936b4ec825b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822fb29824936b4ec826b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e822fb29824936b4ec8267"
+  },
+  "owner": {
+    "$oid": "60e822fb29824936b4ec8269"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8233029824936b4ec8279"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8233029824936b4ec8275"
+  },
+  "owner": {
+    "$oid": "60e8233029824936b4ec8277"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8234e29824936b4ec8287"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8234d29824936b4ec8283"
+  },
+  "owner": {
+    "$oid": "60e8234d29824936b4ec8285"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8237629824936b4ec8295"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8237529824936b4ec8291"
+  },
+  "owner": {
+    "$oid": "60e8237629824936b4ec8293"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823b829824936b4ec82a3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e823b829824936b4ec829f"
+  },
+  "owner": {
+    "$oid": "60e823b829824936b4ec82a1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823d329824936b4ec82b1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e823d329824936b4ec82ad"
+  },
+  "owner": {
+    "$oid": "60e823d329824936b4ec82af"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823ef29824936b4ec82bf"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e823ef29824936b4ec82bb"
+  },
+  "owner": {
+    "$oid": "60e823ef29824936b4ec82bd"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8240e29824936b4ec82cd"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8240e29824936b4ec82c9"
+  },
+  "owner": {
+    "$oid": "60e8240e29824936b4ec82cb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8242d29824936b4ec82db"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8242d29824936b4ec82d7"
+  },
+  "owner": {
+    "$oid": "60e8242d29824936b4ec82d9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8245529824936b4ec82e9"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8245429824936b4ec82e5"
+  },
+  "owner": {
+    "$oid": "60e8245529824936b4ec82e7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8247429824936b4ec82f7"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8247429824936b4ec82f3"
+  },
+  "owner": {
+    "$oid": "60e8247429824936b4ec82f5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8249a29824936b4ec8305"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8249a29824936b4ec8301"
+  },
+  "owner": {
+    "$oid": "60e8249a29824936b4ec8303"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e824bf29824936b4ec8313"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e824be29824936b4ec830f"
+  },
+  "owner": {
+    "$oid": "60e824bf29824936b4ec8311"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e824e029824936b4ec8321"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e824df29824936b4ec831d"
+  },
+  "owner": {
+    "$oid": "60e824e029824936b4ec831f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8252929824936b4ec832f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8252929824936b4ec832b"
+  },
+  "owner": {
+    "$oid": "60e8252929824936b4ec832d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8254e29824936b4ec833d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8254d29824936b4ec8339"
+  },
+  "owner": {
+    "$oid": "60e8254e29824936b4ec833b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8257b29824936b4ec834b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8257b29824936b4ec8347"
+  },
+  "owner": {
+    "$oid": "60e8257b29824936b4ec8349"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825ae29824936b4ec8359"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e825ad29824936b4ec8355"
+  },
+  "owner": {
+    "$oid": "60e825ae29824936b4ec8357"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825d929824936b4ec8367"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e825d929824936b4ec8363"
+  },
+  "owner": {
+    "$oid": "60e825d929824936b4ec8365"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825fc29824936b4ec8375"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e825fb29824936b4ec8371"
+  },
+  "owner": {
+    "$oid": "60e825fc29824936b4ec8373"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8264329824936b4ec8383"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8264329824936b4ec837f"
+  },
+  "owner": {
+    "$oid": "60e8264329824936b4ec8381"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8266129824936b4ec8391"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8266129824936b4ec838d"
+  },
+  "owner": {
+    "$oid": "60e8266129824936b4ec838f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8268429824936b4ec839f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8268429824936b4ec839b"
+  },
+  "owner": {
+    "$oid": "60e8268429824936b4ec839d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826a729824936b4ec83ad"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e826a729824936b4ec83a9"
+  },
+  "owner": {
+    "$oid": "60e826a729824936b4ec83ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826cb29824936b4ec83bb"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e826ca29824936b4ec83b7"
+  },
+  "owner": {
+    "$oid": "60e826ca29824936b4ec83b9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826fd29824936b4ec83c9"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e826fd29824936b4ec83c5"
+  },
+  "owner": {
+    "$oid": "60e826fd29824936b4ec83c7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8272929824936b4ec83d7"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8272929824936b4ec83d3"
+  },
+  "owner": {
+    "$oid": "60e8272929824936b4ec83d5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8275429824936b4ec83e5"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8275429824936b4ec83e1"
+  },
+  "owner": {
+    "$oid": "60e8275429824936b4ec83e3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8277c29824936b4ec83f3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8277c29824936b4ec83ef"
+  },
+  "owner": {
+    "$oid": "60e8277c29824936b4ec83f1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e827b329824936b4ec8401"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e827b229824936b4ec83fd"
+  },
+  "owner": {
+    "$oid": "60e827b229824936b4ec83ff"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e827e929824936b4ec840f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e827e929824936b4ec840b"
+  },
+  "owner": {
+    "$oid": "60e827e929824936b4ec840d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8281429824936b4ec841d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8281329824936b4ec8419"
+  },
+  "owner": {
+    "$oid": "60e8281429824936b4ec841b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8283629824936b4ec842b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8283629824936b4ec8427"
+  },
+  "owner": {
+    "$oid": "60e8283629824936b4ec8429"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8285329824936b4ec8439"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8285229824936b4ec8435"
+  },
+  "owner": {
+    "$oid": "60e8285229824936b4ec8437"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8286e29824936b4ec8447"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8286e29824936b4ec8443"
+  },
+  "owner": {
+    "$oid": "60e8286e29824936b4ec8445"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8288f29824936b4ec8455"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8288f29824936b4ec8451"
+  },
+  "owner": {
+    "$oid": "60e8288f29824936b4ec8453"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828ac29824936b4ec8463"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e828ac29824936b4ec845f"
+  },
+  "owner": {
+    "$oid": "60e828ac29824936b4ec8461"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828d329824936b4ec8471"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e828d329824936b4ec846d"
+  },
+  "owner": {
+    "$oid": "60e828d329824936b4ec846f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828f329824936b4ec847f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e828f229824936b4ec847b"
+  },
+  "owner": {
+    "$oid": "60e828f229824936b4ec847d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8291429824936b4ec848d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8291329824936b4ec8489"
+  },
+  "owner": {
+    "$oid": "60e8291329824936b4ec848b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8292c29824936b4ec849b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8292c29824936b4ec8497"
+  },
+  "owner": {
+    "$oid": "60e8292c29824936b4ec8499"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8295929824936b4ec84a9"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8295829824936b4ec84a5"
+  },
+  "owner": {
+    "$oid": "60e8295929824936b4ec84a7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8298129824936b4ec84b7"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8298129824936b4ec84b3"
+  },
+  "owner": {
+    "$oid": "60e8298129824936b4ec84b5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829a029824936b4ec84c5"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e829a029824936b4ec84c1"
+  },
+  "owner": {
+    "$oid": "60e829a029824936b4ec84c3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829bd29824936b4ec84d3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e829bc29824936b4ec84cf"
+  },
+  "owner": {
+    "$oid": "60e829bc29824936b4ec84d1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829d829824936b4ec84e1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e829d829824936b4ec84dd"
+  },
+  "owner": {
+    "$oid": "60e829d829824936b4ec84df"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829f729824936b4ec84ef"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e829f629824936b4ec84eb"
+  },
+  "owner": {
+    "$oid": "60e829f629824936b4ec84ed"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a1129824936b4ec84fd"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82a1129824936b4ec84f9"
+  },
+  "owner": {
+    "$oid": "60e82a1129824936b4ec84fb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a3029824936b4ec850b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82a2f29824936b4ec8507"
+  },
+  "owner": {
+    "$oid": "60e82a2f29824936b4ec8509"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a4c29824936b4ec8519"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82a4c29824936b4ec8515"
+  },
+  "owner": {
+    "$oid": "60e82a4c29824936b4ec8517"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a7329824936b4ec8527"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82a7329824936b4ec8523"
+  },
+  "owner": {
+    "$oid": "60e82a7329824936b4ec8525"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a9629824936b4ec8535"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82a9529824936b4ec8531"
+  },
+  "owner": {
+    "$oid": "60e82a9529824936b4ec8533"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ab829824936b4ec8543"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82ab829824936b4ec853f"
+  },
+  "owner": {
+    "$oid": "60e82ab829824936b4ec8541"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ad529824936b4ec8551"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82ad429824936b4ec854d"
+  },
+  "owner": {
+    "$oid": "60e82ad429824936b4ec854f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82af729824936b4ec855f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82af729824936b4ec855b"
+  },
+  "owner": {
+    "$oid": "60e82af729824936b4ec855d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b1829824936b4ec856d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82b1729824936b4ec8569"
+  },
+  "owner": {
+    "$oid": "60e82b1829824936b4ec856b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b4929824936b4ec857b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82b4829824936b4ec8577"
+  },
+  "owner": {
+    "$oid": "60e82b4829824936b4ec8579"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b6b29824936b4ec8589"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82b6a29824936b4ec8585"
+  },
+  "owner": {
+    "$oid": "60e82b6b29824936b4ec8587"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b8829824936b4ec8597"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82b8729824936b4ec8593"
+  },
+  "owner": {
+    "$oid": "60e82b8729824936b4ec8595"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82d9229824936b4ec85a5"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82d9229824936b4ec85a1"
+  },
+  "owner": {
+    "$oid": "60e82d9229824936b4ec85a3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82db229824936b4ec85b3"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82db229824936b4ec85af"
+  },
+  "owner": {
+    "$oid": "60e82db229824936b4ec85b1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82dd129824936b4ec85c1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82dd129824936b4ec85bd"
+  },
+  "owner": {
+    "$oid": "60e82dd129824936b4ec85bf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82def29824936b4ec85cf"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82def29824936b4ec85cb"
+  },
+  "owner": {
+    "$oid": "60e82def29824936b4ec85cd"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e0a29824936b4ec85dd"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82e0a29824936b4ec85d9"
+  },
+  "owner": {
+    "$oid": "60e82e0a29824936b4ec85db"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e3529824936b4ec85eb"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82e3529824936b4ec85e7"
+  },
+  "owner": {
+    "$oid": "60e82e3529824936b4ec85e9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e5129824936b4ec85f9"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82e5129824936b4ec85f5"
+  },
+  "owner": {
+    "$oid": "60e82e5129824936b4ec85f7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e7329824936b4ec8607"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82e7229824936b4ec8603"
+  },
+  "owner": {
+    "$oid": "60e82e7329824936b4ec8605"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e9429824936b4ec8615"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82e9329824936b4ec8611"
+  },
+  "owner": {
+    "$oid": "60e82e9329824936b4ec8613"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82eb329824936b4ec8623"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82eb229824936b4ec861f"
+  },
+  "owner": {
+    "$oid": "60e82eb329824936b4ec8621"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ee729824936b4ec8631"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82ee629824936b4ec862d"
+  },
+  "owner": {
+    "$oid": "60e82ee629824936b4ec862f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f1329824936b4ec863f"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82f1229824936b4ec863b"
+  },
+  "owner": {
+    "$oid": "60e82f1329824936b4ec863d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f3129824936b4ec864d"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82f3129824936b4ec8649"
+  },
+  "owner": {
+    "$oid": "60e82f3129824936b4ec864b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f5329824936b4ec865b"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82f5229824936b4ec8657"
+  },
+  "owner": {
+    "$oid": "60e82f5329824936b4ec8659"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f6b29824936b4ec8669"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e82f6b29824936b4ec8665"
+  },
+  "owner": {
+    "$oid": "60e82f6b29824936b4ec8667"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e837d729824936b4ec8677"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e837d729824936b4ec8673"
+  },
+  "owner": {
+    "$oid": "60e837d729824936b4ec8675"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e837f829824936b4ec8685"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e837f729824936b4ec8681"
+  },
+  "owner": {
+    "$oid": "60e837f729824936b4ec8683"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8381629824936b4ec8693"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8381529824936b4ec868f"
+  },
+  "owner": {
+    "$oid": "60e8381629824936b4ec8691"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8383129824936b4ec86a1"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8383129824936b4ec869d"
+  },
+  "owner": {
+    "$oid": "60e8383129824936b4ec869f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8387029824936b4ec86b6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8386f29824936b4ec86b2"
+  },
+  "owner": {
+    "$oid": "60e8386f29824936b4ec86b4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8388b29824936b4ec86c4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8388a29824936b4ec86c0"
+  },
+  "owner": {
+    "$oid": "60e8388a29824936b4ec86c2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e838ca29824936b4ec86d4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e838c929824936b4ec86d0"
+  },
+  "owner": {
+    "$oid": "60e838c929824936b4ec86d2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e838f929824936b4ec86e4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e838f829824936b4ec86e0"
+  },
+  "owner": {
+    "$oid": "60e838f929824936b4ec86e2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8392429824936b4ec86f2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8392429824936b4ec86ee"
+  },
+  "owner": {
+    "$oid": "60e8392429824936b4ec86f0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8397529824936b4ec8700"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8397529824936b4ec86fc"
+  },
+  "owner": {
+    "$oid": "60e8397529824936b4ec86fe"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8399729824936b4ec870e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8399729824936b4ec870a"
+  },
+  "owner": {
+    "$oid": "60e8399729824936b4ec870c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839b329824936b4ec871c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e839b229824936b4ec8718"
+  },
+  "owner": {
+    "$oid": "60e839b329824936b4ec871a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839d029824936b4ec872a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e839d029824936b4ec8726"
+  },
+  "owner": {
+    "$oid": "60e839d029824936b4ec8728"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839ef29824936b4ec8738"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e839ee29824936b4ec8734"
+  },
+  "owner": {
+    "$oid": "60e839ef29824936b4ec8736"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a1729824936b4ec8746"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83a1729824936b4ec8742"
+  },
+  "owner": {
+    "$oid": "60e83a1729824936b4ec8744"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a3229824936b4ec8754"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83a3129824936b4ec8750"
+  },
+  "owner": {
+    "$oid": "60e83a3129824936b4ec8752"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a5e29824936b4ec8762"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83a5e29824936b4ec875e"
+  },
+  "owner": {
+    "$oid": "60e83a5e29824936b4ec8760"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a7d29824936b4ec8770"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83a7c29824936b4ec876c"
+  },
+  "owner": {
+    "$oid": "60e83a7c29824936b4ec876e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ab729824936b4ec877e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83ab629824936b4ec877a"
+  },
+  "owner": {
+    "$oid": "60e83ab729824936b4ec877c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ad429824936b4ec878c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83ad329824936b4ec8788"
+  },
+  "owner": {
+    "$oid": "60e83ad329824936b4ec878a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83af429824936b4ec879a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83af329824936b4ec8796"
+  },
+  "owner": {
+    "$oid": "60e83af429824936b4ec8798"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b2a29824936b4ec87a8"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83b2a29824936b4ec87a4"
+  },
+  "owner": {
+    "$oid": "60e83b2a29824936b4ec87a6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b4729824936b4ec87b6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83b4629824936b4ec87b2"
+  },
+  "owner": {
+    "$oid": "60e83b4729824936b4ec87b4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b6629824936b4ec87c4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83b6629824936b4ec87c0"
+  },
+  "owner": {
+    "$oid": "60e83b6629824936b4ec87c2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b8029824936b4ec87d2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83b7f29824936b4ec87ce"
+  },
+  "owner": {
+    "$oid": "60e83b7f29824936b4ec87d0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83fd629824936b4ec87e0"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83fd529824936b4ec87dc"
+  },
+  "owner": {
+    "$oid": "60e83fd629824936b4ec87de"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ff929824936b4ec87ee"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e83ff829824936b4ec87ea"
+  },
+  "owner": {
+    "$oid": "60e83ff829824936b4ec87ec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8401a29824936b4ec87fc"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8401929824936b4ec87f8"
+  },
+  "owner": {
+    "$oid": "60e8401a29824936b4ec87fa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8403d29824936b4ec880a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8403d29824936b4ec8806"
+  },
+  "owner": {
+    "$oid": "60e8403d29824936b4ec8808"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8405e29824936b4ec8818"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8405d29824936b4ec8814"
+  },
+  "owner": {
+    "$oid": "60e8405e29824936b4ec8816"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8407a29824936b4ec8826"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8407929824936b4ec8822"
+  },
+  "owner": {
+    "$oid": "60e8407929824936b4ec8824"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8409729824936b4ec8834"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8409729824936b4ec8830"
+  },
+  "owner": {
+    "$oid": "60e8409729824936b4ec8832"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840b429824936b4ec8842"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e840b429824936b4ec883e"
+  },
+  "owner": {
+    "$oid": "60e840b429824936b4ec8840"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840d629824936b4ec8850"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e840d529824936b4ec884c"
+  },
+  "owner": {
+    "$oid": "60e840d529824936b4ec884e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840f229824936b4ec885e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e840f129824936b4ec885a"
+  },
+  "owner": {
+    "$oid": "60e840f229824936b4ec885c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8410c29824936b4ec886c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8410c29824936b4ec8868"
+  },
+  "owner": {
+    "$oid": "60e8410c29824936b4ec886a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8412929824936b4ec887a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8412729824936b4ec8876"
+  },
+  "owner": {
+    "$oid": "60e8412829824936b4ec8878"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8414329824936b4ec8888"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8414229824936b4ec8884"
+  },
+  "owner": {
+    "$oid": "60e8414329824936b4ec8886"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8415f29824936b4ec8896"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8415e29824936b4ec8892"
+  },
+  "owner": {
+    "$oid": "60e8415e29824936b4ec8894"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841a329824936b4ec88ac"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e841a229824936b4ec88a8"
+  },
+  "owner": {
+    "$oid": "60e841a329824936b4ec88aa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841be29824936b4ec88ba"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e841bd29824936b4ec88b6"
+  },
+  "owner": {
+    "$oid": "60e841be29824936b4ec88b8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841d829824936b4ec88c8"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e841d829824936b4ec88c4"
+  },
+  "owner": {
+    "$oid": "60e841d829824936b4ec88c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841f529824936b4ec88d6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e841f429824936b4ec88d2"
+  },
+  "owner": {
+    "$oid": "60e841f529824936b4ec88d4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8422f29824936b4ec88e4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8422e29824936b4ec88e0"
+  },
+  "owner": {
+    "$oid": "60e8422e29824936b4ec88e2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8425029824936b4ec88f2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8425029824936b4ec88ee"
+  },
+  "owner": {
+    "$oid": "60e8425029824936b4ec88f0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8426f29824936b4ec8900"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8426e29824936b4ec88fc"
+  },
+  "owner": {
+    "$oid": "60e8426f29824936b4ec88fe"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8429629824936b4ec890e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8429529824936b4ec890a"
+  },
+  "owner": {
+    "$oid": "60e8429629824936b4ec890c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842b529824936b4ec891c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e842b429824936b4ec8918"
+  },
+  "owner": {
+    "$oid": "60e842b429824936b4ec891a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842d429824936b4ec892a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e842d329824936b4ec8926"
+  },
+  "owner": {
+    "$oid": "60e842d329824936b4ec8928"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842fe29824936b4ec8938"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e842fd29824936b4ec8934"
+  },
+  "owner": {
+    "$oid": "60e842fe29824936b4ec8936"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8431929824936b4ec8946"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8431829824936b4ec8942"
+  },
+  "owner": {
+    "$oid": "60e8431829824936b4ec8944"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e843b229824936b4ec8954"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e843b229824936b4ec8950"
+  },
+  "owner": {
+    "$oid": "60e843b229824936b4ec8952"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e843da29824936b4ec8962"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e843da29824936b4ec895e"
+  },
+  "owner": {
+    "$oid": "60e843da29824936b4ec8960"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8440429824936b4ec8970"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8440329824936b4ec896c"
+  },
+  "owner": {
+    "$oid": "60e8440329824936b4ec896e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8442429824936b4ec897e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8442329824936b4ec897a"
+  },
+  "owner": {
+    "$oid": "60e8442429824936b4ec897c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8445829824936b4ec898c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8445829824936b4ec8988"
+  },
+  "owner": {
+    "$oid": "60e8445829824936b4ec898a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8447c29824936b4ec899a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8447b29824936b4ec8996"
+  },
+  "owner": {
+    "$oid": "60e8447c29824936b4ec8998"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8449c29824936b4ec89a8"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8449b29824936b4ec89a4"
+  },
+  "owner": {
+    "$oid": "60e8449c29824936b4ec89a6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8453329824936b4ec89b6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8453329824936b4ec89b2"
+  },
+  "owner": {
+    "$oid": "60e8453329824936b4ec89b4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8454f29824936b4ec89c4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8454e29824936b4ec89c0"
+  },
+  "owner": {
+    "$oid": "60e8454f29824936b4ec89c2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8456a29824936b4ec89d2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8456929824936b4ec89ce"
+  },
+  "owner": {
+    "$oid": "60e8456929824936b4ec89d0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8458229824936b4ec89e0"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8458129824936b4ec89dc"
+  },
+  "owner": {
+    "$oid": "60e8458129824936b4ec89de"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e845fd29824936b4ec89ee"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e845fd29824936b4ec89ea"
+  },
+  "owner": {
+    "$oid": "60e845fd29824936b4ec89ec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8463029824936b4ec89fe"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8463029824936b4ec89fa"
+  },
+  "owner": {
+    "$oid": "60e8463029824936b4ec89fc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8465b29824936b4ec8a0c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8465a29824936b4ec8a08"
+  },
+  "owner": {
+    "$oid": "60e8465a29824936b4ec8a0a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e846b629824936b4ec8a1c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e846b629824936b4ec8a18"
+  },
+  "owner": {
+    "$oid": "60e846b629824936b4ec8a1a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e846da29824936b4ec8a2a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e846d929824936b4ec8a26"
+  },
+  "owner": {
+    "$oid": "60e846d929824936b4ec8a28"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8470729824936b4ec8a38"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8470629824936b4ec8a34"
+  },
+  "owner": {
+    "$oid": "60e8470629824936b4ec8a36"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8474629824936b4ec8a46"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8474429824936b4ec8a42"
+  },
+  "owner": {
+    "$oid": "60e8474529824936b4ec8a44"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847b429824936b4ec8a54"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e847b429824936b4ec8a50"
+  },
+  "owner": {
+    "$oid": "60e847b429824936b4ec8a52"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847d729824936b4ec8a62"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e847d529824936b4ec8a5e"
+  },
+  "owner": {
+    "$oid": "60e847d629824936b4ec8a60"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847fa29824936b4ec8a70"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e847f929824936b4ec8a6c"
+  },
+  "owner": {
+    "$oid": "60e847fa29824936b4ec8a6e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8481629824936b4ec8a7e"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8481629824936b4ec8a7a"
+  },
+  "owner": {
+    "$oid": "60e8481629824936b4ec8a7c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8483e29824936b4ec8a8c"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8483d29824936b4ec8a88"
+  },
+  "owner": {
+    "$oid": "60e8483e29824936b4ec8a8a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8485b29824936b4ec8a9a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8485b29824936b4ec8a96"
+  },
+  "owner": {
+    "$oid": "60e8485b29824936b4ec8a98"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8487829824936b4ec8aa8"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8487829824936b4ec8aa4"
+  },
+  "owner": {
+    "$oid": "60e8487829824936b4ec8aa6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e848a029824936b4ec8ab6"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8489f29824936b4ec8ab2"
+  },
+  "owner": {
+    "$oid": "60e8489f29824936b4ec8ab4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e848bf29824936b4ec8ac4"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e848bf29824936b4ec8ac0"
+  },
+  "owner": {
+    "$oid": "60e848bf29824936b4ec8ac2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8490a29824936b4ec8ad2"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8490929824936b4ec8ace"
+  },
+  "owner": {
+    "$oid": "60e8490929824936b4ec8ad0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8492929824936b4ec8ae0"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8492829824936b4ec8adc"
+  },
+  "owner": {
+    "$oid": "60e8492829824936b4ec8ade"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8497c29824936b4ec8aee"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e8497b29824936b4ec8aea"
+  },
+  "owner": {
+    "$oid": "60e8497c29824936b4ec8aec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e849be29824936b4ec8afc"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e849bd29824936b4ec8af8"
+  },
+  "owner": {
+    "$oid": "60e849bd29824936b4ec8afa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e849da29824936b4ec8b0a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e849da29824936b4ec8b06"
+  },
+  "owner": {
+    "$oid": "60e849da29824936b4ec8b08"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a1029824936b4ec8b1a"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84a0f29824936b4ec8b16"
+  },
+  "owner": {
+    "$oid": "60e84a1029824936b4ec8b18"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a3829824936b4ec8b28"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84a3829824936b4ec8b24"
+  },
+  "owner": {
+    "$oid": "60e84a3829824936b4ec8b26"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a6f29824936b4ec8b36"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84a6e29824936b4ec8b32"
+  },
+  "owner": {
+    "$oid": "60e84a6f29824936b4ec8b34"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a9029824936b4ec8b44"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84a8f29824936b4ec8b40"
+  },
+  "owner": {
+    "$oid": "60e84a9029824936b4ec8b42"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84acb29824936b4ec8b52"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84aca29824936b4ec8b4e"
+  },
+  "owner": {
+    "$oid": "60e84aca29824936b4ec8b50"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84b4329824936b4ec8b68"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84b4229824936b4ec8b64"
+  },
+  "owner": {
+    "$oid": "60e84b4329824936b4ec8b66"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84b6429824936b4ec8b76"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84b6329824936b4ec8b72"
+  },
+  "owner": {
+    "$oid": "60e84b6429824936b4ec8b74"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84ba829824936b4ec8b84"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84ba629824936b4ec8b80"
+  },
+  "owner": {
+    "$oid": "60e84ba729824936b4ec8b82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84bee29824936b4ec8b92"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84bed29824936b4ec8b8e"
+  },
+  "owner": {
+    "$oid": "60e84bee29824936b4ec8b90"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84c1629824936b4ec8ba0"
+  },
+  "nameOfStatus": "Dương tính",
+  "timeOfStatus": {
+    "$oid": "60e84c1529824936b4ec8b9c"
+  },
+  "owner": {
+    "$oid": "60e84c1629824936b4ec8b9e"
+  },
+  "__v": 0
+}]

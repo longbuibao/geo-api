@@ -1,0 +1,4817 @@
+[{
+  "_id": {
+    "$oid": "60e6c8dc6d48dd4b346278d6"
+  },
+  "name": "BN0001",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e6c8db6d48dd4b346278d0"
+  },
+  "announcedTime": {
+    "$oid": "60e6c8db6d48dd4b346278d2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6c9d685a4590fb48784cc"
+  },
+  "name": "BN0002",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e6c9d585a4590fb48784c6"
+  },
+  "announcedTime": {
+    "$oid": "60e6c9d585a4590fb48784c8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6cffd0802d30f34e114a7"
+  },
+  "name": "BN0003",
+  "yearOfBirth": 2007,
+  "currentLocation": {
+    "$oid": "60e6cffc0802d30f34e114a1"
+  },
+  "announcedTime": {
+    "$oid": "60e6cffd0802d30f34e114a3"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6d21d85335c3250fda35d"
+  },
+  "name": "BN0004",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e6d21c85335c3250fda357"
+  },
+  "announcedTime": {
+    "$oid": "60e6d21d85335c3250fda359"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6d2bf7282dd460835b56b"
+  },
+  "name": "BN0005",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e6d2be7282dd460835b565"
+  },
+  "announcedTime": {
+    "$oid": "60e6d2bf7282dd460835b567"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e717ab82759c37982f5fca"
+  },
+  "name": "BN15829",
+  "yearOfBirth": 1985,
+  "currentLocation": {
+    "$oid": "60e717aa82759c37982f5fc4"
+  },
+  "announcedTime": {
+    "$oid": "60e717aa82759c37982f5fc6"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e71d0ddde94044382af05d"
+  },
+  "name": "BN19190",
+  "yearOfBirth": 1967,
+  "currentLocation": {
+    "$oid": "60e71d0cdde94044382af057"
+  },
+  "announcedTime": {
+    "$oid": "60e71d0cdde94044382af059"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e71e0cdde94044382af07f"
+  },
+  "name": "BN11613",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e71e0bdde94044382af079"
+  },
+  "announcedTime": {
+    "$oid": "60e71e0bdde94044382af07b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72036e600e661d401ad6d"
+  },
+  "name": "BN13094",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e72035e600e661d401ad67"
+  },
+  "announcedTime": {
+    "$oid": "60e72036e600e661d401ad69"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e723c8e600e661d401ad81"
+  },
+  "name": "BN13451",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e723c7e600e661d401ad7b"
+  },
+  "announcedTime": {
+    "$oid": "60e723c7e600e661d401ad7d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7280e7bd9f532e07bc100"
+  },
+  "name": "BN19362",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e7280d7bd9f532e07bc0fa"
+  },
+  "announcedTime": {
+    "$oid": "60e7280d7bd9f532e07bc0fc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72bc77bd9f532e07bc117"
+  },
+  "name": "BN21494",
+  "yearOfBirth": 1952,
+  "currentLocation": {
+    "$oid": "60e72bc67bd9f532e07bc111"
+  },
+  "announcedTime": {
+    "$oid": "60e72bc67bd9f532e07bc113"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72e3fafed474bd0158214"
+  },
+  "name": "BN13094",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e72e3eafed474bd015820e"
+  },
+  "announcedTime": {
+    "$oid": "60e72e3eafed474bd0158210"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72e527bd9f532e07bc12c"
+  },
+  "name": "BN19043",
+  "yearOfBirth": 1985,
+  "currentLocation": {
+    "$oid": "60e72e517bd9f532e07bc126"
+  },
+  "announcedTime": {
+    "$oid": "60e72e517bd9f532e07bc128"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72eb0afed474bd0158229"
+  },
+  "name": "BN17887",
+  "yearOfBirth": 2008,
+  "currentLocation": {
+    "$oid": "60e72eafafed474bd0158223"
+  },
+  "announcedTime": {
+    "$oid": "60e72eafafed474bd0158225"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72ec27bd9f532e07bc140"
+  },
+  "name": "BN18208",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e72ec17bd9f532e07bc13a"
+  },
+  "announcedTime": {
+    "$oid": "60e72ec17bd9f532e07bc13c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72f337bd9f532e07bc155"
+  },
+  "name": "BN17829",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e72f327bd9f532e07bc14f"
+  },
+  "announcedTime": {
+    "$oid": "60e72f327bd9f532e07bc151"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e72f997bd9f532e07bc169"
+  },
+  "name": "BN15005",
+  "yearOfBirth": 1998,
+  "currentLocation": {
+    "$oid": "60e72f987bd9f532e07bc163"
+  },
+  "announcedTime": {
+    "$oid": "60e72f987bd9f532e07bc165"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7306d7bd9f532e07bc17d"
+  },
+  "name": "BN19385",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e7306c7bd9f532e07bc177"
+  },
+  "announcedTime": {
+    "$oid": "60e7306d7bd9f532e07bc179"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e730bd7bd9f532e07bc191"
+  },
+  "name": "BN14899",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e730bc7bd9f532e07bc18b"
+  },
+  "announcedTime": {
+    "$oid": "60e730bc7bd9f532e07bc18d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e730f87bd9f532e07bc1a5"
+  },
+  "name": "BN16020",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e730f87bd9f532e07bc19f"
+  },
+  "announcedTime": {
+    "$oid": "60e730f87bd9f532e07bc1a1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7313f7bd9f532e07bc1b9"
+  },
+  "name": "BN14962",
+  "yearOfBirth": 2013,
+  "currentLocation": {
+    "$oid": "60e7313e7bd9f532e07bc1b3"
+  },
+  "announcedTime": {
+    "$oid": "60e7313e7bd9f532e07bc1b5"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7318c7bd9f532e07bc1cd"
+  },
+  "name": "BN21436",
+  "yearOfBirth": 2016,
+  "currentLocation": {
+    "$oid": "60e7318b7bd9f532e07bc1c7"
+  },
+  "announcedTime": {
+    "$oid": "60e7318c7bd9f532e07bc1c9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731b4afed474bd015845a"
+  },
+  "name": "BN15975",
+  "yearOfBirth": 1961,
+  "currentLocation": {
+    "$oid": "60e731b3afed474bd0158454"
+  },
+  "announcedTime": {
+    "$oid": "60e731b4afed474bd0158456"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731c67bd9f532e07bc1e1"
+  },
+  "name": "BN19265",
+  "yearOfBirth": 1973,
+  "currentLocation": {
+    "$oid": "60e731c67bd9f532e07bc1db"
+  },
+  "announcedTime": {
+    "$oid": "60e731c67bd9f532e07bc1dd"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e731fc7bd9f532e07bc1f5"
+  },
+  "name": "BN18081",
+  "yearOfBirth": 1966,
+  "currentLocation": {
+    "$oid": "60e731fb7bd9f532e07bc1ef"
+  },
+  "announcedTime": {
+    "$oid": "60e731fb7bd9f532e07bc1f1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732417bd9f532e07bc20a"
+  },
+  "name": " BN18103",
+  "yearOfBirth": 1973,
+  "currentLocation": {
+    "$oid": "60e732407bd9f532e07bc204"
+  },
+  "announcedTime": {
+    "$oid": "60e732407bd9f532e07bc206"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73258afed474bd015846e"
+  },
+  "name": " BN12207",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e73257afed474bd0158468"
+  },
+  "announcedTime": {
+    "$oid": "60e73258afed474bd015846a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7327f7bd9f532e07bc21e"
+  },
+  "name": "BN15391",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e7327e7bd9f532e07bc218"
+  },
+  "announcedTime": {
+    "$oid": "60e7327e7bd9f532e07bc21a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732b87bd9f532e07bc232"
+  },
+  "name": "BN18466",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e732b77bd9f532e07bc22c"
+  },
+  "announcedTime": {
+    "$oid": "60e732b87bd9f532e07bc22e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e732fc7bd9f532e07bc246"
+  },
+  "name": "BN11196",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e732fb7bd9f532e07bc240"
+  },
+  "announcedTime": {
+    "$oid": "60e732fb7bd9f532e07bc242"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733357bd9f532e07bc25a"
+  },
+  "name": "BN18100",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e733347bd9f532e07bc254"
+  },
+  "announcedTime": {
+    "$oid": "60e733357bd9f532e07bc256"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733377bd9f532e07bc266"
+  },
+  "name": "BN18100",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e733367bd9f532e07bc25f"
+  },
+  "announcedTime": {
+    "$oid": "60e733367bd9f532e07bc262"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7336eafed474bd0158483"
+  },
+  "name": "BN13181",
+  "yearOfBirth": 1977,
+  "currentLocation": {
+    "$oid": "60e7336eafed474bd015847d"
+  },
+  "announcedTime": {
+    "$oid": "60e7336eafed474bd015847f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733947bd9f532e07bc27a"
+  },
+  "name": "BN18093",
+  "yearOfBirth": 1934,
+  "currentLocation": {
+    "$oid": "60e733927bd9f532e07bc274"
+  },
+  "announcedTime": {
+    "$oid": "60e733927bd9f532e07bc276"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e733ce7bd9f532e07bc28e"
+  },
+  "name": "BN17754",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e733cd7bd9f532e07bc288"
+  },
+  "announcedTime": {
+    "$oid": "60e733cd7bd9f532e07bc28a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734137bd9f532e07bc2a2"
+  },
+  "name": "BN10517",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e734127bd9f532e07bc29c"
+  },
+  "announcedTime": {
+    "$oid": "60e734127bd9f532e07bc29e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734537bd9f532e07bc2b6"
+  },
+  "name": "BN11197",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e734527bd9f532e07bc2b0"
+  },
+  "announcedTime": {
+    "$oid": "60e734527bd9f532e07bc2b2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734917bd9f532e07bc2cb"
+  },
+  "name": "BN18538",
+  "yearOfBirth": 1956,
+  "currentLocation": {
+    "$oid": "60e734907bd9f532e07bc2c5"
+  },
+  "announcedTime": {
+    "$oid": "60e734907bd9f532e07bc2c7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734bd7bd9f532e07bc2df"
+  },
+  "name": "BN19275",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e734bd7bd9f532e07bc2d9"
+  },
+  "announcedTime": {
+    "$oid": "60e734bd7bd9f532e07bc2db"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e734f37bd9f532e07bc2f3"
+  },
+  "name": "BN18469",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e734f27bd9f532e07bc2ed"
+  },
+  "announcedTime": {
+    "$oid": "60e734f27bd9f532e07bc2ef"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7350fafed474bd0158497"
+  },
+  "name": "BN11451",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e7350eafed474bd0158491"
+  },
+  "announcedTime": {
+    "$oid": "60e7350eafed474bd0158493"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735257bd9f532e07bc307"
+  },
+  "name": "BN19264",
+  "yearOfBirth": 1954,
+  "currentLocation": {
+    "$oid": "60e735247bd9f532e07bc301"
+  },
+  "announcedTime": {
+    "$oid": "60e735247bd9f532e07bc303"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735657bd9f532e07bc31b"
+  },
+  "name": "BN14824",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e735647bd9f532e07bc315"
+  },
+  "announcedTime": {
+    "$oid": "60e735657bd9f532e07bc317"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7359d7bd9f532e07bc330"
+  },
+  "name": " BN17881",
+  "yearOfBirth": 1960,
+  "currentLocation": {
+    "$oid": "60e7359d7bd9f532e07bc32a"
+  },
+  "announcedTime": {
+    "$oid": "60e7359d7bd9f532e07bc32c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735beafed474bd01584ab"
+  },
+  "name": "BN15238",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e735beafed474bd01584a5"
+  },
+  "announcedTime": {
+    "$oid": "60e735beafed474bd01584a7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e735d17bd9f532e07bc344"
+  },
+  "name": "BN18549",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e735d07bd9f532e07bc33e"
+  },
+  "announcedTime": {
+    "$oid": "60e735d07bd9f532e07bc340"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7366e7bd9f532e07bc35b"
+  },
+  "name": "BN13194",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e7366d7bd9f532e07bc355"
+  },
+  "announcedTime": {
+    "$oid": "60e7366d7bd9f532e07bc357"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e736a7afed474bd01584bf"
+  },
+  "name": "BN17722",
+  "yearOfBirth": 1954,
+  "currentLocation": {
+    "$oid": "60e736a6afed474bd01584b9"
+  },
+  "announcedTime": {
+    "$oid": "60e736a7afed474bd01584bb"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e736bc7bd9f532e07bc36f"
+  },
+  "name": "BN13416",
+  "yearOfBirth": 1989,
+  "currentLocation": {
+    "$oid": "60e736bb7bd9f532e07bc369"
+  },
+  "announcedTime": {
+    "$oid": "60e736bc7bd9f532e07bc36b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7370f7bd9f532e07bc383"
+  },
+  "name": "BN15682",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e7370e7bd9f532e07bc37d"
+  },
+  "announcedTime": {
+    "$oid": "60e7370e7bd9f532e07bc37f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73758afed474bd01584d3"
+  },
+  "name": "BN19427",
+  "yearOfBirth": 2003,
+  "currentLocation": {
+    "$oid": "60e73757afed474bd01584cd"
+  },
+  "announcedTime": {
+    "$oid": "60e73757afed474bd01584cf"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7380aafed474bd01584e8"
+  },
+  "name": "BN19423",
+  "yearOfBirth": 2012,
+  "currentLocation": {
+    "$oid": "60e73809afed474bd01584e2"
+  },
+  "announcedTime": {
+    "$oid": "60e73809afed474bd01584e4"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73877afed474bd01584fc"
+  },
+  "name": "BN18834",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e73876afed474bd01584f6"
+  },
+  "announcedTime": {
+    "$oid": "60e73876afed474bd01584f8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73935afed474bd0158657"
+  },
+  "name": "BN19294",
+  "yearOfBirth": 2005,
+  "currentLocation": {
+    "$oid": "60e73934afed474bd0158651"
+  },
+  "announcedTime": {
+    "$oid": "60e73935afed474bd0158653"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e739dfafed474bd015866c"
+  },
+  "name": "BN19849",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e739deafed474bd0158666"
+  },
+  "announcedTime": {
+    "$oid": "60e739dfafed474bd0158668"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73a5bafed474bd0158680"
+  },
+  "name": "BN13859",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e73a5bafed474bd015867a"
+  },
+  "announcedTime": {
+    "$oid": "60e73a5bafed474bd015867c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73b1eafed474bd0158861"
+  },
+  "name": "BN18456",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e73b1dafed474bd015885b"
+  },
+  "announcedTime": {
+    "$oid": "60e73b1dafed474bd015885d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73bbfafed474bd0158875"
+  },
+  "name": "BN17671",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e73bbeafed474bd015886f"
+  },
+  "announcedTime": {
+    "$oid": "60e73bbfafed474bd0158871"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73c54afed474bd0158889"
+  },
+  "name": "BN15571",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e73c53afed474bd0158883"
+  },
+  "announcedTime": {
+    "$oid": "60e73c54afed474bd0158885"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73ce3afed474bd0158a82"
+  },
+  "name": "BN18250",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e73ce3afed474bd0158a7c"
+  },
+  "announcedTime": {
+    "$oid": "60e73ce3afed474bd0158a7e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e73d4fafed474bd0158a96"
+  },
+  "name": "BN20320",
+  "yearOfBirth": 1975,
+  "currentLocation": {
+    "$oid": "60e73d4eafed474bd0158a90"
+  },
+  "announcedTime": {
+    "$oid": "60e73d4eafed474bd0158a92"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79151eba66e2470d5d90b"
+  },
+  "name": "BN10038",
+  "yearOfBirth": 2010,
+  "currentLocation": {
+    "$oid": "60e79150eba66e2470d5d905"
+  },
+  "announcedTime": {
+    "$oid": "60e79150eba66e2470d5d907"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79415eba66e2470d5da9e"
+  },
+  "name": "BN20322",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e79414eba66e2470d5da98"
+  },
+  "announcedTime": {
+    "$oid": "60e79414eba66e2470d5da9a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79df3eba66e2470d5dc72"
+  },
+  "name": "BN14059",
+  "yearOfBirth": 1951,
+  "currentLocation": {
+    "$oid": "60e79df2eba66e2470d5dc6c"
+  },
+  "announcedTime": {
+    "$oid": "60e79df2eba66e2470d5dc6e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e79e82eba66e2470d5dc86"
+  },
+  "name": "BN14062",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e79e81eba66e2470d5dc80"
+  },
+  "announcedTime": {
+    "$oid": "60e79e82eba66e2470d5dc82"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bb63fabd7d2124dc4177"
+  },
+  "name": "BN10988",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e7bb62fabd7d2124dc4171"
+  },
+  "announcedTime": {
+    "$oid": "60e7bb62fabd7d2124dc4173"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bbb9fabd7d2124dc418b"
+  },
+  "name": "BN17895",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e7bbb8fabd7d2124dc4185"
+  },
+  "announcedTime": {
+    "$oid": "60e7bbb9fabd7d2124dc4187"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bc10fabd7d2124dc419f"
+  },
+  "name": "BN18188",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e7bc0ffabd7d2124dc4199"
+  },
+  "announcedTime": {
+    "$oid": "60e7bc0ffabd7d2124dc419b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bc8efabd7d2124dc41b3"
+  },
+  "name": "BN20390",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e7bc8dfabd7d2124dc41ad"
+  },
+  "announcedTime": {
+    "$oid": "60e7bc8dfabd7d2124dc41af"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bce1fabd7d2124dc41c1"
+  },
+  "name": "BN19774",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e7bce0fabd7d2124dc41bb"
+  },
+  "announcedTime": {
+    "$oid": "60e7bce0fabd7d2124dc41bd"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bd1efabd7d2124dc41cf"
+  },
+  "name": "BN19817",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e7bd1dfabd7d2124dc41c9"
+  },
+  "announcedTime": {
+    "$oid": "60e7bd1dfabd7d2124dc41cb"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bd62fabd7d2124dc41dd"
+  },
+  "name": "BN18527",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e7bd61fabd7d2124dc41d7"
+  },
+  "announcedTime": {
+    "$oid": "60e7bd61fabd7d2124dc41d9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7be38fabd7d2124dc41f2"
+  },
+  "name": "BN17674",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e7be37fabd7d2124dc41ec"
+  },
+  "announcedTime": {
+    "$oid": "60e7be37fabd7d2124dc41ee"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7be8dfabd7d2124dc4200"
+  },
+  "name": "BN20327",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e7be8cfabd7d2124dc41fa"
+  },
+  "announcedTime": {
+    "$oid": "60e7be8cfabd7d2124dc41fc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7beb4fabd7d2124dc420e"
+  },
+  "name": "BN17896",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e7beb3fabd7d2124dc4208"
+  },
+  "announcedTime": {
+    "$oid": "60e7beb4fabd7d2124dc420a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bedcfabd7d2124dc421c"
+  },
+  "name": "BN18631",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e7bedbfabd7d2124dc4216"
+  },
+  "announcedTime": {
+    "$oid": "60e7bedbfabd7d2124dc4218"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bf23fabd7d2124dc422a"
+  },
+  "name": "BN18627",
+  "yearOfBirth": 2019,
+  "currentLocation": {
+    "$oid": "60e7bf22fabd7d2124dc4224"
+  },
+  "announcedTime": {
+    "$oid": "60e7bf23fabd7d2124dc4226"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bfa8fabd7d2124dc4238"
+  },
+  "name": "BN15008",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e7bfa7fabd7d2124dc4232"
+  },
+  "announcedTime": {
+    "$oid": "60e7bfa7fabd7d2124dc4234"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7bff1fabd7d2124dc424c"
+  },
+  "name": "BN19219",
+  "yearOfBirth": 1958,
+  "currentLocation": {
+    "$oid": "60e7bff0fabd7d2124dc4246"
+  },
+  "announcedTime": {
+    "$oid": "60e7bff0fabd7d2124dc4248"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c04bfabd7d2124dc4260"
+  },
+  "name": "BN06907",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e7c04afabd7d2124dc425a"
+  },
+  "announcedTime": {
+    "$oid": "60e7c04afabd7d2124dc425c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c0a9fabd7d2124dc4274"
+  },
+  "name": "BN13306",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e7c0a8fabd7d2124dc426e"
+  },
+  "announcedTime": {
+    "$oid": "60e7c0a9fabd7d2124dc4270"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c0e0fabd7d2124dc4288"
+  },
+  "name": "BN19024",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e7c0dffabd7d2124dc4282"
+  },
+  "announcedTime": {
+    "$oid": "60e7c0dffabd7d2124dc4284"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c13bfabd7d2124dc429c"
+  },
+  "name": "BN18037",
+  "yearOfBirth": 1964,
+  "currentLocation": {
+    "$oid": "60e7c13afabd7d2124dc4296"
+  },
+  "announcedTime": {
+    "$oid": "60e7c13bfabd7d2124dc4298"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c17bfabd7d2124dc42b0"
+  },
+  "name": "BN21450",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e7c17afabd7d2124dc42aa"
+  },
+  "announcedTime": {
+    "$oid": "60e7c17bfabd7d2124dc42ac"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c1bcfabd7d2124dc42c4"
+  },
+  "name": "BN18462",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e7c1bbfabd7d2124dc42be"
+  },
+  "announcedTime": {
+    "$oid": "60e7c1bbfabd7d2124dc42c0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c1edfabd7d2124dc42d8"
+  },
+  "name": "BN19253",
+  "yearOfBirth": 1971,
+  "currentLocation": {
+    "$oid": "60e7c1ecfabd7d2124dc42d2"
+  },
+  "announcedTime": {
+    "$oid": "60e7c1ecfabd7d2124dc42d4"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c239fabd7d2124dc42ec"
+  },
+  "name": "BN10715",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e7c238fabd7d2124dc42e6"
+  },
+  "announcedTime": {
+    "$oid": "60e7c238fabd7d2124dc42e8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c5fffabd7d2124dc4302"
+  },
+  "name": "BN14952",
+  "yearOfBirth": 1980,
+  "currentLocation": {
+    "$oid": "60e7c5fefabd7d2124dc42fc"
+  },
+  "announcedTime": {
+    "$oid": "60e7c5fffabd7d2124dc42fe"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c63afabd7d2124dc4316"
+  },
+  "name": "BN14983",
+  "yearOfBirth": 1977,
+  "currentLocation": {
+    "$oid": "60e7c639fabd7d2124dc4310"
+  },
+  "announcedTime": {
+    "$oid": "60e7c63afabd7d2124dc4312"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c680fabd7d2124dc432a"
+  },
+  "name": "BN15100",
+  "yearOfBirth": 1964,
+  "currentLocation": {
+    "$oid": "60e7c67ffabd7d2124dc4324"
+  },
+  "announcedTime": {
+    "$oid": "60e7c67ffabd7d2124dc4326"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c6fefabd7d2124dc4338"
+  },
+  "name": "BN08063",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e7c6fdfabd7d2124dc4332"
+  },
+  "announcedTime": {
+    "$oid": "60e7c6fefabd7d2124dc4334"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c72bfabd7d2124dc4346"
+  },
+  "name": "BN17783",
+  "yearOfBirth": 2011,
+  "currentLocation": {
+    "$oid": "60e7c72afabd7d2124dc4340"
+  },
+  "announcedTime": {
+    "$oid": "60e7c72afabd7d2124dc4342"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c768fabd7d2124dc4354"
+  },
+  "name": "BN17890",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e7c767fabd7d2124dc434e"
+  },
+  "announcedTime": {
+    "$oid": "60e7c768fabd7d2124dc4350"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c79bfabd7d2124dc4362"
+  },
+  "name": "BN13255",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e7c79bfabd7d2124dc435c"
+  },
+  "announcedTime": {
+    "$oid": "60e7c79bfabd7d2124dc435e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c7d2fabd7d2124dc4370"
+  },
+  "name": "BN18879",
+  "yearOfBirth": 1967,
+  "currentLocation": {
+    "$oid": "60e7c7d1fabd7d2124dc436a"
+  },
+  "announcedTime": {
+    "$oid": "60e7c7d1fabd7d2124dc436c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c818fabd7d2124dc437e"
+  },
+  "name": "BN09917",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e7c817fabd7d2124dc4378"
+  },
+  "announcedTime": {
+    "$oid": "60e7c817fabd7d2124dc437a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c849fabd7d2124dc438c"
+  },
+  "name": "BN19387",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e7c849fabd7d2124dc4386"
+  },
+  "announcedTime": {
+    "$oid": "60e7c849fabd7d2124dc4388"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c8d4fabd7d2124dc439a"
+  },
+  "name": "BN09968",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e7c8d4fabd7d2124dc4394"
+  },
+  "announcedTime": {
+    "$oid": "60e7c8d4fabd7d2124dc4396"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c900fabd7d2124dc43a8"
+  },
+  "name": "BN10425",
+  "yearOfBirth": 1980,
+  "currentLocation": {
+    "$oid": "60e7c8fffabd7d2124dc43a2"
+  },
+  "announcedTime": {
+    "$oid": "60e7c8fffabd7d2124dc43a4"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c92bfabd7d2124dc43b6"
+  },
+  "name": "BN06442",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e7c92bfabd7d2124dc43b0"
+  },
+  "announcedTime": {
+    "$oid": "60e7c92bfabd7d2124dc43b2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c954fabd7d2124dc43c4"
+  },
+  "name": "BN13471",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e7c954fabd7d2124dc43be"
+  },
+  "announcedTime": {
+    "$oid": "60e7c954fabd7d2124dc43c0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c97dfabd7d2124dc43d2"
+  },
+  "name": "BN18026",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e7c97cfabd7d2124dc43cc"
+  },
+  "announcedTime": {
+    "$oid": "60e7c97cfabd7d2124dc43ce"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c9acfabd7d2124dc43e0"
+  },
+  "name": "BN10030",
+  "yearOfBirth": 2010,
+  "currentLocation": {
+    "$oid": "60e7c9abfabd7d2124dc43da"
+  },
+  "announcedTime": {
+    "$oid": "60e7c9abfabd7d2124dc43dc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7c9d7fabd7d2124dc43ee"
+  },
+  "name": "BN12385",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e7c9d6fabd7d2124dc43e8"
+  },
+  "announcedTime": {
+    "$oid": "60e7c9d6fabd7d2124dc43ea"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca08fabd7d2124dc43fc"
+  },
+  "name": "BN08363",
+  "yearOfBirth": 2014,
+  "currentLocation": {
+    "$oid": "60e7ca07fabd7d2124dc43f6"
+  },
+  "announcedTime": {
+    "$oid": "60e7ca07fabd7d2124dc43f8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca3efabd7d2124dc440a"
+  },
+  "name": "BN07086",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e7ca3efabd7d2124dc4404"
+  },
+  "announcedTime": {
+    "$oid": "60e7ca3efabd7d2124dc4406"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7ca6ffabd7d2124dc4418"
+  },
+  "name": "BN14859",
+  "yearOfBirth": 2011,
+  "currentLocation": {
+    "$oid": "60e7ca6efabd7d2124dc4412"
+  },
+  "announcedTime": {
+    "$oid": "60e7ca6ffabd7d2124dc4414"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cae0fabd7d2124dc4426"
+  },
+  "name": "BN18263",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e7cadffabd7d2124dc4420"
+  },
+  "announcedTime": {
+    "$oid": "60e7cadffabd7d2124dc4422"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cb0afabd7d2124dc4434"
+  },
+  "name": "BN13850",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e7cb0afabd7d2124dc442e"
+  },
+  "announcedTime": {
+    "$oid": "60e7cb0afabd7d2124dc4430"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e7cb49fabd7d2124dc4442"
+  },
+  "name": "BN17631",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e7cb49fabd7d2124dc443c"
+  },
+  "announcedTime": {
+    "$oid": "60e7cb49fabd7d2124dc443e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81f5129824936b4ec8126"
+  },
+  "name": "BN17639",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e81f5029824936b4ec8120"
+  },
+  "announcedTime": {
+    "$oid": "60e81f5029824936b4ec8122"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81f7c29824936b4ec8134"
+  },
+  "name": "BN07064",
+  "yearOfBirth": 1998,
+  "currentLocation": {
+    "$oid": "60e81f7b29824936b4ec812e"
+  },
+  "announcedTime": {
+    "$oid": "60e81f7b29824936b4ec8130"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81fb729824936b4ec8142"
+  },
+  "name": "BN06288",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e81fb629824936b4ec813c"
+  },
+  "announcedTime": {
+    "$oid": "60e81fb629824936b4ec813e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e81fdb29824936b4ec8150"
+  },
+  "name": "BN06765",
+  "yearOfBirth": 2004,
+  "currentLocation": {
+    "$oid": "60e81fda29824936b4ec814a"
+  },
+  "announcedTime": {
+    "$oid": "60e81fda29824936b4ec814c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8200b29824936b4ec815e"
+  },
+  "name": "BN10718",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e8200a29824936b4ec8158"
+  },
+  "announcedTime": {
+    "$oid": "60e8200b29824936b4ec815a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8203429824936b4ec816c"
+  },
+  "name": "BN10120",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e8203429824936b4ec8166"
+  },
+  "announcedTime": {
+    "$oid": "60e8203429824936b4ec8168"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8205629824936b4ec817a"
+  },
+  "name": "BN20366",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e8205529824936b4ec8174"
+  },
+  "announcedTime": {
+    "$oid": "60e8205529824936b4ec8176"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8207329824936b4ec8189"
+  },
+  "name": "BN17980",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e8207229824936b4ec8183"
+  },
+  "announcedTime": {
+    "$oid": "60e8207229824936b4ec8185"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8209c29824936b4ec8197"
+  },
+  "name": "BN13759",
+  "yearOfBirth": 2006,
+  "currentLocation": {
+    "$oid": "60e8209c29824936b4ec8191"
+  },
+  "announcedTime": {
+    "$oid": "60e8209c29824936b4ec8193"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e820c029824936b4ec81a5"
+  },
+  "name": "BN12488",
+  "yearOfBirth": 1956,
+  "currentLocation": {
+    "$oid": "60e820bf29824936b4ec819f"
+  },
+  "announcedTime": {
+    "$oid": "60e820c029824936b4ec81a1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e820e229824936b4ec81b3"
+  },
+  "name": "BN08571",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e820e129824936b4ec81ad"
+  },
+  "announcedTime": {
+    "$oid": "60e820e129824936b4ec81af"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8210929824936b4ec81c1"
+  },
+  "name": "BN18455",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e8210829824936b4ec81bb"
+  },
+  "announcedTime": {
+    "$oid": "60e8210929824936b4ec81bd"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8214a29824936b4ec81cf"
+  },
+  "name": "BN06439",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8214a29824936b4ec81c9"
+  },
+  "announcedTime": {
+    "$oid": "60e8214a29824936b4ec81cb"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8217329824936b4ec81dd"
+  },
+  "name": "BN13720",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e8217229824936b4ec81d7"
+  },
+  "announcedTime": {
+    "$oid": "60e8217329824936b4ec81d9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8219529824936b4ec81eb"
+  },
+  "name": "BN07782",
+  "yearOfBirth": 1945,
+  "currentLocation": {
+    "$oid": "60e8219529824936b4ec81e5"
+  },
+  "announcedTime": {
+    "$oid": "60e8219529824936b4ec81e7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e821b429824936b4ec81f9"
+  },
+  "name": "BN17976",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e821b429824936b4ec81f3"
+  },
+  "announcedTime": {
+    "$oid": "60e821b429824936b4ec81f5"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e821e229824936b4ec8207"
+  },
+  "name": "BN17978",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e821e129824936b4ec8201"
+  },
+  "announcedTime": {
+    "$oid": "60e821e129824936b4ec8203"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8220629824936b4ec8215"
+  },
+  "name": "BN15099",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e8220529824936b4ec820f"
+  },
+  "announcedTime": {
+    "$oid": "60e8220629824936b4ec8211"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8225529824936b4ec8223"
+  },
+  "name": "BN09155",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e8225429824936b4ec821d"
+  },
+  "announcedTime": {
+    "$oid": "60e8225429824936b4ec821f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8227b29824936b4ec8231"
+  },
+  "name": "BN19259",
+  "yearOfBirth": 1989,
+  "currentLocation": {
+    "$oid": "60e8227a29824936b4ec822b"
+  },
+  "announcedTime": {
+    "$oid": "60e8227b29824936b4ec822d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8229b29824936b4ec823f"
+  },
+  "name": "BN09501",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8229a29824936b4ec8239"
+  },
+  "announcedTime": {
+    "$oid": "60e8229b29824936b4ec823b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822b929824936b4ec824d"
+  },
+  "name": "BN18643",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e822b829824936b4ec8247"
+  },
+  "announcedTime": {
+    "$oid": "60e822b929824936b4ec8249"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822d629824936b4ec825b"
+  },
+  "name": "BN19770",
+  "yearOfBirth": 1966,
+  "currentLocation": {
+    "$oid": "60e822d629824936b4ec8255"
+  },
+  "announcedTime": {
+    "$oid": "60e822d629824936b4ec8257"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e822fb29824936b4ec8269"
+  },
+  "name": "BN07785",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e822fa29824936b4ec8263"
+  },
+  "announcedTime": {
+    "$oid": "60e822fb29824936b4ec8265"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8233029824936b4ec8277"
+  },
+  "name": "BN09098",
+  "yearOfBirth": 2002,
+  "currentLocation": {
+    "$oid": "60e8232f29824936b4ec8271"
+  },
+  "announcedTime": {
+    "$oid": "60e8233029824936b4ec8273"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8234d29824936b4ec8285"
+  },
+  "name": "BN20341",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e8234d29824936b4ec827f"
+  },
+  "announcedTime": {
+    "$oid": "60e8234d29824936b4ec8281"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8237629824936b4ec8293"
+  },
+  "name": "BN09102",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e8237529824936b4ec828d"
+  },
+  "announcedTime": {
+    "$oid": "60e8237529824936b4ec828f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823b829824936b4ec82a1"
+  },
+  "name": "BN12868",
+  "yearOfBirth": 1960,
+  "currentLocation": {
+    "$oid": "60e823b729824936b4ec829b"
+  },
+  "announcedTime": {
+    "$oid": "60e823b829824936b4ec829d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823d329824936b4ec82af"
+  },
+  "name": "BN19128",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e823d229824936b4ec82a9"
+  },
+  "announcedTime": {
+    "$oid": "60e823d329824936b4ec82ab"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e823ef29824936b4ec82bd"
+  },
+  "name": "BN19120",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e823ee29824936b4ec82b7"
+  },
+  "announcedTime": {
+    "$oid": "60e823ee29824936b4ec82b9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8240e29824936b4ec82cb"
+  },
+  "name": "BN13340",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8240d29824936b4ec82c5"
+  },
+  "announcedTime": {
+    "$oid": "60e8240d29824936b4ec82c7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8242d29824936b4ec82d9"
+  },
+  "name": "BN10023",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e8242c29824936b4ec82d3"
+  },
+  "announcedTime": {
+    "$oid": "60e8242c29824936b4ec82d5"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8245529824936b4ec82e7"
+  },
+  "name": "BN13430",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e8245429824936b4ec82e1"
+  },
+  "announcedTime": {
+    "$oid": "60e8245429824936b4ec82e3"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8247429824936b4ec82f5"
+  },
+  "name": "BN18813",
+  "yearOfBirth": 2002,
+  "currentLocation": {
+    "$oid": "60e8247329824936b4ec82ef"
+  },
+  "announcedTime": {
+    "$oid": "60e8247429824936b4ec82f1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8249a29824936b4ec8303"
+  },
+  "name": "BN19135",
+  "yearOfBirth": 2007,
+  "currentLocation": {
+    "$oid": "60e8249929824936b4ec82fd"
+  },
+  "announcedTime": {
+    "$oid": "60e8249a29824936b4ec82ff"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e824bf29824936b4ec8311"
+  },
+  "name": "BN17772",
+  "yearOfBirth": 2009,
+  "currentLocation": {
+    "$oid": "60e824be29824936b4ec830b"
+  },
+  "announcedTime": {
+    "$oid": "60e824be29824936b4ec830d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e824e029824936b4ec831f"
+  },
+  "name": "BN12350",
+  "yearOfBirth": 2011,
+  "currentLocation": {
+    "$oid": "60e824df29824936b4ec8319"
+  },
+  "announcedTime": {
+    "$oid": "60e824df29824936b4ec831b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8252929824936b4ec832d"
+  },
+  "name": "BN12875",
+  "yearOfBirth": 1928,
+  "currentLocation": {
+    "$oid": "60e8252829824936b4ec8327"
+  },
+  "announcedTime": {
+    "$oid": "60e8252929824936b4ec8329"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8254e29824936b4ec833b"
+  },
+  "name": "BN07774",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8254d29824936b4ec8335"
+  },
+  "announcedTime": {
+    "$oid": "60e8254d29824936b4ec8337"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8257b29824936b4ec8349"
+  },
+  "name": "BN11195",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e8257a29824936b4ec8343"
+  },
+  "announcedTime": {
+    "$oid": "60e8257b29824936b4ec8345"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825ae29824936b4ec8357"
+  },
+  "name": "BN12296",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e825ad29824936b4ec8351"
+  },
+  "announcedTime": {
+    "$oid": "60e825ad29824936b4ec8353"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825d929824936b4ec8365"
+  },
+  "name": "BN18807",
+  "yearOfBirth": 1979,
+  "currentLocation": {
+    "$oid": "60e825d829824936b4ec835f"
+  },
+  "announcedTime": {
+    "$oid": "60e825d929824936b4ec8361"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e825fc29824936b4ec8373"
+  },
+  "name": "BN18863",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e825fb29824936b4ec836d"
+  },
+  "announcedTime": {
+    "$oid": "60e825fb29824936b4ec836f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8264329824936b4ec8381"
+  },
+  "name": "BN14761",
+  "yearOfBirth": 2002,
+  "currentLocation": {
+    "$oid": "60e8264229824936b4ec837b"
+  },
+  "announcedTime": {
+    "$oid": "60e8264229824936b4ec837d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8266129824936b4ec838f"
+  },
+  "name": "BN15390",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e8266029824936b4ec8389"
+  },
+  "announcedTime": {
+    "$oid": "60e8266129824936b4ec838b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8268429824936b4ec839d"
+  },
+  "name": "BN15313",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e8268329824936b4ec8397"
+  },
+  "announcedTime": {
+    "$oid": "60e8268429824936b4ec8399"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826a729824936b4ec83ab"
+  },
+  "name": "BN13710",
+  "yearOfBirth": 1969,
+  "currentLocation": {
+    "$oid": "60e826a629824936b4ec83a5"
+  },
+  "announcedTime": {
+    "$oid": "60e826a729824936b4ec83a7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826ca29824936b4ec83b9"
+  },
+  "name": "BN09612",
+  "yearOfBirth": 1964,
+  "currentLocation": {
+    "$oid": "60e826ca29824936b4ec83b3"
+  },
+  "announcedTime": {
+    "$oid": "60e826ca29824936b4ec83b5"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e826fd29824936b4ec83c7"
+  },
+  "name": "BN14872",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e826fc29824936b4ec83c1"
+  },
+  "announcedTime": {
+    "$oid": "60e826fc29824936b4ec83c3"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8272929824936b4ec83d5"
+  },
+  "name": "BN14927",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e8272829824936b4ec83cf"
+  },
+  "announcedTime": {
+    "$oid": "60e8272829824936b4ec83d1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8275429824936b4ec83e3"
+  },
+  "name": "BN18872",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8275329824936b4ec83dd"
+  },
+  "announcedTime": {
+    "$oid": "60e8275429824936b4ec83df"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8277c29824936b4ec83f1"
+  },
+  "name": "BN18555",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e8277b29824936b4ec83eb"
+  },
+  "announcedTime": {
+    "$oid": "60e8277c29824936b4ec83ed"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e827b229824936b4ec83ff"
+  },
+  "name": "BN11204",
+  "yearOfBirth": 1971,
+  "currentLocation": {
+    "$oid": "60e827b229824936b4ec83f9"
+  },
+  "announcedTime": {
+    "$oid": "60e827b229824936b4ec83fb"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e827e929824936b4ec840d"
+  },
+  "name": "BN11606",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e827e829824936b4ec8407"
+  },
+  "announcedTime": {
+    "$oid": "60e827e829824936b4ec8409"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8281429824936b4ec841b"
+  },
+  "name": "BN17636",
+  "yearOfBirth": 1998,
+  "currentLocation": {
+    "$oid": "60e8281329824936b4ec8415"
+  },
+  "announcedTime": {
+    "$oid": "60e8281329824936b4ec8417"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8283629824936b4ec8429"
+  },
+  "name": "BN12559",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e8283529824936b4ec8423"
+  },
+  "announcedTime": {
+    "$oid": "60e8283629824936b4ec8425"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8285229824936b4ec8437"
+  },
+  "name": "BN18835",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e8285129824936b4ec8431"
+  },
+  "announcedTime": {
+    "$oid": "60e8285229824936b4ec8433"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8286e29824936b4ec8445"
+  },
+  "name": "BN18919",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e8286d29824936b4ec843f"
+  },
+  "announcedTime": {
+    "$oid": "60e8286d29824936b4ec8441"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8288f29824936b4ec8453"
+  },
+  "name": "BN11985",
+  "yearOfBirth": 1979,
+  "currentLocation": {
+    "$oid": "60e8288e29824936b4ec844d"
+  },
+  "announcedTime": {
+    "$oid": "60e8288f29824936b4ec844f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828ac29824936b4ec8461"
+  },
+  "name": "BN15396",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e828ab29824936b4ec845b"
+  },
+  "announcedTime": {
+    "$oid": "60e828ab29824936b4ec845d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828d329824936b4ec846f"
+  },
+  "name": "BN21178",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e828d229824936b4ec8469"
+  },
+  "announcedTime": {
+    "$oid": "60e828d229824936b4ec846b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e828f229824936b4ec847d"
+  },
+  "name": "BN17759",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e828f229824936b4ec8477"
+  },
+  "announcedTime": {
+    "$oid": "60e828f229824936b4ec8479"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8291329824936b4ec848b"
+  },
+  "name": "BN18922",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e8291329824936b4ec8485"
+  },
+  "announcedTime": {
+    "$oid": "60e8291329824936b4ec8487"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8292c29824936b4ec8499"
+  },
+  "name": "BN17632",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e8292b29824936b4ec8493"
+  },
+  "announcedTime": {
+    "$oid": "60e8292b29824936b4ec8495"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8295929824936b4ec84a7"
+  },
+  "name": "BN15574",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e8295829824936b4ec84a1"
+  },
+  "announcedTime": {
+    "$oid": "60e8295829824936b4ec84a3"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8298129824936b4ec84b5"
+  },
+  "name": "BN19498",
+  "yearOfBirth": 2015,
+  "currentLocation": {
+    "$oid": "60e8298029824936b4ec84af"
+  },
+  "announcedTime": {
+    "$oid": "60e8298129824936b4ec84b1"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829a029824936b4ec84c3"
+  },
+  "name": "BN19156",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e8299f29824936b4ec84bd"
+  },
+  "announcedTime": {
+    "$oid": "60e829a029824936b4ec84bf"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829bc29824936b4ec84d1"
+  },
+  "name": "BN18842",
+  "yearOfBirth": 2011,
+  "currentLocation": {
+    "$oid": "60e829bb29824936b4ec84cb"
+  },
+  "announcedTime": {
+    "$oid": "60e829bc29824936b4ec84cd"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829d829824936b4ec84df"
+  },
+  "name": "BN19384",
+  "yearOfBirth": 1971,
+  "currentLocation": {
+    "$oid": "60e829d729824936b4ec84d9"
+  },
+  "announcedTime": {
+    "$oid": "60e829d829824936b4ec84db"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e829f629824936b4ec84ed"
+  },
+  "name": "BN18063",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e829f629824936b4ec84e7"
+  },
+  "announcedTime": {
+    "$oid": "60e829f629824936b4ec84e9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a1129824936b4ec84fb"
+  },
+  "name": "BN19504",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e82a1029824936b4ec84f5"
+  },
+  "announcedTime": {
+    "$oid": "60e82a1029824936b4ec84f7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a2f29824936b4ec8509"
+  },
+  "name": "BN13597",
+  "yearOfBirth": 1967,
+  "currentLocation": {
+    "$oid": "60e82a2e29824936b4ec8503"
+  },
+  "announcedTime": {
+    "$oid": "60e82a2e29824936b4ec8505"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a4c29824936b4ec8517"
+  },
+  "name": "BN18577",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e82a4b29824936b4ec8511"
+  },
+  "announcedTime": {
+    "$oid": "60e82a4c29824936b4ec8513"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a7329824936b4ec8525"
+  },
+  "name": "BN10207",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e82a7229824936b4ec851f"
+  },
+  "announcedTime": {
+    "$oid": "60e82a7329824936b4ec8521"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82a9529824936b4ec8533"
+  },
+  "name": "BN18262",
+  "yearOfBirth": 1964,
+  "currentLocation": {
+    "$oid": "60e82a9529824936b4ec852d"
+  },
+  "announcedTime": {
+    "$oid": "60e82a9529824936b4ec852f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ab829824936b4ec8541"
+  },
+  "name": "BN09500",
+  "yearOfBirth": 1980,
+  "currentLocation": {
+    "$oid": "60e82ab729824936b4ec853b"
+  },
+  "announcedTime": {
+    "$oid": "60e82ab729824936b4ec853d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ad429824936b4ec854f"
+  },
+  "name": "BN19494",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e82ad429824936b4ec8549"
+  },
+  "announcedTime": {
+    "$oid": "60e82ad429824936b4ec854b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82af729824936b4ec855d"
+  },
+  "name": "BN13086",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e82af629824936b4ec8557"
+  },
+  "announcedTime": {
+    "$oid": "60e82af729824936b4ec8559"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b1829824936b4ec856b"
+  },
+  "name": "BN19502",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e82b1729824936b4ec8565"
+  },
+  "announcedTime": {
+    "$oid": "60e82b1729824936b4ec8567"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b4829824936b4ec8579"
+  },
+  "name": "BN12883",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e82b4829824936b4ec8573"
+  },
+  "announcedTime": {
+    "$oid": "60e82b4829824936b4ec8575"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b6b29824936b4ec8587"
+  },
+  "name": "BN17993",
+  "yearOfBirth": 1964,
+  "currentLocation": {
+    "$oid": "60e82b6a29824936b4ec8581"
+  },
+  "announcedTime": {
+    "$oid": "60e82b6a29824936b4ec8583"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82b8729824936b4ec8595"
+  },
+  "name": "BN16015",
+  "yearOfBirth": 1966,
+  "currentLocation": {
+    "$oid": "60e82b8629824936b4ec858f"
+  },
+  "announcedTime": {
+    "$oid": "60e82b8729824936b4ec8591"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82d9229824936b4ec85a3"
+  },
+  "name": "BN10027",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e82d9129824936b4ec859d"
+  },
+  "announcedTime": {
+    "$oid": "60e82d9229824936b4ec859f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82db229824936b4ec85b1"
+  },
+  "name": "BN06437",
+  "yearOfBirth": 2002,
+  "currentLocation": {
+    "$oid": "60e82db129824936b4ec85ab"
+  },
+  "announcedTime": {
+    "$oid": "60e82db129824936b4ec85ad"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82dd129824936b4ec85bf"
+  },
+  "name": "BN18240",
+  "yearOfBirth": 1989,
+  "currentLocation": {
+    "$oid": "60e82dd029824936b4ec85b9"
+  },
+  "announcedTime": {
+    "$oid": "60e82dd029824936b4ec85bb"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82def29824936b4ec85cd"
+  },
+  "name": "BN12333",
+  "yearOfBirth": 1960,
+  "currentLocation": {
+    "$oid": "60e82dee29824936b4ec85c7"
+  },
+  "announcedTime": {
+    "$oid": "60e82def29824936b4ec85c9"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e0a29824936b4ec85db"
+  },
+  "name": "BN19525",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e82e0929824936b4ec85d5"
+  },
+  "announcedTime": {
+    "$oid": "60e82e0929824936b4ec85d7"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e3529824936b4ec85e9"
+  },
+  "name": "BN19195",
+  "yearOfBirth": 1989,
+  "currentLocation": {
+    "$oid": "60e82e3429824936b4ec85e3"
+  },
+  "announcedTime": {
+    "$oid": "60e82e3429824936b4ec85e5"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e5129824936b4ec85f7"
+  },
+  "name": "BN12331",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e82e5029824936b4ec85f1"
+  },
+  "announcedTime": {
+    "$oid": "60e82e5129824936b4ec85f3"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e7329824936b4ec8605"
+  },
+  "name": "BN05329",
+  "yearOfBirth": 2019,
+  "currentLocation": {
+    "$oid": "60e82e7229824936b4ec85ff"
+  },
+  "announcedTime": {
+    "$oid": "60e82e7229824936b4ec8601"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82e9329824936b4ec8613"
+  },
+  "name": "BN09904",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e82e9329824936b4ec860d"
+  },
+  "announcedTime": {
+    "$oid": "60e82e9329824936b4ec860f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82eb329824936b4ec8621"
+  },
+  "name": "BN18295",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e82eb229824936b4ec861b"
+  },
+  "announcedTime": {
+    "$oid": "60e82eb229824936b4ec861d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82ee629824936b4ec862f"
+  },
+  "name": "BN06904",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e82ee629824936b4ec8629"
+  },
+  "announcedTime": {
+    "$oid": "60e82ee629824936b4ec862b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f1329824936b4ec863d"
+  },
+  "name": "BN09964",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e82f1229824936b4ec8637"
+  },
+  "announcedTime": {
+    "$oid": "60e82f1229824936b4ec8639"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f3129824936b4ec864b"
+  },
+  "name": "BN13674",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e82f3029824936b4ec8645"
+  },
+  "announcedTime": {
+    "$oid": "60e82f3029824936b4ec8647"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f5329824936b4ec8659"
+  },
+  "name": "BN18321",
+  "yearOfBirth": 1971,
+  "currentLocation": {
+    "$oid": "60e82f5229824936b4ec8653"
+  },
+  "announcedTime": {
+    "$oid": "60e82f5229824936b4ec8655"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e82f6b29824936b4ec8667"
+  },
+  "name": "BN19015",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e82f6a29824936b4ec8661"
+  },
+  "announcedTime": {
+    "$oid": "60e82f6b29824936b4ec8663"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e837d729824936b4ec8675"
+  },
+  "name": "BN18239",
+  "yearOfBirth": 1977,
+  "currentLocation": {
+    "$oid": "60e837d629824936b4ec866f"
+  },
+  "announcedTime": {
+    "$oid": "60e837d729824936b4ec8671"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e837f729824936b4ec8683"
+  },
+  "name": "BN07569",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e837f729824936b4ec867d"
+  },
+  "announcedTime": {
+    "$oid": "60e837f729824936b4ec867f"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8381629824936b4ec8691"
+  },
+  "name": "BN13896",
+  "yearOfBirth": 1953,
+  "currentLocation": {
+    "$oid": "60e8381529824936b4ec868b"
+  },
+  "announcedTime": {
+    "$oid": "60e8381529824936b4ec868d"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8383129824936b4ec869f"
+  },
+  "name": "BN19337",
+  "yearOfBirth": 2007,
+  "currentLocation": {
+    "$oid": "60e8383029824936b4ec8699"
+  },
+  "announcedTime": {
+    "$oid": "60e8383129824936b4ec869b"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8386f29824936b4ec86b4"
+  },
+  "name": "BN16025",
+  "yearOfBirth": 2011,
+  "currentLocation": {
+    "$oid": "60e8386f29824936b4ec86ae"
+  },
+  "announcedTime": {
+    "$oid": "60e8386f29824936b4ec86b0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8388a29824936b4ec86c2"
+  },
+  "name": "BN16003",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e8388a29824936b4ec86bc"
+  },
+  "announcedTime": {
+    "$oid": "60e8388a29824936b4ec86be"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e838c929824936b4ec86d2"
+  },
+  "name": "BN10878",
+  "yearOfBirth": 1975,
+  "currentLocation": {
+    "$oid": "60e838c929824936b4ec86cc"
+  },
+  "announcedTime": {
+    "$oid": "60e838c929824936b4ec86ce"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e838f929824936b4ec86e2"
+  },
+  "name": "BN15636",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e838f829824936b4ec86dc"
+  },
+  "announcedTime": {
+    "$oid": "60e838f829824936b4ec86de"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8392429824936b4ec86f0"
+  },
+  "name": "BN14777",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e8392329824936b4ec86ea"
+  },
+  "announcedTime": {
+    "$oid": "60e8392429824936b4ec86ec"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8397529824936b4ec86fe"
+  },
+  "name": "BN12113",
+  "yearOfBirth": 1975,
+  "currentLocation": {
+    "$oid": "60e8397429824936b4ec86f8"
+  },
+  "announcedTime": {
+    "$oid": "60e8397429824936b4ec86fa"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8399729824936b4ec870c"
+  },
+  "name": "BN15998",
+  "yearOfBirth": 2015,
+  "currentLocation": {
+    "$oid": "60e8399629824936b4ec8706"
+  },
+  "announcedTime": {
+    "$oid": "60e8399629824936b4ec8708"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839b329824936b4ec871a"
+  },
+  "name": "BN12013",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e839b229824936b4ec8714"
+  },
+  "announcedTime": {
+    "$oid": "60e839b229824936b4ec8716"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839d029824936b4ec8728"
+  },
+  "name": "BN13595",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e839cf29824936b4ec8722"
+  },
+  "announcedTime": {
+    "$oid": "60e839cf29824936b4ec8724"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e839ef29824936b4ec8736"
+  },
+  "name": "BN19463",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e839ee29824936b4ec8730"
+  },
+  "announcedTime": {
+    "$oid": "60e839ee29824936b4ec8732"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a1729824936b4ec8744"
+  },
+  "name": "BN9977",
+  "yearOfBirth": 1956,
+  "currentLocation": {
+    "$oid": "60e83a1629824936b4ec873e"
+  },
+  "announcedTime": {
+    "$oid": "60e83a1629824936b4ec8740"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a3129824936b4ec8752"
+  },
+  "name": "BN11200",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e83a3129824936b4ec874c"
+  },
+  "announcedTime": {
+    "$oid": "60e83a3129824936b4ec874e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a5e29824936b4ec8760"
+  },
+  "name": "BN15300",
+  "yearOfBirth": 1998,
+  "currentLocation": {
+    "$oid": "60e83a5d29824936b4ec875a"
+  },
+  "announcedTime": {
+    "$oid": "60e83a5d29824936b4ec875c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83a7c29824936b4ec876e"
+  },
+  "name": "BN15228",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e83a7b29824936b4ec8768"
+  },
+  "announcedTime": {
+    "$oid": "60e83a7c29824936b4ec876a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ab729824936b4ec877c"
+  },
+  "name": "BN10506",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e83ab529824936b4ec8776"
+  },
+  "announcedTime": {
+    "$oid": "60e83ab629824936b4ec8778"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ad329824936b4ec878a"
+  },
+  "name": "BN07772",
+  "yearOfBirth": 1990,
+  "currentLocation": {
+    "$oid": "60e83ad229824936b4ec8784"
+  },
+  "announcedTime": {
+    "$oid": "60e83ad329824936b4ec8786"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83af429824936b4ec8798"
+  },
+  "name": "BN18557",
+  "yearOfBirth": 1969,
+  "currentLocation": {
+    "$oid": "60e83af229824936b4ec8792"
+  },
+  "announcedTime": {
+    "$oid": "60e83af329824936b4ec8794"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b2a29824936b4ec87a6"
+  },
+  "name": "BN10712",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e83b2929824936b4ec87a0"
+  },
+  "announcedTime": {
+    "$oid": "60e83b2929824936b4ec87a2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b4729824936b4ec87b4"
+  },
+  "name": "BN14219",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e83b4629824936b4ec87ae"
+  },
+  "announcedTime": {
+    "$oid": "60e83b4629824936b4ec87b0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b6629824936b4ec87c2"
+  },
+  "name": "BN18891",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e83b6529824936b4ec87bc"
+  },
+  "announcedTime": {
+    "$oid": "60e83b6529824936b4ec87be"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83b7f29824936b4ec87d0"
+  },
+  "name": "BN18075",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e83b7e29824936b4ec87ca"
+  },
+  "announcedTime": {
+    "$oid": "60e83b7f29824936b4ec87cc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83fd629824936b4ec87de"
+  },
+  "name": "BN15865",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e83fd429824936b4ec87d8"
+  },
+  "announcedTime": {
+    "$oid": "60e83fd529824936b4ec87da"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e83ff829824936b4ec87ec"
+  },
+  "name": "BN09498",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e83ff829824936b4ec87e6"
+  },
+  "announcedTime": {
+    "$oid": "60e83ff829824936b4ec87e8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8401a29824936b4ec87fa"
+  },
+  "name": "BN15860",
+  "yearOfBirth": 1974,
+  "currentLocation": {
+    "$oid": "60e8401929824936b4ec87f4"
+  },
+  "announcedTime": {
+    "$oid": "60e8401929824936b4ec87f6"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8403d29824936b4ec8808"
+  },
+  "name": "BN17981",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e8403c29824936b4ec8802"
+  },
+  "announcedTime": {
+    "$oid": "60e8403c29824936b4ec8804"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8405e29824936b4ec8816"
+  },
+  "name": "BN15868",
+  "yearOfBirth": 1979,
+  "currentLocation": {
+    "$oid": "60e8405d29824936b4ec8810"
+  },
+  "announcedTime": {
+    "$oid": "60e8405d29824936b4ec8812"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8407929824936b4ec8824"
+  },
+  "name": "BN18974",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e8407829824936b4ec881e"
+  },
+  "announcedTime": {
+    "$oid": "60e8407929824936b4ec8820"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8409729824936b4ec8832"
+  },
+  "name": "BN15558",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e8409629824936b4ec882c"
+  },
+  "announcedTime": {
+    "$oid": "60e8409629824936b4ec882e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840b429824936b4ec8840"
+  },
+  "name": "BN11748",
+  "yearOfBirth": 2006,
+  "currentLocation": {
+    "$oid": "60e840b329824936b4ec883a"
+  },
+  "announcedTime": {
+    "$oid": "60e840b329824936b4ec883c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840d529824936b4ec884e"
+  },
+  "name": "BN19198",
+  "yearOfBirth": 1975,
+  "currentLocation": {
+    "$oid": "60e840d429824936b4ec8848"
+  },
+  "announcedTime": {
+    "$oid": "60e840d529824936b4ec884a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e840f229824936b4ec885c"
+  },
+  "name": "BN09495",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e840f129824936b4ec8856"
+  },
+  "announcedTime": {
+    "$oid": "60e840f129824936b4ec8858"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8410c29824936b4ec886a"
+  },
+  "name": "BN17627",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e8410b29824936b4ec8864"
+  },
+  "announcedTime": {
+    "$oid": "60e8410c29824936b4ec8866"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8412829824936b4ec8878"
+  },
+  "name": "BN15287",
+  "yearOfBirth": 1979,
+  "currentLocation": {
+    "$oid": "60e8412729824936b4ec8872"
+  },
+  "announcedTime": {
+    "$oid": "60e8412729824936b4ec8874"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8414329824936b4ec8886"
+  },
+  "name": "BN18678",
+  "yearOfBirth": 2012,
+  "currentLocation": {
+    "$oid": "60e8414229824936b4ec8880"
+  },
+  "announcedTime": {
+    "$oid": "60e8414229824936b4ec8882"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8415e29824936b4ec8894"
+  },
+  "name": "BN14191",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e8415d29824936b4ec888e"
+  },
+  "announcedTime": {
+    "$oid": "60e8415e29824936b4ec8890"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841a329824936b4ec88aa"
+  },
+  "name": "BN19169",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e841a229824936b4ec88a4"
+  },
+  "announcedTime": {
+    "$oid": "60e841a229824936b4ec88a6"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841be29824936b4ec88b8"
+  },
+  "name": "BN18926",
+  "yearOfBirth": 2008,
+  "currentLocation": {
+    "$oid": "60e841bd29824936b4ec88b2"
+  },
+  "announcedTime": {
+    "$oid": "60e841bd29824936b4ec88b4"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841d829824936b4ec88c6"
+  },
+  "name": "BN19270",
+  "yearOfBirth": 1985,
+  "currentLocation": {
+    "$oid": "60e841d729824936b4ec88c0"
+  },
+  "announcedTime": {
+    "$oid": "60e841d729824936b4ec88c2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e841f529824936b4ec88d4"
+  },
+  "name": "BN07062",
+  "yearOfBirth": 1982,
+  "currentLocation": {
+    "$oid": "60e841f329824936b4ec88ce"
+  },
+  "announcedTime": {
+    "$oid": "60e841f429824936b4ec88d0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8422e29824936b4ec88e2"
+  },
+  "name": "BN15080",
+  "yearOfBirth": 1988,
+  "currentLocation": {
+    "$oid": "60e8422d29824936b4ec88dc"
+  },
+  "announcedTime": {
+    "$oid": "60e8422d29824936b4ec88de"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8425029824936b4ec88f0"
+  },
+  "name": "BN15056",
+  "yearOfBirth": 1973,
+  "currentLocation": {
+    "$oid": "60e8424f29824936b4ec88ea"
+  },
+  "announcedTime": {
+    "$oid": "60e8424f29824936b4ec88ec"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8426f29824936b4ec88fe"
+  },
+  "name": "BN18929",
+  "yearOfBirth": 1970,
+  "currentLocation": {
+    "$oid": "60e8426e29824936b4ec88f8"
+  },
+  "announcedTime": {
+    "$oid": "60e8426e29824936b4ec88fa"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8429629824936b4ec890c"
+  },
+  "name": "BN15582",
+  "yearOfBirth": 1984,
+  "currentLocation": {
+    "$oid": "60e8429529824936b4ec8906"
+  },
+  "announcedTime": {
+    "$oid": "60e8429529824936b4ec8908"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842b429824936b4ec891a"
+  },
+  "name": "BN15052",
+  "yearOfBirth": 1976,
+  "currentLocation": {
+    "$oid": "60e842b329824936b4ec8914"
+  },
+  "announcedTime": {
+    "$oid": "60e842b429824936b4ec8916"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842d329824936b4ec8928"
+  },
+  "name": "BN15079",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e842d229824936b4ec8922"
+  },
+  "announcedTime": {
+    "$oid": "60e842d329824936b4ec8924"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e842fe29824936b4ec8936"
+  },
+  "name": "BN18649",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e842fd29824936b4ec8930"
+  },
+  "announcedTime": {
+    "$oid": "60e842fd29824936b4ec8932"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8431829824936b4ec8944"
+  },
+  "name": "BN18950",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e8431829824936b4ec893e"
+  },
+  "announcedTime": {
+    "$oid": "60e8431829824936b4ec8940"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e843b229824936b4ec8952"
+  },
+  "name": "BN15579",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e843b129824936b4ec894c"
+  },
+  "announcedTime": {
+    "$oid": "60e843b129824936b4ec894e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e843da29824936b4ec8960"
+  },
+  "name": "BN17660",
+  "yearOfBirth": 1986,
+  "currentLocation": {
+    "$oid": "60e843d929824936b4ec895a"
+  },
+  "announcedTime": {
+    "$oid": "60e843da29824936b4ec895c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8440329824936b4ec896e"
+  },
+  "name": "BN19018",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e8440329824936b4ec8968"
+  },
+  "announcedTime": {
+    "$oid": "60e8440329824936b4ec896a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8442429824936b4ec897c"
+  },
+  "name": "BN17763",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e8442329824936b4ec8976"
+  },
+  "announcedTime": {
+    "$oid": "60e8442329824936b4ec8978"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8445829824936b4ec898a"
+  },
+  "name": "BN17751",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e8445729824936b4ec8984"
+  },
+  "announcedTime": {
+    "$oid": "60e8445729824936b4ec8986"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8447c29824936b4ec8998"
+  },
+  "name": "BN13841",
+  "yearOfBirth": 1994,
+  "currentLocation": {
+    "$oid": "60e8447b29824936b4ec8992"
+  },
+  "announcedTime": {
+    "$oid": "60e8447b29824936b4ec8994"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8449c29824936b4ec89a6"
+  },
+  "name": "BN18264",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e8449b29824936b4ec89a0"
+  },
+  "announcedTime": {
+    "$oid": "60e8449b29824936b4ec89a2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8453329824936b4ec89b4"
+  },
+  "name": "BN10705",
+  "yearOfBirth": 1993,
+  "currentLocation": {
+    "$oid": "60e8453229824936b4ec89ae"
+  },
+  "announcedTime": {
+    "$oid": "60e8453229824936b4ec89b0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8454f29824936b4ec89c2"
+  },
+  "name": "BN18458",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e8454e29824936b4ec89bc"
+  },
+  "announcedTime": {
+    "$oid": "60e8454e29824936b4ec89be"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8456929824936b4ec89d0"
+  },
+  "name": "BN18257",
+  "yearOfBirth": 2002,
+  "currentLocation": {
+    "$oid": "60e8456829824936b4ec89ca"
+  },
+  "announcedTime": {
+    "$oid": "60e8456929824936b4ec89cc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8458129824936b4ec89de"
+  },
+  "name": "BN18260",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e8458029824936b4ec89d8"
+  },
+  "announcedTime": {
+    "$oid": "60e8458129824936b4ec89da"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e845fd29824936b4ec89ec"
+  },
+  "name": "BN09765",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e845fc29824936b4ec89e6"
+  },
+  "announcedTime": {
+    "$oid": "60e845fc29824936b4ec89e8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8463029824936b4ec89fc"
+  },
+  "name": "BN10521",
+  "yearOfBirth": 1981,
+  "currentLocation": {
+    "$oid": "60e8462f29824936b4ec89f6"
+  },
+  "announcedTime": {
+    "$oid": "60e8462f29824936b4ec89f8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8465a29824936b4ec8a0a"
+  },
+  "name": "BN07402",
+  "yearOfBirth": 1989,
+  "currentLocation": {
+    "$oid": "60e8465929824936b4ec8a04"
+  },
+  "announcedTime": {
+    "$oid": "60e8465929824936b4ec8a06"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e846b629824936b4ec8a1a"
+  },
+  "name": "BN20443",
+  "yearOfBirth": 2000,
+  "currentLocation": {
+    "$oid": "60e846b529824936b4ec8a14"
+  },
+  "announcedTime": {
+    "$oid": "60e846b529824936b4ec8a16"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e846d929824936b4ec8a28"
+  },
+  "name": "BN08742",
+  "yearOfBirth": 1999,
+  "currentLocation": {
+    "$oid": "60e846d829824936b4ec8a22"
+  },
+  "announcedTime": {
+    "$oid": "60e846d829824936b4ec8a24"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8470629824936b4ec8a36"
+  },
+  "name": "BN10992",
+  "yearOfBirth": 2004,
+  "currentLocation": {
+    "$oid": "60e8470529824936b4ec8a30"
+  },
+  "announcedTime": {
+    "$oid": "60e8470529824936b4ec8a32"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8474529824936b4ec8a44"
+  },
+  "name": "BN13610",
+  "yearOfBirth": 2004,
+  "currentLocation": {
+    "$oid": "60e8474329824936b4ec8a3e"
+  },
+  "announcedTime": {
+    "$oid": "60e8474429824936b4ec8a40"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847b429824936b4ec8a52"
+  },
+  "name": "BN20410",
+  "yearOfBirth": 1991,
+  "currentLocation": {
+    "$oid": "60e847b329824936b4ec8a4c"
+  },
+  "announcedTime": {
+    "$oid": "60e847b329824936b4ec8a4e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847d629824936b4ec8a60"
+  },
+  "name": "BN15034",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e847d529824936b4ec8a5a"
+  },
+  "announcedTime": {
+    "$oid": "60e847d529824936b4ec8a5c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e847fa29824936b4ec8a6e"
+  },
+  "name": "BN19839",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e847f929824936b4ec8a68"
+  },
+  "announcedTime": {
+    "$oid": "60e847f929824936b4ec8a6a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8481629824936b4ec8a7c"
+  },
+  "name": "BN19033",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e8481529824936b4ec8a76"
+  },
+  "announcedTime": {
+    "$oid": "60e8481529824936b4ec8a78"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8483e29824936b4ec8a8a"
+  },
+  "name": "BN09100",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e8483d29824936b4ec8a84"
+  },
+  "announcedTime": {
+    "$oid": "60e8483d29824936b4ec8a86"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8485b29824936b4ec8a98"
+  },
+  "name": "BN08579",
+  "yearOfBirth": 1997,
+  "currentLocation": {
+    "$oid": "60e8485a29824936b4ec8a92"
+  },
+  "announcedTime": {
+    "$oid": "60e8485a29824936b4ec8a94"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8487829824936b4ec8aa6"
+  },
+  "name": "BN10033",
+  "yearOfBirth": 1973,
+  "currentLocation": {
+    "$oid": "60e8487729824936b4ec8aa0"
+  },
+  "announcedTime": {
+    "$oid": "60e8487829824936b4ec8aa2"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8489f29824936b4ec8ab4"
+  },
+  "name": "BN13666",
+  "yearOfBirth": 1962,
+  "currentLocation": {
+    "$oid": "60e8489f29824936b4ec8aae"
+  },
+  "announcedTime": {
+    "$oid": "60e8489f29824936b4ec8ab0"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e848bf29824936b4ec8ac2"
+  },
+  "name": "BN12223",
+  "yearOfBirth": 1996,
+  "currentLocation": {
+    "$oid": "60e848be29824936b4ec8abc"
+  },
+  "announcedTime": {
+    "$oid": "60e848be29824936b4ec8abe"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8490929824936b4ec8ad0"
+  },
+  "name": "BN17826",
+  "yearOfBirth": 1978,
+  "currentLocation": {
+    "$oid": "60e8490929824936b4ec8aca"
+  },
+  "announcedTime": {
+    "$oid": "60e8490929824936b4ec8acc"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8492829824936b4ec8ade"
+  },
+  "name": "BN13849",
+  "yearOfBirth": 1985,
+  "currentLocation": {
+    "$oid": "60e8492729824936b4ec8ad8"
+  },
+  "announcedTime": {
+    "$oid": "60e8492829824936b4ec8ada"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e8497c29824936b4ec8aec"
+  },
+  "name": "BN17893",
+  "yearOfBirth": 1983,
+  "currentLocation": {
+    "$oid": "60e8497a29824936b4ec8ae6"
+  },
+  "announcedTime": {
+    "$oid": "60e8497b29824936b4ec8ae8"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e849bd29824936b4ec8afa"
+  },
+  "name": "BN08819",
+  "yearOfBirth": 1995,
+  "currentLocation": {
+    "$oid": "60e849bc29824936b4ec8af4"
+  },
+  "announcedTime": {
+    "$oid": "60e849bd29824936b4ec8af6"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e849da29824936b4ec8b08"
+  },
+  "name": "BN19524",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e849d929824936b4ec8b02"
+  },
+  "announcedTime": {
+    "$oid": "60e849d929824936b4ec8b04"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a1029824936b4ec8b18"
+  },
+  "name": "BN19179",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e84a0f29824936b4ec8b12"
+  },
+  "announcedTime": {
+    "$oid": "60e84a0f29824936b4ec8b14"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a3829824936b4ec8b26"
+  },
+  "name": "BN17983",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e84a3729824936b4ec8b20"
+  },
+  "announcedTime": {
+    "$oid": "60e84a3729824936b4ec8b22"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a6f29824936b4ec8b34"
+  },
+  "name": "BN19797",
+  "yearOfBirth": 1968,
+  "currentLocation": {
+    "$oid": "60e84a6d29824936b4ec8b2e"
+  },
+  "announcedTime": {
+    "$oid": "60e84a6e29824936b4ec8b30"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84a9029824936b4ec8b42"
+  },
+  "name": "BN19106",
+  "yearOfBirth": 1987,
+  "currentLocation": {
+    "$oid": "60e84a8e29824936b4ec8b3c"
+  },
+  "announcedTime": {
+    "$oid": "60e84a8f29824936b4ec8b3e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84aca29824936b4ec8b50"
+  },
+  "name": "BN10433",
+  "yearOfBirth": 1972,
+  "currentLocation": {
+    "$oid": "60e84ac929824936b4ec8b4a"
+  },
+  "announcedTime": {
+    "$oid": "60e84ac929824936b4ec8b4c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84b4329824936b4ec8b66"
+  },
+  "name": "BN20407",
+  "yearOfBirth": 1992,
+  "currentLocation": {
+    "$oid": "60e84b4229824936b4ec8b60"
+  },
+  "announcedTime": {
+    "$oid": "60e84b4229824936b4ec8b62"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84b6429824936b4ec8b74"
+  },
+  "name": "BN18599",
+  "yearOfBirth": 2010,
+  "currentLocation": {
+    "$oid": "60e84b6229824936b4ec8b6e"
+  },
+  "announcedTime": {
+    "$oid": "60e84b6329824936b4ec8b70"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84ba729824936b4ec8b82"
+  },
+  "name": "BN10999",
+  "yearOfBirth": 1979,
+  "currentLocation": {
+    "$oid": "60e84ba529824936b4ec8b7c"
+  },
+  "announcedTime": {
+    "$oid": "60e84ba529824936b4ec8b7e"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84bee29824936b4ec8b90"
+  },
+  "name": "BN13162",
+  "yearOfBirth": 2009,
+  "currentLocation": {
+    "$oid": "60e84bed29824936b4ec8b8a"
+  },
+  "announcedTime": {
+    "$oid": "60e84bed29824936b4ec8b8c"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e84c1629824936b4ec8b9e"
+  },
+  "name": "BN10796",
+  "yearOfBirth": 2001,
+  "currentLocation": {
+    "$oid": "60e84c1329824936b4ec8b98"
+  },
+  "announcedTime": {
+    "$oid": "60e84c1529824936b4ec8b9a"
+  },
+  "hasDisease": {
+    "$oid": "60e69bb40f2f99381836dc82"
+  },
+  "__v": 0
+}]
