@@ -44,7 +44,7 @@
                 container: "viewDiv",
                 map: map,
                 zoom: 12,
-                center: [106.61161801378586, 10.720173847940856]
+                center: [106.69714496360614, 10.775242573332328]
             });
             // add the button for the draw tool
             view.ui.add("line-button", "top-left");
@@ -53,7 +53,7 @@
                 view.hitTest(event).then(function(hitTestResults) { // Search for features where the user clicked
                     if (hitTestResults.results) {
                         console.log('long: ' + event.mapPoint.longitude, '\nlat: ' + event.mapPoint.latitude)
-                        longLatArray.push([event.mapPoint.longitude, event.mapPoint.latitude])
+                        longLatArray.push([event.mapPoint.longitude.toFixed(4), event.mapPoint.latitude.toFixed(4)])
                     }
                 })
             });
@@ -84,9 +84,8 @@
                         textArr.push('[' + element + ']')
                     })
                     textArr.push(textArr[0])
-                    copy('[' + textArr.reverse().toString() + ']')
                     console.log('[' + textArr.toString() + ']')
-                    document.getElementById('isoLongLat').value = '[' + textArr.reverse().toString() + ']'
+                    document.getElementById('isoLongLat').value = '[' + textArr.toString() + ']'
                     longLatArray = []
                     textArr = []
                 }
@@ -242,7 +241,7 @@
                 esri-interactive" title="Draw polyline">
                     <span class="esri-icon-polyline"></span>
                 </div>
-                <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 15px; top: 0;">
+                <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 20px; top: 10px;">
                     <label for="tenVung">Tên vùng: </label>
                     <input type="text" required name="tenVung"><br><br>
 

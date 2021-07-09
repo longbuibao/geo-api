@@ -1,0 +1,1 @@
+mongo_uri=mongodb+srv://ie402:11011010@covid-tracker-database.7i8xl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

@@ -87,6 +87,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://js.arcgis.com/4.15/"></script>
     <script>
+        fetch(
+                '/api/get-all'
+            )
+            .then(data => data.text())
+            .then(data => console.log(JSON.parse(data)))
         require([
             "esri/Map",
             "esri/views/MapView",
