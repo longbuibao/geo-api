@@ -5,7 +5,7 @@
             <%= data.message %>, vui lòng nhập bệnh nhân mới
         </h3>
         <% } %>
-            <form action="/add-patient" method="post" class="mt-4" style="margin-left: 30%;">
+            <form action="/add-patient" method="post" class="mt-4 ml-auto">
                 <label for="name">Tên: </label>
                 <% if(!data.isFound) {%>
                     <input type="text" name="name" value="<%= data.nameValue %>"><br><br>

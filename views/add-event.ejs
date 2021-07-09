@@ -4,12 +4,12 @@
         Thêm địa chỉ đã từng đến cho bệnh nhân
     </h3>
     <hr>
-    <form action="/add-event/?name=<%= data.nameValue%>" method="post" style="margin-left: 30%;">
+    <form action="/add-event/?name=<%= data.nameValue%>" method="post" style="padding-left: 30%;">
 
         <label for="name">Tên: </label>
         <input type="text" name="name" value="<%= data.name%>"><br><br>
         <label for="time">Thời gian bệnh nhân đã đến:</label>
-        <input type="datetime-local" id="time" name="time" min="2021-01-01T00:00" max="2021-07-01T00:00">
+        <input type="datetime-local" id="time" name="time" min="2021-01-01T00:00" max="2021-07-08T00:00">
 
         <br>
         <label for="latEvent">Tọa độ lat: </label>

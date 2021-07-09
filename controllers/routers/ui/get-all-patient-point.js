@@ -13,6 +13,7 @@ const getAllPatientAndPoint = async() => {
                 })
                 .execPopulate()
         }))
+
         const patientsArray = patients.map(patient => {
             return patient.toObject()
         })
