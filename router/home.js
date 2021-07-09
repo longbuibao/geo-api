@@ -35,6 +35,7 @@ router.get('/dien-bien', async(req, res) => {
     }
 })
 
+<<<<<<< HEAD
 
 router.get('/lich-trinh-di-chuyen', async(req, res) => {
     try {
@@ -47,6 +48,10 @@ router.get('/lich-trinh-di-chuyen', async(req, res) => {
     } catch (error) {
         res.send(error)
     }
+=======
+router.get('/statistic', async(req, res) => {
+    res.render('statistic')
+>>>>>>> 148202ee1a167ea43aca0a3a3f774394ca2fd0cd
 })
 
 module.exports = router

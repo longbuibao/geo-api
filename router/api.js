@@ -6,6 +6,7 @@ const axios = require('axios')
 const { getAllPatientAndPoint } = require('../controllers/routers/ui/get-all-patient-point')
 const { getPolygon } = require('../controllers/cachli/cachli.controller')
 const { lichTrinhDiChuyen } = require('../controllers/routers/ui/get-lich-trinh-di-chuyen')
+const { getPhongToa } = require('../controllers/phongtoa/phongtoa.controller')
 
 router.get('/api/get-all-patient-current-point', async(req, res) => {
     try {
@@ -69,12 +70,24 @@ router.get('/api/lich-trinh-di-chuyen', async(req, res) => {
     }
 })
 
+router.get('/api/get-lockade-area', async(req, res) => {
+    try {
+        const result = await getPhongToa()
+        const geoRes = geoJSON.parse(result, {
+            Point: ['lat', 'long'],
+            include: ['detailAddress', 'district', 'timeMili', 'timeUTC']
+        })
+        res.send(geoRes)
+    } catch (error) {
+        res.send(error)
+    }
+
+})
+
 router.get('/api/get-all', async(req, res) => {
     const point = (await axios.get('http://localhost:3000/api/get-all-patient-current-point')).data
     const polygon = (await axios.get('http://localhost:3000/api/get-polygon')).data
     res.send({ point, polygon })
 })
-
-
 
 module.exports = router
