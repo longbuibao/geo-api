@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="public/img/GreenMask.png">
+    <link rel="shortcut icon" href="/img/GreenMask.png">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
@@ -41,8 +41,17 @@
             "esri/layers/GeoJSONLayer",
             "esri/widgets/TimeSlider",
             "esri/widgets/Expand",
-            "esri/widgets/Legend"
-        ], (Map, MapView, GeoJSONLayer, TimeSlider, Expand, Legend) => {
+            "esri/widgets/Legend",
+            "esri/widgets/Directions",
+            "esri/config",
+            "esri/widgets/Search",
+            "esri/widgets/Track"
+        ], (Map, MapView, GeoJSONLayer, TimeSlider, Expand, Legend, Directions,
+            esriConfig, Search, Track) => {
+
+
+            esriConfig.apiKey = "AAPKc1f7559b59c44a1397e39b4f2b87ebc6f0KRFFVS8U5tWT8HBBMXDbTbSjKVwGiQOmbF1LJYadDZLWfya-c13h_TIC36h0F6";
+
             let layerView;
 
             // set the timeInfo on GeoJSONLayer at the time initialization
@@ -93,13 +102,28 @@
             const view = new MapView({
                 map: map,
                 container: "viewDiv",
-                zoom: 13,
-                center: [106.76998, 10.84963]
+                zoom: 11,
+                center: [106.65467167927251, 10.786936536630055]
             });
             map.on("load", function() {
                 map.graphics.enableMouseEvents();
             });
 
+            var searchWidget = new Search({
+                view: view,
+                container: "searchWidget"
+            });
+            const directExpand = new Expand({
+                content: new Directions({
+                    view: view
+                }),
+                view: view,
+                group: "bottom-right"
+            })
+
+            var track = new Track({
+                view: view
+            });
             // create a new time slider widget
             // set other properties when the layer view is loaded
             // by default timeSlider.mode is "time-window" - shows
@@ -211,6 +235,11 @@
             });
             view.ui.add(infoDivExpand, "top-right");
 
+            view.ui.add(track, "top-left");
+
+            view.ui.add(directExpand, {
+                position: "bottom-right"
+            });
             view.ui.add(
                 [
                     new Expand({
@@ -224,6 +253,7 @@
                 ], "top-left"
 
             );
+
         });
     </script>
 </head>
@@ -239,11 +269,11 @@
                 <li class="menu-item">
                     <a href="/" class="menu-link ">Bản đồ</a>
                 </li>
-                <li class="menu-item">
-                    <a href="/thống kê" class="menu-link">Thống kê</a>
-                </li>
                 <li class="menu-item active">
                     <a href="/dien-bien" class="menu-link">Diễn biến</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/patient-list-update" class="menu-link">Quản trị</a>
                 </li>
             </ul>
         </nav>

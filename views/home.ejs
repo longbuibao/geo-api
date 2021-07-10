@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="public/img/GreenMask.png">
+    <link rel="shortcut icon" href="/img/GreenMask.png">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
@@ -19,6 +19,8 @@
         #patients {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
+            min-width: 350px;
+            max-height: 400px;
         }
         
         #patients td,
@@ -59,19 +61,20 @@
 <body>
     <header class="header">
         <div class="logo">
-            <div class="logo-icon"><img src="/img/GreenMask.png" style="width: 35px; height: 35px"></div>
+            <div class="logo-icon">
+                <a href="/"><img src="/img/GreenMask.png" style="width: 35px; height: 35px"></a>
+            </div>
         </div>
         <nav class="nav">
             <ul class="menu">
-
                 <li class="menu-item active">
-                    <a href="/home" class="menu-link ">Bản đồ</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/thống kê" class="menu-link">Thống kê</a>
+                    <a href="/" class="menu-link ">Bản đồ</a>
                 </li>
                 <li class="menu-item">
                     <a href="/dien-bien" class="menu-link">Diễn biến</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/patient-list-update" class="menu-link">Quản trị</a>
                 </li>
             </ul>
         </nav>
@@ -89,7 +92,7 @@
         </form>
     </header>
     <div id="viewDiv">
-        <div id="divPatient" class="table-responsive" class="esri-widget" style="max-width: 350px; height: 300px; position: absolute; right: 2rem;
+        <!-- <div id="divPatient" class="table-responsive" class="esri-widget" style="max-width: 350px; height: 300px; position: absolute; right: 2rem;
         bottom: 4rem;
         background-color: #fff; border: 2px solid #4CAF50;">
             <table id="patients" class="table">
@@ -110,121 +113,94 @@
                     </tr>
                     <% }) %>
             </table>
-        </div>
+        </div> -->
     </div>
+    <div id="infoNote" class="esri-widget">
+        <div id="statsDivNote" class="esri-widget">
+            <table id="patients" class="table-responsive" style="min-width:max-content ;max-height: 300px;">
+                <tr>
+                    <th>Tên bệnh nhân</th>
+                    <th>Tình trạng</th>
+                </tr>
+                <% patients.forEach(patient => { %>
+                    <tr>
+                        <td>
+                            <a href="/lich-trinh-di-chuyen/name=<%= patient.name %>">
+                                <%= patient.name%>
+                            </a>
+                        </td>
+                        <td>
+                            <%= patient.status%>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </table>
+        </div>
 
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://js.arcgis.com/4.15/"></script>
+        <script src="/script/main.js"></script>
+        <script>
+            // fetch(
+            //         '/api/get-all'
+            //     )
+            //     .then(data => data.text())
+            //     .then(data => console.log(JSON.parse(data)))
+            require([
+                "esri/Map",
+                "esri/views/MapView",
+                "esri/Graphic",
+                "esri/layers/GraphicsLayer",
+                "esri/widgets/LayerList",
+                "esri/widgets/BasemapGallery",
+                "esri/widgets/Legend",
+                "esri/widgets/Expand",
+                "esri/widgets/Search",
+                "esri/widgets/Track",
+                "esri/layers/GeoJSONLayer",
+                "esri/widgets/Directions",
+                "esri/config",
+                "esri/widgets/TimeSlider"
+            ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track, GeoJSONLayer, Directions,
+                esriConfig, TimeSlider) {
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://js.arcgis.com/4.15/"></script>
-    <script src="/script/main.js"></script>
-    <script>
-        // fetch(
-        //         '/api/get-all'
-        //     )
-        //     .then(data => data.text())
-        //     .then(data => console.log(JSON.parse(data)))
-        require([
-            "esri/Map",
-            "esri/views/MapView",
-            "esri/Graphic",
-            "esri/layers/GraphicsLayer",
-            "esri/widgets/LayerList",
-            "esri/widgets/BasemapGallery",
-            "esri/widgets/Legend",
-            "esri/widgets/Expand",
-            "esri/widgets/Search",
-            "esri/widgets/Track",
-            "esri/layers/GeoJSONLayer",
-            "esri/widgets/Directions",
-            "esri/config",
-            "esri/widgets/TimeSlider"
-        ], function(Map, MapView, Graphic, GraphicsLayer, LayerList, BasemapGallery, Legend, Expand, Search, Track, GeoJSONLayer, Directions,
-            esriConfig, TimeSlider) {
+                esriConfig.apiKey = "AAPKc1f7559b59c44a1397e39b4f2b87ebc6f0KRFFVS8U5tWT8HBBMXDbTbSjKVwGiQOmbF1LJYadDZLWfya-c13h_TIC36h0F6";
 
-            esriConfig.apiKey = "AAPKc1f7559b59c44a1397e39b4f2b87ebc6f0KRFFVS8U5tWT8HBBMXDbTbSjKVwGiQOmbF1LJYadDZLWfya-c13h_TIC36h0F6";
+                let layerView;
 
-            let layerView;
-
-            // set the timeInfo on GeoJSONLayer at the time initialization
-            const layer = new GeoJSONLayer({
-                url: "http://localhost:3000/api/get-all-patient-current-point",
-                // set the CSVLayer's timeInfo based on the date field
-                timeInfo: {
-                    startField: "accTimeMili", // name of the date field
-                    interval: {
-                        // set time interval to one day
-                        unit: "days",
-                        value: 1
-                    }
-                },
-                renderer: {
-                    type: "simple",
-                    symbol: {
-                        type: "picture-marker",
-                        url: "/img/patient.png",
-                        width: "24px",
-                        height: "24px"
-                    }
-                },
-                popupTemplate: {
-                    title: "Chi tiết",
-                    content: [{
-                        type: "fields",
-                        fieldInfos: [{
-                            fieldName: "name",
-                            label: "Tên bệnh nhân",
-                            visible: true
-                        }, {
-                            fieldName: "detailAdd",
-                            label: "Địa chỉ",
-                            visible: true
-                        }, {
-                            fieldName: "status",
-                            label: "Trạng thái",
-                            visible: true
-                        }, {
-                            fieldName: "yearOfBirth",
-                            label: "Năm sinh",
-                            visible: true
-                        }, {
-                            fieldName: "accTime",
-                            label: "Ngày công bố",
-                            visible: true
-                        }]
-                    }]
-                }
-            });
-
-            const layerPolygon = new GeoJSONLayer({
-                url: "http://localhost:3000/api/get-polygon",
-                // set the CSVLayer's timeInfo based on the date field
-                timeInfo: {
-                    startField: "accTimeMili", // name of the date field
-                    interval: {
-                        // set time interval to one day
-                        unit: "days",
-                        value: 1
-                    }
-                },
-                renderer: {
-                    type: "simple",
-                    symbol: {
-                        type: "simple-fill",
-                        color: [255, 153, 153, 0.4],
-                        outline: {
-                            color: [0, 51, 0],
-                            width: 1
+                // set the timeInfo on GeoJSONLayer at the time initialization
+                const layer = new GeoJSONLayer({
+                    url: "http://localhost:3000/api/get-all-patient-current-point",
+                    // set the CSVLayer's timeInfo based on the date field
+                    timeInfo: {
+                        startField: "accTimeMili", // name of the date field
+                        interval: {
+                            // set time interval to one day
+                            unit: "days",
+                            value: 1
                         }
-                    }
-                },
-                popupTemplate: {
-                    title: "Chi tiết",
-                    content: [{
-                        type: "fields",
-                        fieldInfos: [{
+                    },
+                    renderer: {
+                        type: "simple",
+                        symbol: {
+                            type: "picture-marker",
+                            url: "/img/patient.png",
+                            width: "24px",
+                            height: "24px"
+                        }
+                    },
+                    popupTemplate: {
+                        title: "Chi tiết",
+                        content: [{
+                            type: "fields",
+                            fieldInfos: [{
+                                fieldName: "name",
+                                label: "Tên bệnh nhân",
+                                visible: true
+                            }, {
                                 fieldName: "detailAdd",
                                 label: "Địa chỉ",
                                 visible: true
@@ -232,204 +208,263 @@
                                 fieldName: "status",
                                 label: "Trạng thái",
                                 visible: true
+                            }, {
+                                fieldName: "yearOfBirth",
+                                label: "Năm sinh",
+                                visible: true
+                            }, {
+                                fieldName: "accTime",
+                                label: "Ngày công bố",
+                                visible: true
+                            }]
+                        }]
+                    }
+                });
+
+                const layerPolygon = new GeoJSONLayer({
+                    url: "http://localhost:3000/api/get-polygon",
+                    // set the CSVLayer's timeInfo based on the date field
+                    timeInfo: {
+                        startField: "accTimeMili", // name of the date field
+                        interval: {
+                            // set time interval to one day
+                            unit: "days",
+                            value: 1
+                        }
+                    },
+                    renderer: {
+                        type: "simple",
+                        symbol: {
+                            type: "simple-fill",
+                            color: [255, 153, 153, 0.4],
+                            outline: {
+                                color: [0, 51, 0],
+                                width: 1
                             }
+                        }
+                    },
+                    popupTemplate: {
+                        title: "Chi tiết",
+                        content: [{
+                            type: "fields",
+                            fieldInfos: [{
+                                    fieldName: "name",
+                                    label: "Địa chỉ",
+                                    visible: true
+                                }
 
-                        ]
-                    }]
-                }
-            });
-
-
-            const map = new Map({
-                basemap: "topo-vector",
-                layers: [layer]
-            });
-            layer.title = "Ca nhiễm"
-            layerPolygon.title = "Vùng cách ly"
-            map.add(layerPolygon)
-                // const view = new MapView({
-                //     map: map,
-                //     container: "viewDiv",
-                //     zoom: 13,
-                //     center: [106.76998, 10.84963]
-                // });
-                // map.on("load", function() {
-                //     map.graphics.enableMouseEvents();
-                // });
-
-            var view = new MapView({
-                container: "viewDiv",
-                map: map,
-                zoom: 13,
-                center: [106.76998, 10.84963],
-                highlightOptions: {
-                    color: "blue"
-                }
-            });
-
-            map.on("load", function() {
-                map.graphics.enableMouseEvents();
-            });
-
-            var searchWidget = new Search({
-                view: view,
-                container: "searchWidget"
-            });
-            const directExpand = new Expand({
-                content: new Directions({
-                    view: view
-                }),
-                view: view,
-                group: "top-left"
-            })
+                            ]
+                        }]
+                    }
+                });
 
 
+                const map = new Map({
+                    basemap: "topo-vector",
+                    layers: [layer]
+                });
+                layer.title = "Ca nhiễm"
+                layerPolygon.title = "Vùng cách ly"
 
-            // Add the Directions widget to the top right corner of the view
-            // var createGraphic = function(data) {
-            //     return new Graphic({
-            //         geometry: data,
-            //         symbol: data.symbol,
-            //         attributes: data,
-            //         popupTemplate: data.popupTemplate
-            //     });
-            // };
+                map.add(layerPolygon)
 
-            // var graphicsLayer = new GraphicsLayer();
-            // // Create attributes
+                var view = new MapView({
+                    container: "viewDiv",
+                    map: map,
+                    zoom: 12,
+                    center: [106.70537156579168, 10.823906670417175],
+                    highlightOptions: {
+                        color: "blue"
+                    }
+                });
 
-            // var graphicsLayerPoint = new GraphicsLayer();
+                map.on("load", function() {
+                    map.graphics.enableMouseEvents();
+                });
 
-
-
-            // var graphicsLayerPatient = new GraphicsLayer();
-            // // var temp = [];
-            // var PatientList = <%- JSON.stringify(patients) %>
-            //     // for (var i = PatientList.length - 1; i >= 0; i--) {
-            //     //     temp.push(PatientList[i]);
-            //     // }
-            // var dataPatient = PatientList.map(patient => ({
-            //     type: "point",
-            //     longitude: patient.long,
-            //     latitude: patient.lat,
-            //     Name: patient.name,
-            //     Year: patient.yearOfBirth,
-            //     Location: patient.detailAdd,
-            //     Time: patient.accTime,
-            //     Status: patient.status,
-            //     symbol: {
-            //         type: "picture-marker",
-            //         url: "/img/patient.png",
-            //         width: "24px",
-            //         height: "24px"
-            //     },
-            //     popupTemplate: {
-            //         title: "{Name}",
-            //         // content: "<b>Năm sinh: </b>{Year}<br><b>Địa chỉ: </b>{Location}<br><b>Ngày công bố: </b>{Time}<br><b>Tình trạng: </b>{Status}"
-            //         content: [{
-            //             type: "fields",
-            //             fieldInfos: [{
-            //                 fieldName: "Year",
-            //                 label: "Năm sinh",
-            //                 visible: true
-            //             }, {
-            //                 fieldName: "Location",
-            //                 label: "Địa chỉ",
-            //                 visible: true
-            //             }, {
-            //                 fieldName: "Time",
-            //                 label: "Ngày công bố",
-            //                 visible: true
-            //             }, {
-            //                 fieldName: "Status",
-            //                 label: "Tình trạng",
-            //                 visible: true
-            //             }]
-
-            //         }]
-            //     }
-            // }))
-
-            // dataPatient.forEach(function(data) {
-            //     // console.log(data)
-            //     var data1 = createGraphic(data)
-            //     graphicsLayerPatient.add(data1);
-            // });
-            // graphicsLayerPatient.title = "Vị trí bệnh nhân"
-            // map.add(graphicsLayerPatient);
-
-            // var graphicsLayerPolygon = new GraphicsLayer();
-            // // var temp1 = [];
-            // var PolygonList = <%- JSON.stringify(polygons) %>
-            //     // for (var i = PolygonList.length - 1; i >= 0; i--) {
-            //     //     temp1.push(PolygonList[i]);
-            //     // }
-
-            // console.log(PolygonList)
-            // var dataPolygon = PolygonList.map(polygon => ({
-            //     type: "polygon",
-            //     rings: polygon.longlat,
-            //     Name: polygon.name,
-            //     symbol: {
-            //         type: "simple-fill",
-            //         color: [255, 153, 153, 0.4],
-            //         outline: {
-            //             color: [0, 51, 0],
-            //             width: 1
-            //         }
-            //     },
-            //     popupTemplate: {
-            //         title: "{Name}"
-            //     }
-            // }))
-
-            // dataPolygon.forEach(function(data) {
-            //     var dataPo = createGraphic(data)
-            //     graphicsLayerPolygon.add(dataPo);
-            // });
-            // graphicsLayerPolygon.title = "Vùng cách li"
-            // map.add(graphicsLayerPolygon);
-
-            var track = new Track({
-                view: view
-            });
-
-            const divPatient = document.getElementById("infoNote");
-            const legendExpand = new Expand({
-                view: view,
-                content: divPatient,
-                expanded: true,
-                group: "bottom-right",
-            });
-            view.ui.add(legendExpand, "bottom-righ");
-            view.ui.add(track, "top-left");
-
-            view.ui.add(directExpand, {
-                position: "top-left"
-            });
-            view.ui.add(
-                [
-                    new Expand({
-                        content: new BasemapGallery({
-                            view: view
-                        }),
-                        view: view,
-                        expandIconClass: "esri-icon-basemap",
-                        group: "top-right"
+                var searchWidget = new Search({
+                    view: view,
+                    container: "searchWidget"
+                });
+                const directExpand = new Expand({
+                    content: new Directions({
+                        view: view
                     }),
-                    new Expand({
-                        content: new LayerList({
-                            view: view,
-                        }),
-                        view: view,
-                        expanded: true,
-                        group: "top-right"
-                    })
-                ], "top-right"
+                    view: view,
+                    group: "top-left"
+                })
 
-            );
-        });
-    </script>
+                const infoNote = document.getElementById("infoNote");
+                const legendExpand = new Expand({
+                    view: view,
+                    content: infoNote,
+                    expanded: true
+                });
+                view.ui.add(legendExpand, "bottom-right");
+
+                // Add the Directions widget to the top right corner of the view
+                // var createGraphic = function(data) {
+                //     return new Graphic({
+                //         geometry: data,
+                //         symbol: data.symbol,
+                //         attributes: data,
+                //         popupTemplate: data.popupTemplate
+                //     });
+                // };
+
+                // var graphicsLayer = new GraphicsLayer();
+                // // Create attributes
+
+                // var graphicsLayerPoint = new GraphicsLayer();
+
+
+
+                // var graphicsLayerPatient = new GraphicsLayer();
+                // // var temp = [];
+                // var PatientList = <%- JSON.stringify(patients) %>
+                //     // for (var i = PatientList.length - 1; i >= 0; i--) {
+                //     //     temp.push(PatientList[i]);
+                //     // }
+                // var dataPatient = PatientList.map(patient => ({
+                //     type: "point",
+                //     longitude: patient.long,
+                //     latitude: patient.lat,
+                //     Name: patient.name,
+                //     Year: patient.yearOfBirth,
+                //     Location: patient.detailAdd,
+                //     Time: patient.accTime,
+                //     Status: patient.status,
+                //     symbol: {
+                //         type: "picture-marker",
+                //         url: "/img/patient.png",
+                //         width: "24px",
+                //         height: "24px"
+                //     },
+                //     popupTemplate: {
+                //         title: "{Name}",
+                //         // content: "<b>Năm sinh: </b>{Year}<br><b>Địa chỉ: </b>{Location}<br><b>Ngày công bố: </b>{Time}<br><b>Tình trạng: </b>{Status}"
+                //         content: [{
+                //             type: "fields",
+                //             fieldInfos: [{
+                //                 fieldName: "Year",
+                //                 label: "Năm sinh",
+                //                 visible: true
+                //             }, {
+                //                 fieldName: "Location",
+                //                 label: "Địa chỉ",
+                //                 visible: true
+                //             }, {
+                //                 fieldName: "Time",
+                //                 label: "Ngày công bố",
+                //                 visible: true
+                //             }, {
+                //                 fieldName: "Status",
+                //                 label: "Tình trạng",
+                //                 visible: true
+                //             }]
+
+                //         }]
+                //     }
+                // }))
+
+                // dataPatient.forEach(function(data) {
+                //     // console.log(data)
+                //     var data1 = createGraphic(data)
+                //     graphicsLayerPatient.add(data1);
+                // });
+                // graphicsLayerPatient.title = "Vị trí bệnh nhân"
+                // map.add(graphicsLayerPatient);
+
+                // var graphicsLayerPolygon = new GraphicsLayer();
+                // // var temp1 = [];
+                // var PolygonList = <%- JSON.stringify(polygons) %>
+                //     // for (var i = PolygonList.length - 1; i >= 0; i--) {
+                //     //     temp1.push(PolygonList[i]);
+                //     // }
+
+                // console.log(PolygonList)
+                // var dataPolygon = PolygonList.map(polygon => ({
+                //     type: "polygon",
+                //     rings: polygon.longlat,
+                //     Name: polygon.name,
+                //     symbol: {
+                //         type: "simple-fill",
+                //         color: [255, 153, 153, 0.4],
+                //         outline: {
+                //             color: [0, 51, 0],
+                //             width: 1
+                //         }
+                //     },
+                //     popupTemplate: {
+                //         title: "{Name}"
+                //     }
+                // }))
+
+                // dataPolygon.forEach(function(data) {
+                //     var dataPo = createGraphic(data)
+                //     graphicsLayerPolygon.add(dataPo);
+                // });
+                // graphicsLayerPolygon.title = "Vùng cách li"
+                // map.add(graphicsLayerPolygon);
+
+                var track = new Track({
+                    view: view
+                });
+
+                // const divPatient = document.getElementById("infoNote");
+                // const legendExpand = new Expand({
+                //     view: view,
+                //     content: divPatient,
+                //     expanded: true,
+                //     group: "bottom-right",
+                // });
+                // bảng chú thích
+                // const infoNote = document.getElementById("infoNote");
+                // const legendExpand = new Expand({
+                //     view: view,
+                //     content: infoNote,
+                //     expanded: true
+                // });
+                // view.ui.add(legendExpand, "bottom-left");
+
+                view.ui.add(track, "top-left");
+
+                view.ui.add(directExpand, {
+                    position: "top-left"
+                });
+                view.ui.add(
+                    [
+                        new Expand({
+                            content: new BasemapGallery({
+                                view: view
+                            }),
+                            view: view,
+                            expandIconClass: "esri-icon-basemap",
+                            group: "top-right"
+                        }),
+                        new Expand({
+                            content: new LayerList({
+                                view: view,
+                                listItemCreatedFunction: function(event) {
+                                    const item = event.item;
+                                    if (item.layer.type != "group") {
+                                        // don't show legend twice
+                                        item.panel = {
+                                            content: "legend",
+                                            open: true
+                                        };
+                                    }
+                                }
+                            }),
+                            view: view,
+                            expanded: true,
+                            group: "top-right"
+                        })
+                    ], "top-right"
+
+                );
+            });
+        </script>
 </body>
 
 </html>
