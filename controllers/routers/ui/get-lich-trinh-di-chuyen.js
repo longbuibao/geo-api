@@ -6,6 +6,8 @@ const lichTrinhDiChuyen = async(name) => {
         'events'
     ).execPopulate()
 
+    console.log(patient)
+
     const allEventsPoints = await Promise.all(patient.events.map(async(event) => {
         return await event
             .populate('location', '-_id')
