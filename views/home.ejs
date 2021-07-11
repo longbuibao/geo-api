@@ -46,6 +46,36 @@
             color: white;
         }
         
+        #patients2 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            min-width: 350px;
+            max-height: 400px;
+        }
+        
+        #patients2 td,
+        #patients2 th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #patients2 tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #patients2 tr:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        
+        #patients2 th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+        
         td {
             text-align: center;
         }
@@ -82,6 +112,21 @@
             <div id="searchWidget"></div>
         </form>
     </header>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div>
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+
+
+
+            <!-- map o day ???? -->
+
+
+        </div>
+
+    </div>
     <div id="viewDiv">
     </div>
     <div id="infoNote" class="esri-widget">
@@ -95,9 +140,9 @@
                     <tr>
                         <td>
                             <!-- /api/lich-trinh-di-chuyen/?name=<%= patient.name %> -->
-                            <a href="#" data-patient-name="<%= patient.name %>" onclick="getLichTrinh(this)">
+                            <p id="<%= patient.name %>" data-patient-name="<%= patient.name %>" onclick="getLichTrinh(this)">
                                 <%= patient.name%>
-                            </a>
+                            </p>
                         </td>
                         <td>
                             <%= patient.status%>
