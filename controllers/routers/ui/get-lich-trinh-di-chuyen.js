@@ -18,12 +18,16 @@ const lichTrinhDiChuyen = async(name) => {
 
     const result = evtToObj.map(evt => {
         const time = new Date(evt.time.time).toLocaleString()
+        const timeMili = new Date(evt.time.time).getTime()
+
         evt.patienName = evt.owner.name
         evt.happendAt = time
         evt.long = evt.location.long
         evt.lat = evt.location.lat
         evt.detailAdd = evt.location.detailAddress
         evt.district = evt.location.district
+        evt.timeMili = timeMili
+
         return evt
     })
 
