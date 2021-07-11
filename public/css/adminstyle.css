@@ -155,12 +155,6 @@ button {
     cursor: pointer;
 }
 
-.simple-search {
-    /* width: 30%; */
-    margin: 10px 10px 10px 0;
-    /* display: flex; */
-}
-
 .esri-search .esri-search__submit-button {
     background-color: #3baf54;
     color: white;
@@ -169,8 +163,13 @@ button {
 }
 
 .esri-search {
-    border-radius: 0px 8px 8px 0px;
-    margin: 8px 10px 12px 0;
+    margin-right: 25px;
+    border-radius: 5px 8px 8px 5px;
+    /* margin: 8px 10px 12px 0; */
+}
+
+.esri-search__form input[type=text] {
+    margin: 0;
 }
 
 .simple-search button {
@@ -213,6 +212,12 @@ button {
 
 .form {
     width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
+form {
+    width: 50%;
     height: fit-content;
     margin: auto;
 }

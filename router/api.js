@@ -11,7 +11,7 @@ const { getPhongToa } = require('../controllers/phongtoa/phongtoa.controller')
 router.get('/api/get-all-patient-current-point', async(req, res) => {
     try {
         const patients = await getAllPatientAndPoint()
-        console.log(patients)
+            // console.log(patients)
         const patientGeoJson = geoJSON.parse(
             patients, {
                 Point: ['lat', 'long'],

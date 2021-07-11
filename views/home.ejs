@@ -78,42 +78,11 @@
                 </li>
             </ul>
         </nav>
-        <!-- <div class="form-group">
-          <div class="btn-group">
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Tìm kiếm nhanh">
-              <div class="btn btn-info">Tìm</div>
-          </div>
-      </div> -->
-
         <form id="searchWidgetForm" class="form-group ml-auto mr-5">
-            <!-- <input type="text" placeholder="Tìm kiếm" />
-            <button type="submit" class="fa fa-search"></i></button> -->
             <div id="searchWidget"></div>
         </form>
     </header>
     <div id="viewDiv">
-        <!-- <div id="divPatient" class="table-responsive" class="esri-widget" style="max-width: 350px; height: 300px; position: absolute; right: 2rem;
-        bottom: 4rem;
-        background-color: #fff; border: 2px solid #4CAF50;">
-            <table id="patients" class="table">
-                <tr>
-                    <th>Tên bệnh nhân</th>
-                    <th>Tình trạng</th>
-                </tr>
-                <% patients.forEach(patient => { %>
-                    <tr>
-                        <td>
-                            <a href="/lich-trinh-di-chuyen/name=<%= patient.name %>">
-                                <%= patient.name%>
-                            </a>
-                        </td>
-                        <td>
-                            <%= patient.status%>
-                        </td>
-                    </tr>
-                    <% }) %>
-            </table>
-        </div> -->
     </div>
     <div id="infoNote" class="esri-widget">
         <div id="statsDivNote" class="esri-widget">
@@ -125,7 +94,7 @@
                 <% patients.forEach(patient => { %>
                     <tr>
                         <td>
-                            <a href="/lich-trinh-di-chuyen/name=<%= patient.name %>">
+                            <a href="/api/lich-trinh-di-chuyen/name=<%= patient.name %>">
                                 <%= patient.name%>
                             </a>
                         </td>
@@ -302,130 +271,11 @@
                 });
                 view.ui.add(legendExpand, "bottom-right");
 
-                // Add the Directions widget to the top right corner of the view
-                // var createGraphic = function(data) {
-                //     return new Graphic({
-                //         geometry: data,
-                //         symbol: data.symbol,
-                //         attributes: data,
-                //         popupTemplate: data.popupTemplate
-                //     });
-                // };
-
-                // var graphicsLayer = new GraphicsLayer();
-                // // Create attributes
-
-                // var graphicsLayerPoint = new GraphicsLayer();
-
-
-
-                // var graphicsLayerPatient = new GraphicsLayer();
-                // // var temp = [];
-                // var PatientList = <%- JSON.stringify(patients) %>
-                //     // for (var i = PatientList.length - 1; i >= 0; i--) {
-                //     //     temp.push(PatientList[i]);
-                //     // }
-                // var dataPatient = PatientList.map(patient => ({
-                //     type: "point",
-                //     longitude: patient.long,
-                //     latitude: patient.lat,
-                //     Name: patient.name,
-                //     Year: patient.yearOfBirth,
-                //     Location: patient.detailAdd,
-                //     Time: patient.accTime,
-                //     Status: patient.status,
-                //     symbol: {
-                //         type: "picture-marker",
-                //         url: "/img/patient.png",
-                //         width: "24px",
-                //         height: "24px"
-                //     },
-                //     popupTemplate: {
-                //         title: "{Name}",
-                //         // content: "<b>Năm sinh: </b>{Year}<br><b>Địa chỉ: </b>{Location}<br><b>Ngày công bố: </b>{Time}<br><b>Tình trạng: </b>{Status}"
-                //         content: [{
-                //             type: "fields",
-                //             fieldInfos: [{
-                //                 fieldName: "Year",
-                //                 label: "Năm sinh",
-                //                 visible: true
-                //             }, {
-                //                 fieldName: "Location",
-                //                 label: "Địa chỉ",
-                //                 visible: true
-                //             }, {
-                //                 fieldName: "Time",
-                //                 label: "Ngày công bố",
-                //                 visible: true
-                //             }, {
-                //                 fieldName: "Status",
-                //                 label: "Tình trạng",
-                //                 visible: true
-                //             }]
-
-                //         }]
-                //     }
-                // }))
-
-                // dataPatient.forEach(function(data) {
-                //     // console.log(data)
-                //     var data1 = createGraphic(data)
-                //     graphicsLayerPatient.add(data1);
-                // });
-                // graphicsLayerPatient.title = "Vị trí bệnh nhân"
-                // map.add(graphicsLayerPatient);
-
-                // var graphicsLayerPolygon = new GraphicsLayer();
-                // // var temp1 = [];
-                // var PolygonList = <%- JSON.stringify(polygons) %>
-                //     // for (var i = PolygonList.length - 1; i >= 0; i--) {
-                //     //     temp1.push(PolygonList[i]);
-                //     // }
-
-                // console.log(PolygonList)
-                // var dataPolygon = PolygonList.map(polygon => ({
-                //     type: "polygon",
-                //     rings: polygon.longlat,
-                //     Name: polygon.name,
-                //     symbol: {
-                //         type: "simple-fill",
-                //         color: [255, 153, 153, 0.4],
-                //         outline: {
-                //             color: [0, 51, 0],
-                //             width: 1
-                //         }
-                //     },
-                //     popupTemplate: {
-                //         title: "{Name}"
-                //     }
-                // }))
-
-                // dataPolygon.forEach(function(data) {
-                //     var dataPo = createGraphic(data)
-                //     graphicsLayerPolygon.add(dataPo);
-                // });
-                // graphicsLayerPolygon.title = "Vùng cách li"
-                // map.add(graphicsLayerPolygon);
 
                 var track = new Track({
                     view: view
                 });
 
-                // const divPatient = document.getElementById("infoNote");
-                // const legendExpand = new Expand({
-                //     view: view,
-                //     content: divPatient,
-                //     expanded: true,
-                //     group: "bottom-right",
-                // });
-                // bảng chú thích
-                // const infoNote = document.getElementById("infoNote");
-                // const legendExpand = new Expand({
-                //     view: view,
-                //     content: infoNote,
-                //     expanded: true
-                // });
-                // view.ui.add(legendExpand, "bottom-left");
 
                 view.ui.add(track, "top-left");
 

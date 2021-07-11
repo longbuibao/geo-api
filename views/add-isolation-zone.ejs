@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <title>
+        Green Mask |
         <%=title%>
     </title>
-
+    <link rel="shortcut icon" href="/img/GreenMask.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/adminstyle.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css" />
@@ -35,19 +36,69 @@
             "esri/views/MapView",
             "esri/views/draw/Draw",
             "esri/Graphic",
-            "esri/geometry/geometryEngine"
-        ], (Map, MapView, Draw, Graphic, geometryEngine) => {
+            "esri/geometry/geometryEngine",
+            "esri/layers/GeoJSONLayer",
+            "esri/widgets/Search"
+        ], (Map, MapView, Draw, Graphic, geometryEngine, GeoJSONLayer, Search) => {
+
+
+            const layerPolygon = new GeoJSONLayer({
+                url: "http://localhost:3000/api/get-polygon",
+                // set the CSVLayer's timeInfo based on the date field
+                timeInfo: {
+                    startField: "accTimeMili", // name of the date field
+                    interval: {
+                        // set time interval to one day
+                        unit: "days",
+                        value: 1
+                    }
+                },
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-fill",
+                        color: [255, 153, 153, 0.4],
+                        outline: {
+                            color: [0, 51, 0],
+                            width: 1
+                        }
+                    }
+                },
+                popupTemplate: {
+                    title: "Chi tiết",
+                    content: [{
+                        type: "fields",
+                        fieldInfos: [{
+                                fieldName: "name",
+                                label: "Địa chỉ",
+                                visible: true
+                            }
+
+                        ]
+                    }]
+                }
+            });
+
             const map = new Map({
-                basemap: "gray-vector"
+                basemap: "gray-vector",
+                layers: [layerPolygon]
             });
             const view = new MapView({
                 container: "viewDiv",
                 map: map,
-                zoom: 12,
-                center: [106.69714496360614, 10.775242573332328]
+                zoom: 11,
+                center: [106.6960, 10.7520]
             });
+            var searchWidget = new Search({
+                view: view
+            });
+            view.ui.add(searchWidget, {
+                position: "top-right"
+            });
+
             // add the button for the draw tool
             view.ui.add("line-button", "top-left");
+
             view.popup.autoOpenEnabled = false; // Disable the default popup behavior
             view.on("click", function(event) { // Listen for the click event
                 view.hitTest(event).then(function(hitTestResults) { // Search for features where the user clicked
@@ -224,7 +275,7 @@
     <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-3 sidebar pr-0 mr-0">
             <div class="logo">
-                <a href="/patient-list-update"><img src="img/GreenMask.png"></a>
+                <a href="/"><img src="img/GreenMask.png"></a>
             </div>
             <nav>
                 <ul>
@@ -241,11 +292,11 @@
                 esri-interactive" title="Draw polyline">
                     <span class="esri-icon-polyline"></span>
                 </div>
-                <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 20px; top: 10px;">
-                    <label for="tenVung">Tên vùng: </label>
+                <form action="/add-isolation-zone" method="POST" style="position: absolute; right: 30px; top: 10%;">
+                    <label for="tenVung"><b>Tên vùng: </b></label>
                     <input type="text" required name="tenVung"><br><br>
 
-                    <label for="isoLat">Tọa độ: </label>
+                    <label for="isoLat"><b>Tọa độ: </b></label>
                     <input type="text" id="isoLongLat" required name="points"><br><br>
                     <input type="submit" value="Submit">
                 </form>

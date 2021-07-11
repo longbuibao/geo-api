@@ -2,12 +2,12 @@
     <a href="/patient-list-update" class="btn btn-add my-3">Quay lại</a>
     <h3>
         Cập nhật thông tin bệnh nhân:
-        <%= name %>
+        <i><%= name %></i>
     </h3>
     <hr>
     <h5 class="text-center mb-5"><i>(Muốn cập nhật thông tin nào thì điền thông tin đó)</i></h5>
 
-    <form action="/update-patient/?_method=PATCH&id=<%= id %>" method="POST" style="margin-left: 30%;">
+    <form action="/update-patient/?_method=PATCH&id=<%= id %>" method="POST">
         <label for="name">Tên: </label>
         <input type="text" name="name"><br><br>
 
