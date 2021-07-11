@@ -86,7 +86,7 @@
     </div>
     <div id="infoNote" class="esri-widget">
         <div id="statsDivNote" class="esri-widget">
-            <table id="patients" class="table-responsive" style="min-width:max-content ;max-height: 300px;">
+            <table id="patients" class="table-responsive" style="min-width:max-content ;">
                 <tr>
                     <th>Tên bệnh nhân</th>
                     <th>Tình trạng</th>
@@ -94,7 +94,7 @@
                 <% patients.forEach(patient => { %>
                     <tr>
                         <td>
-                            <a href="/api/lich-trinh-di-chuyen/name=<%= patient.name %>">
+                            <a href="/api/lich-trinh-di-chuyen/?name=<%= patient.name %>">
                                 <%= patient.name%>
                             </a>
                         </td>
@@ -143,15 +143,15 @@
                 // set the timeInfo on GeoJSONLayer at the time initialization
                 const layer = new GeoJSONLayer({
                     url: "http://localhost:3000/api/get-all-patient-current-point",
-                    // set the CSVLayer's timeInfo based on the date field
-                    timeInfo: {
-                        startField: "accTimeMili", // name of the date field
-                        interval: {
-                            // set time interval to one day
-                            unit: "days",
-                            value: 1
-                        }
-                    },
+                    // // set the CSVLayer's timeInfo based on the date field
+                    // timeInfo: {
+                    //     startField: "accTimeMili", // name of the date field
+                    //     interval: {
+                    //         // set time interval to one day
+                    //         unit: "days",
+                    //         value: 1
+                    //     }
+                    // },
                     renderer: {
                         type: "simple",
                         symbol: {
@@ -190,17 +190,66 @@
                     }
                 });
 
+                const layerPatient = new GeoJSONLayer({
+                    url: "http://localhost:3000/api/lich-trinh-di-chuyen/?name=BN15829",
+                    // // set the CSVLayer's timeInfo based on the date field
+                    // timeInfo: {
+                    //     startField: "accTimeMili", // name of the date field
+                    //     interval: {
+                    //         // set time interval to one day
+                    //         unit: "days",
+                    //         value: 1
+                    //     }
+                    // },
+                    renderer: {
+                        type: "simple",
+                        symbol: {
+                            type: "picture-marker",
+                            url: "/img/placeholder.png",
+                            width: "24px",
+                            height: "24px"
+                        }
+                    },
+                    popupTemplate: {
+                        title: "Chi tiết",
+                        content: [{
+                            type: "fields",
+                            fieldInfos: [{
+                                fieldName: "name",
+                                label: "Tên bệnh nhân",
+                                visible: true
+                            }, {
+                                fieldName: "detailAdd",
+                                label: "Địa chỉ",
+                                visible: true
+                            }, {
+                                fieldName: "status",
+                                label: "Trạng thái",
+                                visible: true
+                            }, {
+                                fieldName: "yearOfBirth",
+                                label: "Năm sinh",
+                                visible: true
+                            }, {
+                                fieldName: "accTime",
+                                label: "Ngày công bố",
+                                visible: true
+                            }]
+                        }]
+                    }
+                });
+
                 const layerPolygon = new GeoJSONLayer({
                     url: "http://localhost:3000/api/get-polygon",
                     // set the CSVLayer's timeInfo based on the date field
-                    timeInfo: {
-                        startField: "accTimeMili", // name of the date field
-                        interval: {
-                            // set time interval to one day
-                            unit: "days",
-                            value: 1
-                        }
-                    },
+                    // timeInfo: {
+                    //     startField: "accTimeMili", // name of the date field
+                    //     interval: {
+                    //         // set time interval to one day
+                    //         unit: "days",
+                    //         value: 1
+                    //     }
+                    // },
                     renderer: {
                         type: "simple",
                         symbol: {
@@ -213,7 +262,7 @@
                         }
                     },
                     popupTemplate: {
-                        title: "Chi tiết",
+                        title: "Chi tiết vùng cách li",
                         content: [{
                             type: "fields",
                             fieldInfos: [{
@@ -227,15 +276,57 @@
                     }
                 });
 
+                const layerPointLockade = new GeoJSONLayer({
+                    url: "http://localhost:3000/api/get-lockade-area",
+                    // set the CSVLayer's timeInfo based on the date field
+                    // timeInfo: {
+                    //     startField: "accTimeMili", // name of the date field
+                    //     interval: {
+                    //         // set time interval to one day
+                    //         unit: "days",
+                    //         value: 1
+                    //     }
+                    // },
+                    renderer: {
+                        type: "simple",
+                        symbol: {
+                            type: "picture-marker",
+                            url: "/img/barricade.png",
+                            width: "24px",
+                            height: "24px"
+                        }
+                    },
+                    popupTemplate: {
+                        title: "Chi tiết điểm phong tỏa",
+                        content: [{
+                            type: "fields",
+                            fieldInfos: [{
+                                    fieldName: "detailAddress",
+                                    label: "Địa chỉ",
+                                    visible: true
+                                }, {
+                                    fieldName: "timeUTC",
+                                    label: "Ngày phong tỏa",
+                                    visible: true
+                                }
 
+                            ]
+                        }]
+                    }
+                });
+
+                // 'detailAddress', 'district', 'timeMili', 'timeUTC'
                 const map = new Map({
                     basemap: "topo-vector",
-                    layers: [layer]
+                    layers: [layerPolygon, layer, layerPointLockade]
                 });
                 layer.title = "Ca nhiễm"
                 layerPolygon.title = "Vùng cách ly"
+                layerPointLockade.title = "Điểm phong tỏa"
+                layerPatient.title = "Điểm bệnh nhân từng đến"
+                map.add(layerPatient)
+                    // map.add()
 
-                map.add(layerPolygon)
 
                 var view = new MapView({
                     container: "viewDiv",
@@ -263,13 +354,25 @@
                     group: "top-left"
                 })
 
+
+                // $(document).ready(function() {
+                //     $("#patterns").change(function(event) {
+                //         var selectedData = JSON.parse($(this).find(":selected").attr("data"));
+                //         console.log(selectedData);
+                //         view.goTo({
+                //             center: selectedData,
+                //             zoom: 11.5
+                //         });
+                //     });
+                // });
+
                 const infoNote = document.getElementById("infoNote");
                 const legendExpand = new Expand({
                     view: view,
                     content: infoNote,
                     expanded: true
                 });
-                view.ui.add(legendExpand, "bottom-right");
+
 
 
                 var track = new Track({
@@ -278,7 +381,7 @@
 
 
                 view.ui.add(track, "top-left");
-
+                view.ui.add(legendExpand, "top-left");
                 view.ui.add(directExpand, {
                     position: "top-left"
                 });
@@ -313,6 +416,7 @@
                     ], "top-right"
 
                 );
+
             });
         </script>
 </body>
