@@ -94,7 +94,8 @@
                 <% patients.forEach(patient => { %>
                     <tr>
                         <td>
-                            <a href="/api/lich-trinh-di-chuyen/?name=<%= patient.name %>">
+                            <!-- /api/lich-trinh-di-chuyen/?name=<%= patient.name %> -->
+                            <a href="#" data-patient-name="<%= patient.name %>" onclick="getLichTrinh(this)">
                                 <%= patient.name%>
                             </a>
                         </td>
@@ -420,5 +421,6 @@
             });
         </script>
 </body>
+<script src="/script/patient-lich-trinh-di-chuyen.js"></script>
 
 </html>
