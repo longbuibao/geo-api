@@ -20,6 +20,21 @@ router.get('/', async(req, res) => {
     }
 })
 
+router.get('/index', async(req, res) => {
+    try {
+        const patients = await getAllPatientAndPoint()
+        const polygons = await getAllPolygon()
+
+        res.render('index', {
+            patients,
+            polygons,
+            title: "GreenMask | Trang chủ"
+        })
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 router.get('/dien-bien', async(req, res) => {
     try {
         const patients = await getAllPatientAndPoint()

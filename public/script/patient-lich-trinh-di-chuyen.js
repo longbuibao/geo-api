@@ -1,5 +1,3 @@
-console.log('hello')
-
 const createTable = (data, id) => {
     //tao bang, table header
     let table = document.createElement('table')
@@ -12,15 +10,15 @@ const createTable = (data, id) => {
 
     let row_1 = document.createElement('tr')
     let heading_1 = document.createElement('th')
-    heading_1.innerHTML = "TEN"
+    heading_1.innerHTML = "Địa chỉ"
     let heading_2 = document.createElement('th')
-    heading_2.innerHTML = "DIA CHI CHI TIET"
-    let heading_3 = document.createElement('th')
-    heading_3.innerHTML = "TOA DO"
+    heading_2.innerHTML = "Thời gian"
+        // let heading_3 = document.createElement('th')
+        // heading_3.innerHTML = "TOA DO"
 
     row_1.appendChild(heading_1)
     row_1.appendChild(heading_2)
-    row_1.appendChild(heading_3)
+        // row_1.appendChild(heading_3)
     thead.appendChild(row_1)
 
     //them data cho moi features
@@ -30,18 +28,18 @@ const createTable = (data, id) => {
     features.forEach(ftr => {
         let row_2 = document.createElement('tr');
         let row_2_data_1 = document.createElement('td')
-        row_2_data_1.innerHTML = id
+        row_2_data_1.innerHTML = ftr.properties.detailAdd
         let row_2_data_2 = document.createElement('td')
-        row_2_data_2.innerHTML = ftr.properties.detailAdd
-        let row_2_data_3 = document.createElement('td')
-        row_2_data_3.innerHTML = `toa do long: ${ftr.geometry.coordinates[0]}, toa do lat: ${ftr.geometry.coordinates[1]}`
+        row_2_data_2.innerHTML = ftr.properties.happendAt
+            // let row_2_data_3 = document.createElement('td')
+            // row_2_data_3.innerHTML = `toa do long: ${ftr.geometry.coordinates[0]}, toa do lat: ${ftr.geometry.coordinates[1]}`
 
         // add layer .... ???
 
 
         row_2.appendChild(row_2_data_1)
         row_2.appendChild(row_2_data_2)
-        row_2.appendChild(row_2_data_3)
+            // row_2.appendChild(row_2_data_3)
         tbody.appendChild(row_2)
     })
 
@@ -74,6 +72,7 @@ const getLichTrinh = async(element) => {
     const response = await fetch(
         `http://localhost:3000/api/lich-trinh-di-chuyen/?name=${name}`
     )
+
     const data = await response.text()
     showModal(name, data)
 }
