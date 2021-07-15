@@ -32,11 +32,13 @@ sudo systemctl start mongod.service
 ## Sử dụng
 #### tạo file `.evn` trong thư mục root của ứng dụng
 ```
-mongo_uri=ten_database
+mongo_uri=tên database
 ```
-#### Import các dữ liệu tương ứng trong thư mục `db` bằng `mongodb compass`
+Ví dụ tên database là `covid-tracker`
+#### Tạo cơ sở dữ liệu tên `covid-tracker` và import các dữ liệu tương ứng trong thư mục `db` bằng `mongodb compass`
+#### Ví dụ với file `diseases.json` thì tạo một `collection` mới tên là `diseases`, tương tự cho các file còn lại
 `diseases.json`
-`events.json`
+`events.json``
 `patients.json`
 `phongtoas.json`
 `points.json`
